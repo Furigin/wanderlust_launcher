@@ -1,0 +1,18 @@
+filename = 'aerovive-fix-1.0.3.jar'
+name = 'aerovive fix'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '1.0.3'
+
+[download]
+hash = 'cb0baacae6539e11b4c6f7eef85a39d273cd6347cedc6bcc12bd436503103450fd41f7c92e9b7da80715e2c20b3a11904c2525c9e79944656e8220d7ef828f05'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/eueUQC34/versions/fOARoDHI/aerovive-fix-1.0.3.jar'
+
+[update.modrinth]
+mod-id = 'eueUQC34'
+version = 'fOARoDHI'

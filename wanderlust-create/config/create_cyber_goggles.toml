@@ -1,0 +1,372 @@
+# Очки
+[goggles]
+# Режим игры
+[goggles.gameMode]
+	#  Включить очки
+	#  Главный выключатель для очков
+	enableGoggles = true
+	#  Включить в режиме выживания
+	#  Всегда включать очки в режиме выживания
+	enableInSurvival = true
+	#  Включить в творческом режиме
+	#  Всегда включать очки в творческом режиме
+	enableInCreative = true
+	#  Включить в режиме наблюдателя
+	#  Всегда включать очки в режиме наблюдателя
+	enableInSpectator = true
+	#  Включить в режиме «Приключение»
+	#  Всегда включать очки в режиме «Приключение»
+	enableInAdventure = true
+	#  Улучшенное отображение информации
+	#  Отображать больше информации с помощью очков
+	enhancedInfo = true
+	#  Скрыть кинетическую информацию для статических блоков в очках
+	#  Скрыть кинетическую информацию для статических блоков в очках
+	hideStaticKineticInfo = false
+	#  Only On With Goggles
+	#  Causes most additional display functions to be restricted by goggles
+	#  This option is affected by enableGoggles
+	onlyOnWithGoggles = false
+	#  Улучшенная информация о магазине
+	#  Оптимизировать отображение и логику взаимодействия с информацией о магазине
+	betterStoreInfo = true
+	#  Улучшенное соединение для фабричных контроллеров
+	#  Позволяет подключать и перемещать заводские контроллеры без ограничений
+	betterFactoryGauge = true
+	#  Отображение кинетических частиц
+	#  Отображать эффекты частиц вращения для блоков с кинетической информацией
+	enableKineticEffect = true
+	#  Отключить очки на экране
+	#  Отключить отображение очков, когда любой экран открыт
+	disableInScreenGoggles = true
+	#  Отображение с значением прокрутки
+	#  Разрешить отображение подсказки очков, когда значение прокрутки видимо
+	canRenderOnValueBox = false
+	#  Удалить дублирующиеся строки подсказки
+	#  Удалить соседние дублирующиеся или почти дублирующиеся строки в подсказке очков
+	dedupTooltipLines = true
+	#  Enable Fade Out
+	#  Enable smooth fading of item overlay and goggles overlay
+	enableFadeOut = true
+	#  Точные числа
+	#  Отображать более точные числовые значения
+	preciseNumber = true
+	#  Макс. количество знаков после запятой
+	#  Максимальное количество знаков после запятой, используемое для точных чисел
+	maxFractionDigits = 2
+# Подсказки
+[tooltip]
+	#  Дополнительная информация о предмете
+	#  Показывать дополнительную информацию в подсказке предмета
+	extraItemTooltip = true
+	#  Хранилище
+	#  Показывать содержимое хранилища
+	container = true
+	#  Жидкостный бак
+	#  Показывать содержимое жидкостного бака
+	fluidContainer = true
+	#  Планшет
+	#  Показывать дополнительную информацию для планшета
+	clipboard = true
+	#  Карта
+	#  Показывать содержимое карты
+	map = true
+	#  Ящик для инструментов
+	#  Показывать содержимое ящика для инструментов
+	toolbox = true
+	#  Эндер-сундук
+	#  Показывать содержимое эндер-сундука
+	enderChest = true
+	#  Очки
+	#  Показывать дополнительную информацию для очков
+	goggles = true
+	#  Баллон
+	#  Показывать дополнительную информацию для баллона
+	backtank = true
+	#  Водолазные ботинки
+	#  Показывать дополнительную информацию для водолазных ботинок
+	divingBoots = true
+	#  Гаечный ключ
+	#  Показывать дополнительную информацию для гаечного ключа
+	wrench = true
+	#  Контроллер частот
+	#  Показывать слоты частот для контроллера частот
+	linkedController = true
+	#  Фильтр
+	#  Показывать содержимое фильтра
+	listFilter = true
+	#  Фильтр атрибутов
+	#  Показывать дополнительную информацию для фильтра атрибутов
+	attributeFilter = true
+	#  Коробка в виде предмета
+	#  Показывать содержимое коробки в виде предмета
+	packageItem = true
+	#  Коробка в виде сущности
+	#  Показывать содержимое коробки в виде сущности
+	packageEntity = true
+	#  Элемент сущности
+	#  Показывать информацию о переносимом предмете
+	itemEntity = true
+	#  Автономный активатор
+	#  Показывать содержимое автономного активатора
+	deployer = true
+	#  Депо
+	#  Показывать содержимое депо
+	depot = true
+	#  Скатерть
+	#  Показать содержимое скатерти
+	tableCloth = true
+	#  Редстоуновый запрашиватель
+	#  Показывать содержимое редстоунового запрашивателя
+	redstoneRequester = true
+	#  Контроллер колёс дробления
+	#  Показывать выходы и прогресс контроллера колёс дробления
+	crushingController = true
+	#  Путевый камень
+	#  Показывать дополнительную информацию для путевого камня
+	millstone = true
+# Оверлей
+[overlay]
+	#  Отображать оверлей предмета
+	#  Разрешить отображение оверлея информации о предмете на блоках
+	renderItemOverlay = false
+	#  Overlay Vertical Offset
+	#  Vertical offset of item info overlay
+	#  Positive: down, Negative: up
+	overlayPos = { x = 0, y = 0 }
+	#  Тип подсказки
+	#  Выбрать тип отображения подсказки
+	tooltipFlagType = "Default"
+	#  Тема подсказки
+	#  Тема отображения подсказки
+	tooltipTheme = "Default"
+	#  Использовать пользовательские цвета
+	#  Использовать пользовательские цвета для фона и границ оверлея
+	useCustomColor = false
+	#  Цвет фона
+	#  Пользовательский цвет фона
+	backgroundColor = 0x00000000
+	#  Цвет верхней границы
+	#  Пользовательский цвет верхней границы
+	borderTopColor = 0x00000000
+	#  Цвет нижней границы
+	#  Пользовательский цвет нижней границы
+	borderBottomColor = 0x00000000
+# Drafting View
+[overlay.draftingView]
+	#  Enable Drafting View
+	#  Apply a schematic post-processing effect to the entire screen
+	draftingViewEnabled = false
+	#  Palette Offset
+	#  Horizontal lookup offset (0..1) into the palette texture
+	paletteOffset = 0.25
+	#  Pixelate
+	#  Snap the screen to a coarser virtual grid for a schematic look
+	pixelate = true
+	#  Pixel Scale
+	#  Each virtual pixel covers this many screen pixels (1=off, 4=default, higher=chunkier)
+	pixelScale = 4.0
+	#  Line Color
+	#  Edge outline color
+	lineColor = 0x2E3032
+	#  Line Shadow Color
+	#  Shadow side color for depth-cued outlines
+	lineShadowColor = 0x696965
+# Линии и контуры
+[outliner]
+	#  Отображать линию и обводку блоков
+	#  Отображать линию и обводку блоков, на которые смотрит игрок
+	renderAnalogBox = true
+	#  Улучшенные линии
+	#  Улучшить вид линий, отрисовываемых контуром
+	betterLine = true
+	#  Задержка отрисовки линий и контуров
+	#  Длительность отрисовки линий и контуров
+	delayRenderDuration = 60
+	#  Внешняя цветовая схема
+	#  Цвет, отображаемый при обращении к внешней стороне блока
+	outColor = 0xDDC166
+	#  Внутренняя цветовая схема
+	#  Цвет, отображаемый при обращении к внутренней стороне блока
+	inColor = 0x7FCDE0
+	#  Радужный режим отладки
+	#  Включить радужный режим отладки
+	rainbowDebug = false
+# Аэронавтика
+[aeronautics]
+	#  Всегда показывать массу
+	#  Показывать массу каждого блока
+	alwaysShowMass = false
+	#  Всегда показывать трение
+	#  Показывать коэффициент трения для каждого блока
+	alwaysShowFriction = false
+	#  Лимит дальности рукоятки
+	#  Повышать лимит дальности рукоятки
+	liftLimitOfHandleRange = false
+	#  Пользовательская клавиша для перемещения рукояткой
+	#  Включить пользовательскую клавишу для перемещения рукояткой
+	customHandleMoveSublevelKey = false
+	#  Всегда разрешать висеть на цепи
+	#  Висеть на цепи без гаечного ключа
+	alwaysAllowRidingRope = true
+# Force Overlay
+[aeronautics.forceOverlay]
+	#  Enable Force Overlay
+	#  Render in-world force arrows and COM marker on targeted sub-levels
+	enableForceOverlay = false
+	#  Use World Labels
+	#  Render floating labels in the world near each force arrow
+	useWorldLabels = true
+	#  Enable HUD Panel
+	#  Show a HUD panel with mass and force magnitudes
+	hudPanelEnabled = false
+	#  Render Center of Mass
+	#  Render the center-of-mass cube marker
+	renderCenterOfMass = true
+	#  Overlay Position
+	#  HUD tooltip position offset
+	forceOverlayPos = { x = 0, y = 0 }
+	#  Cluster Angle Threshold
+	#  Angular variance threshold for force clustering (radians)
+	clusterAngleRadians = 0.1
+	#  Smoothing Factor
+	#  EMA smoothing factor (0=no change, 1=instant)
+	smoothingFactor = 0.5
+	#  Gravity Arrow Fraction
+	#  Gravity arrow length as a fraction of bounding box height
+	gravityArrowFraction = 0.5
+	#  Arrow Saturation
+	#  Controls how large forces map to arrow length (higher = smaller relative to gravity)
+	arrowSaturation = 3.0
+	#  Min Arrow Length
+	#  Minimum arrow length in block units
+	minArrowLength = 0.1
+	#  Targeting Range
+	#  Maximum raycast distance for targeting sub-levels (in chunks)
+	targetingChunks = 4
+	#  Heartbeat Interval
+	#  Ticks between force data requests to the server
+	heartbeatIntervalTicks = 10
+	#  Min Overlay Pixel Size
+	#  Minimum visual size of overlay elements in pixels (0 = camera-dependent sizing)
+	minOverlayPixelSize = 0.0
+	#  Show Gravity
+	#  Render gravity force arrows
+	showGravity = true
+	#  Show Drag
+	#  Render drag force arrows
+	showDrag = true
+	#  Show Levitation
+	#  Render levitation force arrows
+	showLevitation = true
+	#  Show Balloon Lift
+	#  Render balloon lift force arrows
+	showBalloonLift = true
+	#  Show Propulsion
+	#  Render propulsion force arrows
+	showPropulsion = true
+	#  Show Lift
+	#  Render lift force arrows
+	showLift = true
+	#  Show Magnetic Force
+	#  Render magnetic force arrows
+	showMagneticForce = true
+# Разное
+[misc]
+# Цепной конвейер
+[misc.chainConveyor]
+	#  Всегда разрешать ездить на цепи
+	#  Позволяет ездить на цепных конвейерах без гаечного ключа
+	alwaysAllowRidingChain = false
+	#  Отключить самопроизвольное отсоединение от цепных конвейеров
+	#  Предотвращение самопроизвольного отсоединения от цепных конвейеров из-за препятствий
+	preventFalling = false
+	#  Расширенные возможности подключения
+	#  Убрать ограничение на подключение цепных конвейеров
+	enhancedConnection = true
+	#  Автоматическое превращение в коробку
+	#  Автоматически становиться коробкой картона при зависании на цепях
+	cardBoardedYourself = false
+# Гаечный ключ
+[misc.wrench]
+	#  Улучшенные шестерни в корпусах
+	#  Разрешить переключение состояния шестерни в корпусе с помощью нажатия ПКМ при отсутствии предметов в руках
+	betterEncasedCogwheel = true
+	#  Улучшенные трубы в корпусах
+	#  Разрешить переключение состояния трубы с помощью нажатия ПКМ при отсутствии предметов в руках
+	betterEncasedPipe = true
+	#  Улучшенные шасси
+	#  Разрешить переключение состояния шасси с помощью нажатия ПКМ при отсутствии предметов в руках
+	betterChassis = true
+	#  Везде показывать значение прокрутки
+	#  Показывать значение прокрутки в меню вращения
+	alwaysShowScrollValue = true
+	#  Всегда разрешать вращение
+	#  Позволяет вращать блоки без гаечного ключа
+	alwaysAllowRotating = true
+	#  Быстрый демонтаж на ЛКМ
+	#  Мгновенно демонтировать блоки при нажатии ЛКМ
+	leftClickFastDismantle = true
+	#  Убрать перезарядку демонтажа гаечного ключа
+	#  Убрать перезарядку меню вращения
+	removeCooldown = true
+	#  Расширенное меню поворота
+	#  Разрешить меню поворота для изменения дополнительных свойств блока
+	#  §cПредупреждение: на некоторых серверах это может рассматриваться как читерство
+	enchancedRotationMenu = false
+# Create Stack Count
+[misc.createStackCount]
+	#  Enable Create Style Stack Count
+	#  Replace item stack counts with Create's style font
+	enableCreateStyleStackCount = true
+	#  Count Outline Color
+	#  Outline color for Create Style Stack Count
+	countOutlineColor = 0xFF383838
+	#  Убрать ограничение для механических рук
+	#  Убрать ограничение расстояния для механических рук
+	removeMechanicalArmLimit = false
+	#  Убрать ограничение запроса
+	#  Убрать ограничение количества запросов для фабричных контроллеров и редстоуновых запрашивателей, оптимизировать быстрое прокручивание
+	removeRequestLimit = true
+	#  Быстрые действия в складском тикере
+	#  Включить быстрые действия на экране складского тикера
+	stockRequestQuickActions = true
+	#  Рекурсивное сканирование схематик
+	#  Включить схематики в подпапках при обновлении списка
+	recursiveSchematicScan = true
+	#  Предотвращать сброс выделения
+	#  Предотвратить сброс выделения при переключении предметов
+	preventSelectionDiscard = true
+	#  Предотвратить закрытие фильтра
+	#  Предотвращение автоматического закрытия экрана фильтра
+	preventAutoCloseFilter = false
+	#  Бесконечная длина поля ввода
+	#  Бесконечная длина поля ввода (2^31 - 1)
+	infEditBoxLength = false
+	#  Убрать оверлей картонной брони
+	#  Убрать оверлей картонной брони при приседании
+	removeCardboardOverlay = true
+	#  Убрать отрисовку в первом лице для незеритового баллона
+	#  Убрать отрисовку незеритового баллона в первом лице
+	removeNetheriteFirstPerson = false
+	#  Разрешить водолазные ботинки
+	#  Функциональность водолазных ботинок, отключите, чтобы они действовали как обычные ботинки
+	allowDivingBoot = true
+	#  Фикс названия схематик
+	#  Разрешить использовать символы, отличные от ASCII в названиях схематик
+	fixSchematicName = true
+	#  Убрать урон от поездов
+	#  Столкновения поездов не будут наносить урон игрокам
+	removeTrainDamage = false
+	#  Разрешить отрицательную бесконечность на тяге
+	#  Разрешить отрицательную бесконечность на тяге поезда
+	enableNegativeInfThrottle = false
+	#  Принудительный бэкенд отрисовки
+	#  Принудительно использовать определённый бэкенд отрисовки, может решить проблемы с производительностью или совместимостью на некоторых системах
+	forcedBackend = false
+	#  NBT фикс
+	#  Фикс отображения NBT данных, который может вызвать проблемы с производительностью
+	nbtFix = true
+	#  Показывать информацию о мусоре
+	#  Показывать детальную информацию о мусоре при последовательной сборке
+	showScrapContent = true

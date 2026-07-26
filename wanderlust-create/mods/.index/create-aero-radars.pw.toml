@@ -1,0 +1,35 @@
+filename = 'create_aero_radar-0.1.1-1.21.1.jar'
+name = 'Create Aero Radars'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-version-number = '0.1.1-1.21.1'
+
+[download]
+hash = '743fb4f8051eb1f361455e125383e67b7681e979d082f75b89fc3c4f1c818727651a6962274edf56aaf8dbcef567ca74d85ae0ea69a52dfdfd51c91afad88da6'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Gxj4Ihed/versions/uDnC1TSw/create_aero_radar-0.1.1-1.21.1.jar'
+
+[update.modrinth]
+mod-id = 'Gxj4Ihed'
+version = 'uDnC1TSw'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'oWaK0Q19'
+type = 'REQUIRED'
+version = 'YhZLrAFC'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'BLu2Yqfq'
+type = 'REQUIRED'
+version = 'vz0tPRci'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'GWp4jCJj'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'xxaCKdq3'
+type = 'REQUIRED'

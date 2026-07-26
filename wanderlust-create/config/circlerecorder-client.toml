@@ -1,0 +1,14 @@
+[recording]
+	#Путь к ffmpeg. Оставь "ffmpeg" (по умолчанию), чтобы мод сам распаковал
+	#вшитую в него копию ffmpeg (Windows) в <папка игры>/circlerecorder/ffmpeg/
+	#при первой записи. Укажи свой путь, только если хочешь использовать
+	#уже установленный на компьютере ffmpeg.
+	ffmpegPath = "ffmpeg"
+	#Максимальная длительность записи в секундах (лимит Telegram video note — 60 сек)
+	# Default: 10
+	# Range: 1 ~ 59
+	durationSeconds = 10
+	#Частота кадров записи
+	# Default: 20
+	# Range: 5 ~ 30
+	fps = 20

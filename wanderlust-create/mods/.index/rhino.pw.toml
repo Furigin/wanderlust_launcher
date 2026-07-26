@@ -1,0 +1,18 @@
+filename = 'rhino-2101.2.7-build.85.jar'
+name = 'Rhino'
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '26.1.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2101.2.7-build.85+Rhino-1.21'
+
+[download]
+hash = '0a6c7f4410281aeb03b815ec03487a8e80a4d3dae013d81282e447bf9c08144ef57318af614ea6d40b7d9a8c25031c557890ec792a5895a82467c1643116f693'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/sk9knFPE/versions/cQ4POTah/rhino-2101.2.7-build.85.jar'
+
+[update.modrinth]
+mod-id = 'sk9knFPE'
+version = 'cQ4POTah'

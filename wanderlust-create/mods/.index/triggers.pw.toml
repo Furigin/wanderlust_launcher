@@ -1,0 +1,18 @@
+filename = 'triggers-neoforge-1.21.1-1.0.1.jar'
+name = 'Triggers'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.1-1.21.1-neoforge'
+
+[download]
+hash = 'ce8f8bc3bed9d0774d3fdcd56c1abba66e12c893f4c3a7eb484743f7a9e25923aca95c19f221efdee7e3e81517774f7bc6b73cfe65c562e5baf2c0b95c60b4c4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/O39hIwP5/versions/XogHdPAh/triggers-neoforge-1.21.1-1.0.1.jar'
+
+[update.modrinth]
+mod-id = 'O39hIwP5'
+version = 'XogHdPAh'

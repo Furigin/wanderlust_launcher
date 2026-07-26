@@ -1,0 +1,8 @@
+#Tablet max range
+#
+#Max distance (blocks, Euclidean) from the player's feet to the linked radar antenna.
+#This file is SERVER-side — on a dedicated server it lives under the world's serverconfigs folder.
+#Requires a logical server reload / reboot to apply safely.
+# Default: 128.0
+# Range: 8.0 ~ 4096.0
+portableMaxRangeBlocks = 128.0

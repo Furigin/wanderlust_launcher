@@ -1,0 +1,19 @@
+{
+  "hunger": 95.98724,
+  "happiness": 97.58907,
+  "energy": 98.392715,
+  "funLevel": 98.370895,
+  "isPeeking": false,
+  "hasBeenAwakened": true,
+  "isActivelyPeeking": false,
+  "peekTimer": 0,
+  "peekDuration": 0,
+  "isDead": false,
+  "canDie": true,
+  "hungerZeroTimestamp": -1,
+  "happinessZeroTimestamp": -1,
+  "maxPoopsCap": 10,
+  "screenWidth": 640,
+  "screenHeight": 361,
+  "poops": []
+}

@@ -1,0 +1,18 @@
+filename = 'nomobfarm-neoforge-1.6.7.jar'
+name = 'No Mob Farms'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2', '1.21.3' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.6.7'
+
+[download]
+hash = '269dcf327e26b1912e596cf7b197682df43c1941c822865e21edcefe6f522519856667f0ac3ab880e26968f91da8e12d46ff0a7cf399538ffc4fc4129427e0c5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Pqq824CC/versions/WEusOEZU/nomobfarm-neoforge-1.6.7.jar'
+
+[update.modrinth]
+mod-id = 'Pqq824CC'
+version = 'WEusOEZU'

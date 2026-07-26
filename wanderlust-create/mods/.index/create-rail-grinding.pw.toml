@@ -1,0 +1,18 @@
+filename = 'createrailgrinding-1.2.1.jar'
+name = 'Create: Train Track Rail Grinding'
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.1+mc1.21.1'
+
+[download]
+hash = 'a55d0199f78c2e6491c3625a3c6142c44b258e8d47fe8c84016fb90173ba9f2baf99ae2d66ce68de4b233cc45768247b328df9d6bdcc75a80aee82689b21caa4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ix2S0LbR/versions/qoqegiyD/createrailgrinding-1.2.1.jar'
+
+[update.modrinth]
+mod-id = 'ix2S0LbR'
+version = 'qoqegiyD'

@@ -1,0 +1,18 @@
+filename = 'ears-neoforge-1.21-1.4.7.jar'
+name = 'Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '1.4.7+neoforge-1.21'
+
+[download]
+hash = '52fc315373bd014fd388c970c17bbd6873593e169841edb8d346bbf176401a527a65f074f1ddf28ebcb87cd5c469aadf64b3f99700f7112c1e0966b42920c7d8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/mfzaZK3Z/versions/Dxc2NR3x/ears-neoforge-1.21-1.4.7.jar'
+
+[update.modrinth]
+mod-id = 'mfzaZK3Z'
+version = 'Dxc2NR3x'

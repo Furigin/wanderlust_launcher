@@ -1,0 +1,33 @@
+filename = 'citresewn_neopatcher-1.2.0-1.2.2.jar'
+name = 'CITResewnNeoPatcher'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.0'
+
+[download]
+hash = '369fe80290af3e12053524612777a124f360aa6ce6d4576b9c9b6be4663a684838f09c8bf55889bea2f2776a410d0865fbfeff6bd5edebf8533026187b326ec9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/yYE9h4iu/versions/WvFwXguE/citresewn_neopatcher-1.2.0-1.2.2.jar'
+
+[update.modrinth]
+mod-id = 'yYE9h4iu'
+version = 'WvFwXguE'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Aqlf1Shp'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'otVJckYQ'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u58R1TMW'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'hvqcuDMT'
+type = 'OPTIONAL'

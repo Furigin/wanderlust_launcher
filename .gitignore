@@ -1,0 +1,10 @@
+# Рантайм-кэш Sinytra Connector — генерируется у каждого игрока сам
+wanderlust-create/mods/.connector/
+
+# Логи и бэкапы конфигов — в пак не входят
+*.log
+*.bak
+*.tmp
+
+# Крупные jar раздаются через GitHub Releases, а не из репозитория
+/releases-upload/

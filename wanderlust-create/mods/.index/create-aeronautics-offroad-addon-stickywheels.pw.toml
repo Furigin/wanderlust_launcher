@@ -1,0 +1,21 @@
+filename = 'stickywheels-1.21.1-0.0.2.jar'
+name = 'Create Aeronautics [Offroad] Addon: StickyWheels'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '0.0.2'
+
+[download]
+hash = '8117f89ff1887803a9db630bc3816ea4d5343041c8f9bf9eca388b6e548a1f64af537f3a11aee6cca0c255f91bc387fa00e9be5dc767bc4f95021c4c509c51a0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/WHj1Nss6/versions/C0ewmXZL/stickywheels-1.21.1-0.0.2.jar'
+
+[update.modrinth]
+mod-id = 'WHj1Nss6'
+version = 'C0ewmXZL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'oWaK0Q19'
+type = 'REQUIRED'

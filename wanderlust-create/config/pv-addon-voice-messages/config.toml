@@ -1,0 +1,31 @@
+# Activation to use for recording
+activation = "proximity"
+# Maximum duration of voice message
+max_duration_seconds = 60
+# How long recorded voice messages will be stored
+expire_after_minutes = 10
+# Whether actionbar text should be shown when recording a voice message
+actionbar_when_recording = true
+# Source line weight controls sorting order in "Volume"
+# Higher weights are placed at the bottom of the list
+source_line_weight = 100
+# Whether packetevents chat integration should be used
+# Only works on Paper-based servers with packetevents installed,
+# otherwise integration won't be loaded
+# 
+# If enabled, addon will send messages "as player" and they'll be formatted with installed chat plugin
+use_packet_events_integration = true
+# Available storage types: [MEMORY, REDIS]
+storage_type = "MEMORY"
+
+[chat_format]
+default = "<lang:chat.type.text:'<player_name>':'<voice_message>'>"
+direct_incoming = "<italic><gray><lang:commands.message.display.incoming:'<source_player_name>':'<voice_message>'>"
+direct_outgoing = "<italic><gray><lang:commands.message.display.outgoing:'<target_player_name>':'<voice_message>'>"
+
+# Redis configuration (required if storageType is REDIS)
+#[redis]
+#host = "localhost"
+#port = 6379
+#user = ""
+#password = ""

@@ -1,0 +1,25 @@
+filename = 'create_radar_mobile_radars-1.0.0.jar'
+name = 'Create Radars: Mobile Radars'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.0'
+
+[download]
+hash = '304c2d9ac6f79f05ac75fc06051ebee7b866795f01b048fdc4d7811ce778dd3abeae6f64cf1a7196db381013427dd00c17757f2e64ecb1bc7ef2801b7cbe4d00'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/f6vfNoDc/versions/bS9l5n2X/create_radar_mobile_radars-1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'f6vfNoDc'
+version = 'bS9l5n2X'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'GWp4jCJj'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'BLu2Yqfq'
+type = 'REQUIRED'

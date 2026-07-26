@@ -1,0 +1,13 @@
+{
+  "serverAuthoritative": true,
+  "weaponEffect": "BOOMERANG",
+  "aimAssist": true,
+  "throwableProjectiles": true,
+  "placeBlocksOnThrow": false,
+  "onlyPlaceLights": false,
+  "throwableTNT": true,
+  "immersiveMCThrowables": true,
+  "throwConflictingItems": true,
+  "crouchBehaviorProjectiles": "NORMAL",
+  "crouchBehaviorPlaceBlocks": "INVERTED"
+}

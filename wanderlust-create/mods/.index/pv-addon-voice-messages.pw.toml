@@ -1,0 +1,51 @@
+filename = 'pv-addon-voice-messages-1.0.0-beta.4-all.jar'
+name = 'pv-addon-voice-messages'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
+x-prismlauncher-mc-versions = [
+    '1.16.5',
+    '1.17.1',
+    '1.18.2',
+    '1.19.2',
+    '1.19.3',
+    '1.19.4',
+    '1.20',
+    '1.20.1',
+    '1.20.2',
+    '1.20.3',
+    '1.20.4',
+    '1.20.5',
+    '1.20.6',
+    '1.21',
+    '1.21.1',
+    '1.21.2',
+    '1.21.3',
+    '1.21.4',
+    '1.21.5',
+    '1.21.6',
+    '1.21.7',
+    '1.21.8',
+    '1.21.9',
+    '1.21.10',
+    '1.21.11',
+    '26.1',
+    '26.1.1',
+    '26.1.2',
+    '26.2'
+]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '1.0.0-beta.4'
+
+[download]
+hash = 'd22bdb3fb6413c7c227028932d1d1f0fb8a8c0799b2b39a986cf0e765985621588a885f653fb8386c09a638a03277cfe0954a7e6a99fa85a3e4e2c6fe8c2c59b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/OrjwT7hp/versions/AJKWSUph/pv-addon-voice-messages-1.0.0-beta.4-all.jar'
+
+[update.modrinth]
+mod-id = 'OrjwT7hp'
+version = 'AJKWSUph'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'HYKaKraK'
+type = 'OPTIONAL'

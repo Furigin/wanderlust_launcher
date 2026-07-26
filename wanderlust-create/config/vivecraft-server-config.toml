@@ -1,0 +1,222 @@
+#Основные Настройки
+[general]
+	#Будет вести логи клиентов, заходящих на сервер, мода и его версии.
+	debug = false
+	#Будет проверять наличие обновлений мода, когда оператор заходит на сервер и отправляет ему системное сообщение.
+	checkForUpdate = true
+	#Какие обновления проверять. 
+	# r: Релиз, b: Бета, a: Альфа
+	checkForUpdateType = "r"
+	#Установите на 'true', чтобы позволить заходить на сервер только игрокам с VR. 
+	#Если включено, Авто-переключение будет отключено.
+	vr_only = false
+	#Установите на 'true', чтобы позволить игрокам с Vivecraft заходить на сервер.
+	vive_only = false
+	#Minimum Vivecraft Version that is allowed to join the Server.
+	# If a player joins with a lower version, they will be kicked.
+	# Format should be: X.X.X
+	minViveVersion = ""
+	#Установите на 'true', чтобы позволить операторам серверов обходить настройки "Только для VR/Vivecraft"
+	allow_op = true
+	#Секунд до кика игрока или отправления приветственного сообщения. 
+	# Клиент игрока должен отправить информацию ВЕРСИИ Vivecraft в это время.
+	# default: 10.00, min: 0.00, max: 100.00
+	messageAndKickDelay = 10.0
+	#Рандомно выдаёт игрокам в VR прикольные тортики и напитки, когда они возрождаются.
+	vrFun = true
+	#Отправляет данные о позиции игрока также обратно игроку, который их отправил, обычно не нужно. 
+	# Включите это на тестовом сервере, когда используете Replay Mod или что-то похожее.
+	sendDataToOwner = false
+	#Kicks players on setting changes, if they don't support updating that setting on the fly. So it forces a rejoin.
+	kickPlayersOnSettingUpdate = false
+
+#Изменяет сообщения, которые отправляются во время определённых действий игрока.
+#Set message to nothing to not send. e.g., leaveMessage = ""
+# Use '&player' in any message for the player name.
+# For messages that take two placeholders (i.e., death by mob) use '&cause' for the second placeholder.
+[messages]
+	#Включить или выключить все сообщения.
+	enabled = false
+	#Сообщение, которое отправляется, когда игрок заходит с активным VR.
+	welcomeVR = "&player has joined with standing VR!"
+	#Сообщение, которое отправляется, когда игрок заходит без VR
+	welcomeNonVR = "&player has joined with Non-VR companion!"
+	#Сообщение, которое отправляется, когда игрок заходит в сидячем режиме VR
+	welcomeSeated = "&player has joined with seated VR!"
+	#Сообщение, которое отправляется, когда игрок заходит без установленного Vivecraft.
+	welcomeVanilla = "&player has joined as a Muggle!"
+	#Сообщение, которое отправляется, когда игрок покидает сервер.
+	leaveMessage = "&player has disconnected from the server!"
+	#Сообщение, отправляемое игроку, когда он умирает с активным VR.
+	deathVR = "&player died in standing VR!"
+	#Сообщение, отправляемое игроку, когда он умирает без VR.
+	deathNonVR = "&player died in Non-VR companion!"
+	#Сообщение, отправляемое игроку, когда он умирает в сидячем режиме VR.
+	deathSeated = "&player died in seated VR!"
+	#Сообщение, отправляемое игроку, когда он умирает без установленного Vivecraft.
+	deathVanilla = "&player died as a Muggle!"
+	#Сообщение, отправляемое игроку, когда он умирает из-за моба с активным VR.
+	deathByMobVR = "&player was slain by &cause in standing VR!"
+	#Сообщение, отправляемое игроку, когда он умирает от моба без VR.
+	deathByMobNonVR = "&player was slain by &cause in Non-VR companion!"
+	#Сообщение, отправляемое игроку, когда он умирает от моба в сидячем режиме VR.
+	deathByMobSeated = "&player was slain by &cause in seated VR!"
+	#Сообщение, отправляемое игроку, когда он умирает от моба без установленного Vivecraft.
+	deathByMobVanilla = "&player was slain by &cause as a Muggle!"
+	#Сообщение, отправляемое игроку, когда его кикает с сервера из-за настройки "Только с Vivecraft".
+	KickViveOnly = "This server is configured for Vivecraft players only."
+	#Сообщение, отправляемое игроку, когда его кикает с сервера из-за "Только с VR".
+	KickVROnly = "This server is configured for VR players only."
+	#Message sent to a player when they get kicked because of the 'Minimum Vivecraft Version' setting.
+	# Use '&minVersion' to access the required Vivecraft version. 
+	# Use '&userVersion' to access the users Vivecraft version.
+	KickOutdatedViveVersion = "This server is configured to only allow Vivecraft '&minVersion' and newer. You are using Vivecraft '&userVersion'"
+
+#Ванильные Модификации для VR-игроков
+[vrChanges]
+	#Расстояние на котором криперы растягиваются и взрываются для стоящих VR-игроков.
+	#Стандартное расстояние: 3
+	# default: 1.75, min: 0.10, max: 10.00
+	creeperSwellDistance = 1.75
+	#Регулирует диапазон, в котором мобы могут использовать атаки ближнего боя против стоящих игроков VR. 
+	#Это сокращение до стандартного диапазона (0,8 блоков), поэтому значение 0,0 не приводит к изменениям, а -0,7 означает, что мобам нужно почти коснуться игрока, чтобы нанести удар. 
+	#При очень низком значении мобы могут останавливаться прямо перед игроком, не атакуя его!
+	# default: -0.40, min: -0.70, max: 0.00
+	mobAttackRangeAdjustment = -0.4
+	#Позволяет игрокам в VR ударять/добывать предметом из не доминирующей руки.
+	dualWielding = true
+	#Melee damage addition for VR players when hitting with their feet.
+	# This scales with the armor attribute of the boots, doing one additional damage per Armor level, times this multiplier
+	# Set to 0.0 to disable.
+	# default: 0.00, min: 0.00, max: 5.00
+	bootsArmorDamage = 0.0
+	#Projectiles by default have an inaccuracy to not shoot in the same direction all the time.
+	# With this, the inaccuracy can be adjusted for VR players.
+	# 1.0 is equal to vanilla, 0.0 is no inaccuracy at all.
+	# default: 1.00, min: 0.00, max: 1.00
+	projectileInaccuracyMultiplier = 1.0
+	#Позволяет игрокам в VR обходить ограничение, которое не позволяет добывать блоки крайне быстро.
+	allowFasterBlockBreaking = true
+	#Позволяет игрокам в VR блокировать атаки с помощью удерживания щита, без необходимости его активации. То есть замедление от него пропадет.
+	allowRoomscaleShieldBlocking = true
+	#Number of ticks a shield is set on cooldown for, when it is used to block something with Roomscale Shield Blocking.
+	# Set to 0 to disable.
+	# default: 0, min: 0, max: 1000
+	roomscaleShieldCooldown = 0
+	#Minimum damage an attack has to have, to set a shield on cooldown when used for Roomscale Shield Blocking.
+	# default: 3.00, min: 0.00, max: 100.00
+	roomscaleShieldCooldownDamageTrigger = 3.0
+	#Позволяет игрокам в VR атаковать сущностей во время использования щита. (Эта настройка не влияет на блок щитом в режиме комнаты)
+	allowAttacksWhileBlocking = true
+
+	#Настройка Урона Лука
+	[vrChanges.bow]
+		#Множитель урона от лука для VR игроков в стоячем режиме. 
+		# Установите на 1.0, чтобы выключить.
+		# default: 2.00, min: 1.00, max: 10.00
+		standingMultiplier = 2.0
+		#Множитель урона от лука для VR игроков в сидячем режиме. Установите на 1.0, чтобы выключить.
+		# default: 1.00, min: 1.00, max: 10.00
+		seatedMultiplier = 1.0
+		#Множитель урона от выстрелов в голову для VR игроков в стоячем режиме. Установите на 1.0, чтобы выключить.
+		# default: 3.00, min: 1.00, max: 10.00
+		standingHeadshotMultiplier = 3.0
+		#Множитель урона от выстрелов в голову для VR игроков в сидячем режиме.
+		# Установите на 1.0, чтобы выключить.
+		# default: 2.00, min: 1.00, max: 10.00
+		seatedHeadshotMultiplier = 2.0
+		#Множитель урона от выстрелов в голову для VR и обычных игроков.
+		# Установите на 1.0, чтобы выключить.
+		# default: 1.00, min: 1.00, max: 10.00
+		vanillaHeadshotMultiplier = 1.0
+		#Индикатор для выстрелов в голову. Варианты: 
+		#"Нет": Без индикатора.
+		#"Звук": Проигрывается звук около стреляющего. 
+		#"Частицы": Появляются частицы на месте выстрела. 
+		#"Оба": Индикаторы Звук и Частицы будут включены.
+		headshotIndicator = "BOTH"
+
+#Настройки PVP
+[pvp]
+	#Notifies the player that tried to cause damage, that it was blocked from the server.
+	notifyBlockedDamage = false
+	#Позволяет игрокам VR в стоячем режиме атаковать друг друга.
+	VRvsVR = true
+	#Позволяет игрокам VR в сидячем режиме атаковать друг друга.
+	SEATEDVRvsSEATEDVR = true
+	#Позволяет игрокам VR в стоячем и не-VR режимах атаковать друг друга.
+	VRvsNONVR = true
+	#Позволяет игрокам VR в сидячем и не-VR режимах атаковать друг друга.
+	SEATEDVRvsNONVR = true
+	#Позволяет игрокам VR в стоячем и сидячем режимах атаковать друг друга.
+	VRvsSEATEDVR = true
+
+#Climbey Motion Settings
+[climbey]
+	#Позволяет использовать "Ботинки-прыгуны" и "Когти Альпиниста".
+	enabled = true
+	#If enabled, hanging on walls with the 'Climb Claws', or jumping with the 'Jump Boots' will cause exhaustion.
+	foodExhaustion = true
+	#Specifies how the blocks in the blocklist are interpreted. Options are:
+	# "DISABLED": List is ignored. All blocks are climbable.
+	# "WHITELIST": Only blocks on the list are climbable.
+	# "BLACKLIST": All blocks are climbable except those on the list
+	blockmode = "DISABLED"
+	#List of block names for use with WHITELIST/BLACKLIST block mode.
+	# Blocks can be of the form 'blockid' for vanilla or 'modid:blockid' for modded blocks
+	blocklist = ["white_wool", "dirt", "grass_block"]
+
+#Настройки Ползания
+[crawling]
+	#Allows VR players to get into the crawl state by getting low to the ground. Disabling does not prevent vanilla crawling.
+	enabled = true
+
+#Параметры Телепортации
+[teleport]
+	#Allows VR players to use teleport movement. It is recommended to leave this enabled for players prone to VR sickness.
+	# Disabling this only works for Vivecraft 1.3.0+ clients.
+	enabled = true
+	#If enabled, teleporting up blocks will cause exhaustion.
+	foodExhaustion = false
+	#Устанавливает ограниченную дальность и частоту телепортации для режима Выживания.
+	limitedSurvival = false
+	#Максимальное количество блоков, на которое игроки могут телепортироваться в режиме Выживания. Установите на 0, чтобы отключить.
+	# default: 4, min: 1, max: 16
+	upLimit = 4
+	#Максимальное количество блоков, на которые игроки в режиме Выживания могут телепортироваться вниз. Установите на 0, чтобы отключить.
+	# default: 4, min: 1, max: 16
+	downLimit = 4
+	#Максимальное количество блоков, на которые игроки в режиме Выживания могут телепортироваться горизонтально. Установите на 0, чтобы отключить.
+	# default: 16, min: 1, max: 32
+	horizontalLimit = 16
+
+#Настройки Масштаба Мира
+[worldScale]
+	#Limit the range of worldscales players are allowed to use.
+	limitRange = false
+	#Нижний лимит масштаба мира
+	# default: 0.50, min: 0.10, max: 100.00
+	min = 0.5
+	#Верхний лимит масштаба мира
+	# default: 2.00, min: 0.10, max: 100.00
+	max = 2.0
+
+#Other Clientsetting Overrides
+[settingOverrides]
+	#Обязует игроков использовать настройку "Простое Расположение Предметов".
+	thirdPersonItems = false
+	#Обязует игроков использовать настройку "Простое Расположение Предметов" только для предметов с пользовательскими данными моделей/пользовательскими моделями предметов. 
+	thirdPersonItemsCustom = false
+
+#Настройки Авто-переключения VR
+[vrSwitching]
+	#Allows players to switch between VR and NonVR on the fly.
+	# If disabled, they will be locked to the mode they joined with.
+	enabled = true
+
+#Настройки Отладки
+[debug]
+	#Will spawn particles at VR players device positions, to indicate the server VR data state.
+	debugParticles = false
+	#Will spawn particles at VR players head position, to indicate the server VR data state.
+	debugParticlesHead = false

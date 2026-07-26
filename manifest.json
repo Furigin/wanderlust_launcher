@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "launcher": { "version": "0.1.0", "url": "", "sha256": "" },
+  "links": {
+    "donate": "",
+    "discord": "",
+    "telegram": ""
+  },
+  "versions": [
+    {
+      "id": "wanderlust-create",
+      "title": "Wanderlust Create",
+      "subtitle": "Minecraft 1.21.1",
+      "theme": "orange",
+      "status": "ready",
+      "news": "Wanderlust Create — сборка вокруг Create на 1.21.1. Жми «Играть», лаунчер сам скачает и обновит все моды.",
+      "minecraft": { "version": "1.21.1" },
+      "neoforge": { "version": "21.1.244" },
+      "java": {
+        "major": 21,
+        "windows-x64": {
+          "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_windows_hotspot_21.0.11_10.zip",
+          "sha256": "be26677aaa20b39a62edcaab4c8857a8b76673b0f45abc0b6143b142b62717e4"
+        }
+      },
+      "server": { "host": "", "port": 25565 },
+      "pack": {
+        "title": "Wanderlust Create",
+        "packwiz_url": "https://furigin.github.io/wanderlust_launcher/wanderlust-create/pack.toml"
+      }
+    },
+    {
+      "id": "stray-souls",
+      "title": "Wanderlust Stray Souls",
+      "subtitle": "Minecraft 26.2 · самописы",
+      "theme": "purple",
+      "status": "soon",
+      "news": "Наша авторская сборка на 26.2. Скоро.",
+      "minecraft": { "version": "26.2" },
+      "neoforge": { "version": "26.2.0.8-beta" },
+      "java": {
+        "major": 25,
+        "windows-x64": {
+          "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_windows_hotspot_25.0.3_9.zip",
+          "sha256": "a183e7280220ad5f6fe94ecbf025a5f10fc5797a0b18c600ed8f813c8158c530"
+        }
+      },
+      "server": { "host": "", "port": 25565 },
+      "pack": {
+        "title": "Wanderlust Stray Souls",
+        "packwiz_url": "https://furigin.github.io/wanderlust_launcher/stray-souls/pack.toml"
+      }
+    }
+  ]
+}

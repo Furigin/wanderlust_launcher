@@ -1,0 +1,21 @@
+filename = 'chloride-NEOFORGE-mc1.21.1-v1.7.9.jar'
+name = 'Chloride (Embeddium++/Sodium++)'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'NEOFORGE-mc1.21.1-v1.7.9'
+
+[download]
+hash = '2b4c5b03751511ea941240cb11094d42bde7e4d6e0fb079c4f7edc9417b119110725de4d55f9c463d2bdaaa518d4595bca17cf3849ef6bbf843240226c592f87'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/yD9qW65f/versions/QsBt57ho/chloride-NEOFORGE-mc1.21.1-v1.7.9.jar'
+
+[update.modrinth]
+mod-id = 'yD9qW65f'
+version = 'QsBt57ho'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'AANobbMI'
+type = 'REQUIRED'

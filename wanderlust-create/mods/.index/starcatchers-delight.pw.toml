@@ -1,0 +1,37 @@
+filename = 'starcatcher_delight-3.0.1-NEOFORGE-1.21.1.jar'
+name = "Starcatcher's Delight"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.0.1-NEOFORGE-1.21.1'
+
+[download]
+hash = '7d8583febdfd4406431138c91cf555e9b3c193aba37630a6575e7aed2278692c3d1a74a8b342746c350f0414a3dc4f1d6c89e4dc2615cb5e35a6db41288160c9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/NCXwQVxD/versions/Yh9v3OLC/starcatcher_delight-3.0.1-NEOFORGE-1.21.1.jar'
+
+[update.modrinth]
+mod-id = 'NCXwQVxD'
+version = 'Yh9v3OLC'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'h2jXvxNR'
+type = 'REQUIRED'
+version = 'gDYg666K'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'R2OftAxM'
+type = 'REQUIRED'
+version = 'GbNuOZ4S'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'L95W3cqk'
+type = 'EMBEDDED'
+version = 'UNJG3qgx'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'K0NYarUG'
+type = 'EMBEDDED'
+version = 'wXmokRnO'

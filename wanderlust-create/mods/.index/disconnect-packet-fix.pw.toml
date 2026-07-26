@@ -1,0 +1,31 @@
+filename = 'disconnect-packet-fix-neoforge-2.0.1.jar'
+name = 'Disconnect Packet Fix'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [
+    '1.21',
+    '1.21.1',
+    '1.21.2',
+    '1.21.3',
+    '1.21.4',
+    '1.21.5',
+    '1.21.6',
+    '1.21.7',
+    '1.21.8',
+    '1.21.9',
+    '1.21.10',
+    '1.21.11'
+]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.0.1-neoforge'
+
+[download]
+hash = '1e67928a4a55a5421861457383fab699a4393e099d3c9395feeba1fa9d99a41ceebcf67cf7f87e9032eb00fc2a8df76990b07b02ee25ed894e4e98b8d1656004'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rd9rKuJT/versions/yjTKEIL5/disconnect-packet-fix-neoforge-2.0.1.jar'
+
+[update.modrinth]
+mod-id = 'rd9rKuJT'
+version = 'yjTKEIL5'

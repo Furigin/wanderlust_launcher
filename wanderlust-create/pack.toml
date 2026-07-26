@@ -1,0 +1,13 @@
+name = "Wanderlust Create"
+author = "furigin"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "ea67a420d99522312c6d5c6302a9ab2b8379b8002b519fe68353ebcd0509d9b1"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.244"

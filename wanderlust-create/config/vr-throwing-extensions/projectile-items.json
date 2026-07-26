@@ -1,0 +1,15 @@
+{
+  "projectile_items": [
+    "minecraft:snowball",
+    "minecraft:egg",
+    "minecraft:blue_egg",
+    "minecraft:brown_egg",
+    "minecraft:ender_pearl",
+    "minecraft:experience_bottle",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion",
+    "minecraft:fishing_rod",
+    "minecraft:wind_charge",
+    "minecraft:firework_rocket"
+  ]
+}
