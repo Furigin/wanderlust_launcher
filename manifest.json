@@ -1,6 +1,10 @@
 {
   "schema": 2,
-  "launcher": { "version": "0.1.0", "url": "", "sha256": "" },
+  "launcher": {
+    "version": "0.1.0",
+    "url": "https://github.com/Furigin/wanderlust_launcher/releases/download/v0.1.0/Wanderlust.exe",
+    "sha256": "9c81bfb017381fa706deaa07a80e50ea47d42557e31a67b1541a0bf0fec6edcf"
+  },
   "links": {
     "donate": "",
     "discord": "",
@@ -14,8 +18,12 @@
       "theme": "orange",
       "status": "ready",
       "news": "Wanderlust Create — сборка вокруг Create на 1.21.1. Жми «Играть», лаунчер сам скачает и обновит все моды.",
-      "minecraft": { "version": "1.21.1" },
-      "neoforge": { "version": "21.1.243" },
+      "minecraft": {
+        "version": "1.21.1"
+      },
+      "neoforge": {
+        "version": "21.1.243"
+      },
       "java": {
         "major": 21,
         "windows-x64": {
@@ -23,7 +31,10 @@
           "sha256": "be26677aaa20b39a62edcaab4c8857a8b76673b0f45abc0b6143b142b62717e4"
         }
       },
-      "server": { "host": "", "port": 25565 },
+      "server": {
+        "host": "",
+        "port": 25565
+      },
       "pack": {
         "title": "Wanderlust Create",
         "packwiz_url": "https://furigin.github.io/wanderlust_launcher/wanderlust-create/pack.toml"
@@ -36,8 +47,12 @@
       "theme": "purple",
       "status": "soon",
       "news": "Наша авторская сборка на 26.2. Скоро.",
-      "minecraft": { "version": "26.2" },
-      "neoforge": { "version": "26.2.0.8-beta" },
+      "minecraft": {
+        "version": "26.2"
+      },
+      "neoforge": {
+        "version": "26.2.0.8-beta"
+      },
       "java": {
         "major": 25,
         "windows-x64": {
@@ -45,7 +60,10 @@
           "sha256": "a183e7280220ad5f6fe94ecbf025a5f10fc5797a0b18c600ed8f813c8158c530"
         }
       },
-      "server": { "host": "", "port": 25565 },
+      "server": {
+        "host": "",
+        "port": 25565
+      },
       "pack": {
         "title": "Wanderlust Stray Souls",
         "packwiz_url": "https://furigin.github.io/wanderlust_launcher/stray-souls/pack.toml"
