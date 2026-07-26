@@ -15,7 +15,7 @@
       "status": "ready",
       "news": "Wanderlust Create — сборка вокруг Create на 1.21.1. Жми «Играть», лаунчер сам скачает и обновит все моды.",
       "minecraft": { "version": "1.21.1" },
-      "neoforge": { "version": "21.1.244" },
+      "neoforge": { "version": "21.1.243" },
       "java": {
         "major": 21,
         "windows-x64": {
