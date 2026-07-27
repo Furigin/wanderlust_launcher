@@ -93,10 +93,6 @@ file = "config/chloride-client.json"
 hash = "c4042c7b407e8ab9d86cc9b30a5beb60b9d46d5a72c209d9afd25848536595e3"
 
 [[files]]
-file = "config/circlerecorder-client.toml"
-hash = "ece81f006dec761b8345292472560142f01e12910eb5fe1f41c027e86cb7a7fd"
-
-[[files]]
 file = "config/citresewn.json"
 hash = "1ea03400477ac2075d61ae58cfc573bc78ce954507d090ab69547de279918656"
 
@@ -1389,11 +1385,6 @@ hash = "f7ce860c7e057996e2c31b44205a39141d0af2eaf02b0f0a8c74cca73043b02f"
 metafile = true
 
 [[files]]
-file = "mods/circlerecorder-client.pw.toml"
-hash = "ac59f3b9472a7de08c8e6ce2805db0ff106b308987d0d294ae578a0328443972"
-metafile = true
-
-[[files]]
 file = "mods/cit-resewn-neopatcher.pw.toml"
 hash = "9105fb7d7eb1fefee032351c6782d6e8abe404178e8a7135a27806be4a06a0ac"
 metafile = true
@@ -1490,7 +1481,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-cyber-goggles.pw.toml"
-hash = "76db881ff74d82bc2939b0d5c92bb63230e71cfb48db3a7fe41d133793bceeec"
+hash = "15d3e9c117794e813f2172f312e1dbe2ba539e0d223d86bced0ae72be6ca845a"
 metafile = true
 
 [[files]]

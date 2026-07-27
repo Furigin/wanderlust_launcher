@@ -1,8 +1,0 @@
-name = "Circle Recorder (Client)"
-filename = "circlerecorder-client-1.0.0.jar"
-side = "client"
-
-[download]
-url = "https://github.com/Furigin/wanderlust_launcher/releases/download/custom-mods-v1/circlerecorder-client-1.0.0.jar"
-hash-format = "sha512"
-hash = "ece87864d88e1de59de04ed34458f0daf84f19830496d1773cc96f095e3c34ec837ccffa56c3cfab06c58ad4075d626c52df4fea520364d062e7ed0978ebe228"
