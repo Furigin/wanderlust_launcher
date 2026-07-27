@@ -1629,6 +1629,11 @@ hash = "7189a718337eeb4bc65ff7ff4a0aa461a5833f0031babbc2797eeb7a80f0719f"
 metafile = true
 
 [[files]]
+file = "mods/easylogin.pw.toml"
+hash = "fd91c80a8b42e78e64bcb552c58c9d4134f34bd3c9f9d8b97c4d161d77c5e3de"
+metafile = true
+
+[[files]]
 file = "mods/embers-text-api.pw.toml"
 hash = "bbbc36e61ff9737f85f62d1fdbfa88000c83966991c1823c8494419372c204e4"
 metafile = true
