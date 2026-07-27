@@ -362,11 +362,11 @@ hash = "a10ab74a15fd722cea390bd3ca453e9f6bfe2a1ad583844033d920cc5db25ce9"
 
 [[files]]
 file = "config/fancymenu/assets/ds_icon.png"
-hash = "d43720552bb6ef1d481c02848b2ed00f91fd327560fa840886793d5aa34919b6"
+hash = "f677a22fd652d3cb94b00a651647b88522fb3b3728460ae595530e03100ef8ea"
 
 [[files]]
 file = "config/fancymenu/assets/tg_icon.png"
-hash = "036eec03e338886f2e454480f6410571f1166040a739110ba4827075502e2b2f"
+hash = "68f1a323d5753f8e638b6cf795953afb41a7663a8a19f66b22f1a3ea59518a1d"
 
 [[files]]
 file = "config/fancymenu/audio_element_controller_metas.json"
@@ -1662,6 +1662,11 @@ metafile = true
 [[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "c03f7fb679748b4c8beb2197a25141d6e222798ef9f1af66b1e17b91452fd316"
+metafile = true
+
+[[files]]
+file = "mods/female-gender.pw.toml"
+hash = "882b7ef150e03885865ae89ff47e072058999f743d449ca96ed9a6f71d412c8d"
 metafile = true
 
 [[files]]
