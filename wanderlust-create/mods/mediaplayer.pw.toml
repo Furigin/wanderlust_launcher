@@ -1,6 +1,6 @@
 filename = 'MediaPlayer-1.0.1.jar'
 name = 'MediaPlayer'
-side = 'both'
+side = 'client'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

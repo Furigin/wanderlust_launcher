@@ -1760,7 +1760,7 @@ metafile = true
 
 [[files]]
 file = "mods/mediaplayer.pw.toml"
-hash = "5a748103f6527f60aeab185b97902840d28787081d2fe3f827fcfb82db2fdba0"
+hash = "258ff91e803127f04b195ff54582d28525a542bf2e50ad2f145620bab5400226"
 metafile = true
 
 [[files]]
