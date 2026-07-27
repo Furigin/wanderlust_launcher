@@ -734,7 +734,7 @@ hash = "deb8b5f96103e8bd7acb3e135c7820c5ca1b13b0359ae0b6b9560f86dcaf7666"
 
 [[files]]
 file = "config/plasmovoice/server/config.toml"
-hash = "2f07b961a22c21803d4699a1640df6fe1d3ad7dace9249a0f423f4f69e25499b"
+hash = "d53983547ff40699ead91a7e07af2df916116b0506f7643c032e54663dac77b6"
 
 [[files]]
 file = "config/plasmovoice/server/languages/.crowdin/de_de.toml"
