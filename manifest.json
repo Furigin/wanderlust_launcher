@@ -3,13 +3,21 @@
   "launcher": {
     "version": "0.1.0",
     "url": "https://github.com/Furigin/wanderlust_launcher/releases/download/v0.1.0/Wanderlust.exe",
-    "sha256": "2d77151e50ecaac4814d3b80b083743cbe075b58f0f7ab30df864ae8514cbca1"
+    "sha256": "8ffcc4048fff72f325fc499378b9d5b3e710415a780bd0907fae511a8af47bc5"
   },
   "links": {
     "donate": "",
     "discord": "",
     "telegram": ""
   },
+  "news_feed": [
+    {
+      "date": "27 июля",
+      "title": "Сервер запущен",
+      "text": "Wanderlust Create работает. Нажмите «Играть» — лаунчер поставит сборку сам.",
+      "url": ""
+    }
+  ],
   "versions": [
     {
       "id": "wanderlust-create",
@@ -32,8 +40,8 @@
         }
       },
       "server": {
-        "host": "",
-        "port": 25565
+        "host": "213.171.18.242",
+        "port": 30530
       },
       "pack": {
         "title": "Wanderlust Create",
