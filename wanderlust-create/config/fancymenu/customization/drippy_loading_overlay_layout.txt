@@ -348,70 +348,7 @@ scroll_list_customization {
 layout_action_executable_blocks {
 }
 
-element {
-  element_type = image
-  instance_identifier = 026259a1-83a0-4ecb-ab08-48eabae7c846-1784286936586
-  appearance_delay = no_delay
-  disappearance_delay = no_delay
-  fade_in_v2 = no_fading
-  fade_out = no_fading
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1011
-  auto_sizing_base_gui_scale = 3
-  auto_sizing_base_gui_width = 640
-  auto_sizing_base_gui_height = 337
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = -132
-  y = -105
-  width = 262
-  height = 168
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 0444674a-9f8d-4d04-9a55-de8c4f2c9685-1784286936586
-  [loading_requirement_container_meta:0444674a-9f8d-4d04-9a55-de8c4f2c9685-1784286936586] = [groups:][instances:]
-  enable_parallax = false
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  layer_hidden_in_editor = false
-  advanced_rotation_mode = false
-  advanced_vertical_tilt_mode = false
-  advanced_horizontal_tilt_mode = false
-  should_be_affected_by_decoration_overlays = false
-  in_editor_color = #FFC800FF
-  advanced_posx = -2147483648
-  advanced_posy = -2147483648
-  advanced_width = -2147483648
-  advanced_height = -2147483648
-  stretch_x = false
-  stretch_y = false
-  appearance_delay_seconds = 1.0
-  disappearance_delay_seconds = 1.0
-  fade_in_speed = 1.0
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  parallax_intensity_x = 0.5
-  parallax_intensity_y = 0.5
-  rotation_degrees = 0.0
-  advanced_rotation_degrees = 0.0
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_degrees = 0.0
-  source = [source:local]/config/fancymenu/assets/ds.png
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  restart_animated_on_menu_load = false
-  image_tint = #FFFFFF
-  rounding_radius_top_left = 0.0
-  rounding_radius_top_right = 0.0
-  rounding_radius_bottom_right = 0.0
-  rounding_radius_bottom_left = 0.0
-}
+
 
 vanilla_button {
   button_element_executable_block_identifier = ec5bfe2a-c1d7-460e-97c3-e877817ef113-1784283405266

@@ -365,8 +365,12 @@ file = "config/fabric/indigo-renderer.properties"
 hash = "a10ab74a15fd722cea390bd3ca453e9f6bfe2a1ad583844033d920cc5db25ce9"
 
 [[files]]
-file = "config/fancymenu/assets/ds.png"
-hash = "a56805363180ebdf35d4bb22e36e786a11323396eb0c3f0f3551c6d738b52ba4"
+file = "config/fancymenu/assets/ds_icon.png"
+hash = "d43720552bb6ef1d481c02848b2ed00f91fd327560fa840886793d5aa34919b6"
+
+[[files]]
+file = "config/fancymenu/assets/tg_icon.png"
+hash = "036eec03e338886f2e454480f6410571f1166040a739110ba4827075502e2b2f"
 
 [[files]]
 file = "config/fancymenu/audio_element_controller_metas.json"
@@ -382,7 +386,7 @@ hash = "0b646bfbbb18d906ebe28aeee8849af076177ca79269bc919777aa27b325fb5a"
 
 [[files]]
 file = "config/fancymenu/customization/drippy_loading_overlay_layout.txt"
-hash = "2e101a10a251399010b38deab732cf446e8e724e1404bb302cf3ae0fd2afefef"
+hash = "e06ae84b55100d5e6e21f012bb40e84c5a5a0fc004b8d4b25a699d4dfe038f35"
 
 [[files]]
 file = "config/fancymenu/customization/options_screen_layout.txt"
@@ -394,19 +398,7 @@ hash = "f8bbe9545c28b19b2267a790e399059f326a7523eb71600f1c944124b5fcd0bf"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "5162c86d3e7ca9120439a45bfad5926c60d449a26ad01656ee54e7fcd73956f5"
-
-[[files]]
-file = "config/fancymenu/customization/title_screen_layout.txt.bak2"
-hash = "e2d845adbc1bce9cca9db1b7f4748037a7d478460e4f6ea0fa7fe8e506fc703e"
-
-[[files]]
-file = "config/fancymenu/customization/title_screen_layout.txt.bak3"
-hash = "f816227fd4fe4072c2426923ac0b1ebc973fb50adc6f0c54fa56b517b6f9e7e3"
-
-[[files]]
-file = "config/fancymenu/customization/title_screen_layout.txt.bak4"
-hash = "f816227fd4fe4072c2426923ac0b1ebc973fb50adc6f0c54fa56b517b6f9e7e3"
+hash = "48f59e10cc0177a0d5ab545ae4f9f3b0ce2863fd6db7a7494e3c2d8e64b9bc80"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
