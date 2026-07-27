@@ -2077,16 +2077,6 @@ hash = "ddbe6f24413568d0b8f57b7e5c90a84d6a62037d0e341dc717875c7f57cbea2d"
 metafile = true
 
 [[files]]
-file = "mods/vr-swing-sprint.pw.toml"
-hash = "648c10a0cbc50a59c4f621919b3974d61dbf7bff0542da7c2dbb626195c62b95"
-metafile = true
-
-[[files]]
-file = "mods/vr-throwing-extensions.pw.toml"
-hash = "943053a5a64588bc89b7c23d9620217c6972dc35b884fef3ef322d508588e271"
-metafile = true
-
-[[files]]
 file = "mods/weavers-paradise.pw.toml"
 hash = "fddae5ca62f1b72db7d9ca4cbb7202f47087ed1ac1d81a625c1932fb12314594"
 metafile = true
