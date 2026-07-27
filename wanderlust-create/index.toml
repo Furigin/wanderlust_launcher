@@ -1926,7 +1926,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable-(create-aeronautics)-collision-damage.pw.toml"
-hash = "8ebe0a4f66bb1154c7dda6393017945c70d1b9ce53d792e5a4fa77cf91868123"
+hash = "8fa9784183733f97395b1ff9dadfd77d52a0ad58bbb7bc44f96961cdf756d750"
 metafile = true
 
 [[files]]
