@@ -3,7 +3,7 @@
   "launcher": {
     "version": "0.1.0",
     "url": "https://github.com/Furigin/wanderlust_launcher/releases/download/v0.1.0/Wanderlust.exe",
-    "sha256": "d8b7951ec2babef157db7916a721a39f2669e2efdd8e2ce1f1fbcbb31e1ab383"
+    "sha256": "2c93d3858f7b4c7bb0bc8fe91c00008817e01a272860d8dd8e70bbafbd303ac1"
   },
   "links": {
     "donate": "https://www.donationalerts.com/r/furigin",
@@ -17,12 +17,6 @@
       "date": "29 июля",
       "title": "Открытие сервера — сегодня в 15:00 МСК",
       "text": "Wanderlust Create открывается 29 июля в 15:00 по Москве. Нажмите «Играть» заранее — лаунчер скачает сборку, чтобы к открытию всё было готово.",
-      "url": ""
-    },
-    {
-      "date": "27 июля",
-      "title": "Сервер запущен",
-      "text": "Wanderlust Create работает. Нажмите «Играть» — лаунчер поставит сборку сам.",
       "url": ""
     }
   ],
