@@ -3,14 +3,22 @@
   "launcher": {
     "version": "0.1.0",
     "url": "https://github.com/Furigin/wanderlust_launcher/releases/download/v0.1.0/Wanderlust.exe",
-    "sha256": "c3fcbd0a54536b545bac219b2647b76c5d4118a7a5acf452be21f6f109ad8525"
+    "sha256": "d8b7951ec2babef157db7916a721a39f2669e2efdd8e2ce1f1fbcbb31e1ab383"
   },
   "links": {
-    "donate": "",
-    "discord": "",
-    "telegram": ""
+    "donate": "https://www.donationalerts.com/r/furigin",
+    "discord": "https://discord.gg/VU9Jhk3jGM",
+    "telegram": "https://t.me/+nnrZgWCTl7ozMjYy",
+    "card": "2200701956191966",
+    "card_note": "Поддержать проект — перевод на карту без комиссии"
   },
   "news_feed": [
+    {
+      "date": "29 июля",
+      "title": "Открытие сервера — сегодня в 15:00 МСК",
+      "text": "Wanderlust Create открывается 29 июля в 15:00 по Москве. Нажмите «Играть» заранее — лаунчер скачает сборку, чтобы к открытию всё было готово.",
+      "url": ""
+    },
     {
       "date": "27 июля",
       "title": "Сервер запущен",
@@ -25,7 +33,7 @@
       "subtitle": "Minecraft 1.21.1",
       "theme": "orange",
       "status": "ready",
-      "news": "Wanderlust Create — сборка вокруг Create на 1.21.1. Жми «Играть», лаунчер сам скачает и обновит все моды.",
+      "news": "Открытие 29 июля в 15:00 МСК. Жми «Играть» — лаунчер сам скачает и обновит все моды.",
       "minecraft": {
         "version": "1.21.1"
       },
