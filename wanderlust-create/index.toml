@@ -394,7 +394,7 @@ hash = "f8bbe9545c28b19b2267a790e399059f326a7523eb71600f1c944124b5fcd0bf"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "48f59e10cc0177a0d5ab545ae4f9f3b0ce2863fd6db7a7494e3c2d8e64b9bc80"
+hash = "1771d7ea4dc6a05e5b416cb4ae4f5ee00018b5bce864698e2498480f7cc18b1b"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -2103,3 +2103,7 @@ metafile = true
 file = "mods/yungs-api.pw.toml"
 hash = "2e9b2be207d17b308c4f2b679e203ec71ead6001e1caed931db0afa78bd3e20a"
 metafile = true
+
+[[files]]
+file = "servers.dat"
+hash = "057544c5bc59877b13136f7f20dd93ed91be402645c080f5baa0cef25033d1bb"
