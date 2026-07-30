@@ -1850,16 +1850,6 @@ hash = "d7f470e016d3c0bd131c49de50d245548b3939e8c97e1970ae1f392f894b532d"
 metafile = true
 
 [[files]]
-file = "mods/plasmo-voice-voice-changer.pw.toml"
-hash = "e41945a196dfd6e7d02b45d69a339a053bf0482d1cfa2789f06d0d162d695394"
-metafile = true
-
-[[files]]
-file = "mods/plasmo-voice.pw.toml"
-hash = "30918b2c2d9bcffb84c5de2a7436376ff7ed7e60f49c412d34367fd272edd154"
-metafile = true
-
-[[files]]
 file = "mods/ponder.pw.toml"
 hash = "3c2315f14ba46fb06ca6d7cfa6fe2ea41d94be67566de843f31f7cf657e87228"
 metafile = true
@@ -1982,6 +1972,11 @@ metafile = true
 [[files]]
 file = "mods/servercore.pw.toml"
 hash = "67cf3289615eb4d999b252f6813c699b984299ed2576bb385b54701fede4dd38"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "cca4b10598ae8cedcc2a6531a422453d624ceb4d1de1163ce46255415ccda045"
 metafile = true
 
 [[files]]
