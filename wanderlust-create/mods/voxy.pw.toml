@@ -2,6 +2,14 @@ name = "Voxy"
 filename = "voxy-0.2.15-NeoForge-1.21.1.jar"
 side = "client"
 
+# Выключен по умолчанию: мод рисует дальние чанки (LOD) и на части
+# конфигураций даёт визуальные артефакты и заметно грузит видеокарту.
+# Кому нужна дальняя прорисовка — включает сам в настройках лаунчера.
+[option]
+optional = true
+default = false
+description = "Дальняя прорисовка мира (LOD). Красиво, но грузит видеокарту и может давать графические артефакты. Включайте, только если компьютер мощный."
+
 [download]
 url = "https://furigin.github.io/wanderlust_launcher/custom-mods/voxy-0.2.15-NeoForge-1.21.1.jar"
 hash-format = "sha512"
