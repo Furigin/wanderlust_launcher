@@ -1655,6 +1655,11 @@ hash = "1a48308f626c4bc152872d0e7242f5c7c2b4ae373895c9812fd858624e7d3912"
 metafile = true
 
 [[files]]
+file = "mods/etched.pw.toml"
+hash = "e542594c75eddafc1b72baebc82aa65ce2d8d791bc0ace17c731760bf30360b4"
+metafile = true
+
+[[files]]
 file = "mods/fancymenu.pw.toml"
 hash = "95271695ac924afa7cc3abb8a7e0997322f7b8a6210840308537ffcc3ce837aa"
 metafile = true
