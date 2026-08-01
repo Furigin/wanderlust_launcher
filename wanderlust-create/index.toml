@@ -1535,11 +1535,6 @@ hash = "b3888e8fbbbc6fc3322744b42eea7562946f35dbc6d91f7ead0c7edac3e33b8f"
 metafile = true
 
 [[files]]
-file = "mods/create-steam-n-rails-1.21.1.pw.toml"
-hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
-metafile = true
-
-[[files]]
 file = "mods/create-tfmg.pw.toml"
 hash = "ffa908d1a9e87a108bebd31fcd005ee6e53eddd4bc58226849e73e2b30df95e6"
 metafile = true
