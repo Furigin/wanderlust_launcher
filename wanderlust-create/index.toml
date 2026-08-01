@@ -1460,6 +1460,11 @@ hash = "2e1be06e704c272126437071c485fb673c59fea7f540e8a6c9cf6bb871e54537"
 metafile = true
 
 [[files]]
+file = "mods/create-aeroworks.pw.toml"
+hash = "54b4e99b8e1262101b5d86345852dcdbc328bb43ad7412cc5171df786f22b398"
+metafile = true
+
+[[files]]
 file = "mods/create-big-cannons-going-ballistic.pw.toml"
 hash = "df098382e4c420186f827368218a3464734a039324326a98d60e3836b337f118"
 metafile = true
@@ -1527,6 +1532,11 @@ metafile = true
 [[files]]
 file = "mods/create-schematic-upload.pw.toml"
 hash = "b3888e8fbbbc6fc3322744b42eea7562946f35dbc6d91f7ead0c7edac3e33b8f"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails-1.21.1.pw.toml"
+hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
 metafile = true
 
 [[files]]
