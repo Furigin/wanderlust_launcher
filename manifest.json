@@ -1,9 +1,9 @@
 {
   "schema": 2,
   "launcher": {
-    "version": "0.2.2",
-    "url": "https://github.com/Furigin/wanderlust_launcher/releases/download/v0.2.2/Wanderlust.exe",
-    "sha256": "6e6d9559f3649cb8fc4de30d3960f838f5a9676f43ad83cac1d2a4aad6be9cd2"
+    "version": "0.2.3",
+    "url": "https://github.com/Furigin/wanderlust_launcher/releases/download/v0.2.3/Wanderlust.exe",
+    "sha256": "3fbde841d8958cf4520ff158ba235aeb7014b06907a99ba225295d5b841c823f"
   },
   "links": {
     "donate": "https://www.donationalerts.com/r/furigin",
@@ -20,6 +20,21 @@
       "url": ""
     }
   ],
+  "anticheat": {
+    "contact": "@MegoCat",
+    "blocklist": [
+      "xray",
+      "wurst",
+      "meteorclient",
+      "impactclient",
+      "liquidbounce",
+      "sigmaclient",
+      "aristois",
+      "rusherhack",
+      "wolfram",
+      "killaura"
+    ]
+  },
   "versions": [
     {
       "id": "wanderlust-create",
