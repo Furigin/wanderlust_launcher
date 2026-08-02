@@ -1940,6 +1940,11 @@ hash = "53ada45ad20415ebba2944e39a53eb204e14cdd54669108315a27b0175ffb205"
 metafile = true
 
 [[files]]
+file = "mods/sable-ragdolls.pw.toml"
+hash = "bf3c84eff52457596d58a73882e72759804117f0731a0fde343cfd54d33e55ba"
+metafile = true
+
+[[files]]
 file = "mods/sable-xaero-bridge.pw.toml"
 hash = "1438d4565b1a1e2a27e9578aa08a31e432f71c17d5d34600e7d55082f703aa1a"
 metafile = true
