@@ -1885,11 +1885,6 @@ hash = "3cf7d22434316931da6ef0f54ff0fa40a4389de07fc1f34ed423bdb75deecada"
 metafile = true
 
 [[files]]
-file = "mods/ragdoll-reactions.pw.toml"
-hash = "bd3ec8f8997d7b66885c548d2b87f89ce8d3a0ff2de83b7e07192824e9245505"
-metafile = true
-
-[[files]]
 file = "mods/reeses-sodium-options.pw.toml"
 hash = "8cddef5f1bdb6ce4e2082b26628d068725ef8dab2eb03ed15905fe8719d41d90"
 metafile = true
@@ -1942,16 +1937,6 @@ metafile = true
 [[files]]
 file = "mods/sable-explosions-fix.pw.toml"
 hash = "53ada45ad20415ebba2944e39a53eb204e14cdd54669108315a27b0175ffb205"
-metafile = true
-
-[[files]]
-file = "mods/sable-ragdoll-corpse.pw.toml"
-hash = "0f60629a44fe9e6c71a1fe55661098ee8fd60e74b5a3b1b6724191af14818d2a"
-metafile = true
-
-[[files]]
-file = "mods/sable-ragdolls.pw.toml"
-hash = "7511bd836df50d279bad146ea3a781754e1ef836e779abe261a25449601a39c7"
 metafile = true
 
 [[files]]
