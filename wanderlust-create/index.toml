@@ -1006,11 +1006,11 @@ hash = "4066c5339cd925118e1a307727a9e37386a325fd257bdbd8f9298655571c95cd"
 
 [[files]]
 file = "config/servercore/config.yml"
-hash = "22b7045bf8c8883aaa4067352ef678c09e4ea246ede79af601714bd0853b9912"
+hash = "705290c187648004698d5912205e47983a25ac3435a25078d2d6bf3bc704f6cf"
 
 [[files]]
 file = "config/servercore/optimizations.yml"
-hash = "63ba7034fdf1f45f1b40798d3212f8d838f7c299fbe5795075fbafe1e2265192"
+hash = "e6623ef7a28bde0891a6b0d42e08e8ffe22143c0f88e6bee6bdcd517b4286866"
 
 [[files]]
 file = "config/servercountryflags/servercountryflags.properties"
