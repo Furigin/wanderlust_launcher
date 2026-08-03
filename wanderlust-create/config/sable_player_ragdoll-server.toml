@@ -25,17 +25,17 @@ grabEnabled = true
 	#Ignore velocity spikes above this (m/s) to filter teleports and chunk loads.
 	# Default: 120.0
 	# Range: 8.0 ~ 256.0
-	maxVelocityDelta = 120.0
+	maxVelocityDelta = 60.0
 	#Clamp inherited linear speed on the ragdoll capsule (m/s).
 	# Default: 128.0
 	# Range: 1.0 ~ 256.0
-	maxFlingSpeed = 128.0
+	maxFlingSpeed = 64.0
 	#Clamp total ragdoll launch speed (m/s).
 	# Default: 128.0
 	# Range: 1.0 ~ 256.0
 	ragdollMaxLaunchSpeed = 128.0
 	#When true, the body parts of a ragdoll collide with each other.
-	partSelfCollision = true
+	partSelfCollision = false
 	#When true, a hand grip slips loose once it is stretched past the break distance under load.
 	grabBreakEnabled = true
 	#How far (blocks) the hand can be pulled from the spot it grabbed before the grip slips.
@@ -71,23 +71,23 @@ grabEnabled = true
 #When player ragdolls expire.
 [despawn]
 	#Expire player ragdolls after the configured duration. If all despawn toggles are off, player ragdolls never expire automatically.
-	expireAfterDuration = false
+	expireAfterDuration = true
 	#Ticks after launch before a player ragdoll expires and the player is unseated.
 	# Default: 40
 	# Range: 5 ~ 600
-	ragdollDurationTicks = 40
+	ragdollDurationTicks = 100
 	#Expire player ragdolls after they touch down and slow below the release speed threshold.
-	expireWhenSlow = false
+	expireWhenSlow = true
 	#Expire after touchdown only once the ragdoll slows below this speed (m/s).
 	# Default: 0.1
 	# Range: 0.0 ~ 32.0
 	releaseSpeedThreshold = 0.1
 	#Force-expire player ragdolls after the safety timeout.
-	expireAfterSafetyTimeout = false
+	expireAfterSafetyTimeout = true
 	#Hard safety limit: force expiry if the ragdoll still exists after this many ticks.
 	# Default: 200
 	# Range: 20 ~ 2400
-	step1BodyLifetimeTicks = 200
+	step1BodyLifetimeTicks = 600
 
 #Ragdoll mass density. Individual parts scale by collision volume.
 [body_mass]
@@ -99,4 +99,7 @@ grabEnabled = true
 #Developer options.
 [debug]
 	#Log ragdoll trigger and seating details to the server console.
-	debugLogging = true
+	# false: строки «restored playerless ragdoll» шли десятками при каждом
+	# старте и топили в себе настоящие ошибки. Включать только на время
+	# разбора проблем с рэгдоллами.
+	debugLogging = false

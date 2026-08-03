@@ -9,7 +9,10 @@ enabled = true
 		#Clamp total ragdoll launch speed after trigger detection (m/s).
 		# Default: 128.0
 		# Range: 1.0 ~ 256.0
-		maxSpeed = 128.0
+		# 64 вместо 128: при 128 м/с (~460 км/ч) тело за один тик проскакивает
+		# несколько чанков, физика срывается в NaN и объект улетает за границы
+		# мира. Согласовано с maxFlingSpeed в sable_player_ragdoll-server.toml.
+		maxSpeed = 64.0
 		#Ticks before the same player can be auto-ragdolled again.
 		# Default: 60
 		# Range: 0 ~ 1200
@@ -96,7 +99,7 @@ enabled = true
 		#When true, no wind charge explosions (from any source) will ragdoll players.
 		suppressAll = false
 		#When true, self-thrown wind charges will not ragdoll the throwing player.
-		suppressSelf = true
+		suppressSelf = false
 		#Ticks to suppress movement reactions after a self-thrown wind charge explodes.
 		# Default: 10
 		# Range: 0 ~ 200
@@ -108,7 +111,7 @@ enabled = true
 	#Sharp horizontal velocity change reactions.
 	[triggers.impact]
 		#When true, sharp horizontal velocity changes can ragdoll the player.
-		enabled = true
+		enabled = false
 		#Minimum horizontal player velocity change over the 3-tick window (m/s) required to trigger.
 		# Default: 16.0
 		# Range: 0.1 ~ 128.0
@@ -155,7 +158,7 @@ enabled = true
 	#Hard fall landing reactions.
 	[triggers.fall]
 		#When true, landing from a high fall ragdolls the player.
-		enabled = true
+		enabled = false
 		#Minimum fall damage actually taken (after feather falling, protection, resistance, etc.) required to trigger a ragdoll.
 		# Default: 4.0
 		# Range: 0.0 ~ 1024.0
@@ -168,7 +171,7 @@ enabled = true
 	#Elytra wall-crash reactions.
 	[triggers.crash]
 		#When true, flying into a wall while gliding ragdolls the player.
-		enabled = true
+		enabled = false
 		#Minimum fly-into-wall damage required to trigger a ragdoll.
 		# Default: 4.0
 		# Range: 0.0 ~ 1024.0
@@ -181,7 +184,7 @@ enabled = true
 	#Heavy melee/projectile hit reactions.
 	[triggers.hit]
 		#When true, taking a big hit knocks the player into a ragdoll away from the attacker.
-		enabled = true
+		enabled = false
 		#Minimum damage required to trigger a ragdoll.
 		# Default: 8.0
 		# Range: 0.0 ~ 1024.0
@@ -194,7 +197,7 @@ enabled = true
 	#Lightning strike reactions.
 	[triggers.lightning]
 		#When true, being struck by lightning ragdolls the player.
-		enabled = true
+		enabled = false
 		#Upward launch speed (m/s) when struck by lightning.
 		# Default: 12.0
 		# Range: 0.0 ~ 128.0
@@ -203,7 +206,12 @@ enabled = true
 #Ragdoll reactions for mobs. Separate from the player triggers above; only whitelisted mobs can ragdoll.
 [mobs]
 	#Master switch for all mob ragdoll reactions.
-	enabled = true
+	# ВЫКЛЮЧЕНО НАМЕРЕННО. Каждый рэгдолл моба — это 6 sub-level'ов Sable и
+	# 5 сочленений; при включённых fall/damage/explosion/impact их порождал
+	# буквально каждый бой и каждое падение. За 30 июля так накопилось 234
+	# осиротевших рэгдолла, 64258 вылетов за границы мира и серия крашей
+	# сервера. Рэгдоллы игроков (sable_player_ragdoll) при этом работают.
+	enabled = false
 
 	#Hard fall landing reactions for mobs.
 	[mobs.fall]

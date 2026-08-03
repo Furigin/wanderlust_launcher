@@ -906,11 +906,11 @@ hash = "bb2cfd4efb798ea23dcdd4f4ba0cf00ebf21c0bff932be3ad34a0e8bf4d12651"
 
 [[files]]
 file = "config/ragdoll_corpse-common.toml"
-hash = "db4960228ca752a3ccc671d59a5547543c6624da547a7ffd23f31d4a12d70c37"
+hash = "9c30c20af61a50424b833bf176fb3704cc2fb86f134e7dc2b11b192b52a7ecf3"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
-hash = "ed9953bdfc796e5dd246e99de86e9f1fe979548d1b318966ae64164def7bd60f"
+hash = "fcd3537a567ea52adb2c36b995e35df7e4ce751b7aa7f47f206b92bef226e83c"
 
 [[files]]
 file = "config/reliable_advancements.json"
@@ -950,7 +950,7 @@ hash = "5f816a5d7d32cc56ff3f26e3adbb25c6bfea6d81aba088cca9e00d42d73753e4"
 
 [[files]]
 file = "config/sable-common.toml"
-hash = "43d5cdfc1997a8aaabfc301e746b773319999d348661a1a7a04b37a70fda93c1"
+hash = "60c2affa50f99c2d8f0260dc7ed5b2467f3b7dd02204bf2eef1fd00e1375b3cd"
 
 [[files]]
 file = "config/sable_beyond/common.json"
@@ -978,7 +978,7 @@ hash = "874fb9e1d2ced12f878e54199fe1f1684282d5a3ab732586e284a500290eb2b8"
 
 [[files]]
 file = "config/sable_player_ragdoll-server.toml"
-hash = "2c5b576473e5e9f4a0d04f60fc9d99247e16190f3dd181b8ac111fe2e5180721"
+hash = "ef0b22c66b9e9a342d8d9a4917446df8e2623069f30137dd6d3f17b6fb9ae13c"
 
 [[files]]
 file = "config/sable_xaero_bridge-client.toml"
@@ -1875,13 +1875,13 @@ hash = "fb9631e4ae82d7a256fafd8ec648052715f3c2f457e0206b8d8204e080ed5dab"
 metafile = true
 
 [[files]]
-file = "mods/pv-addon-voice-messages.pw.toml"
-hash = "a66261223d8148d693176d0649f7fe530df63a4e9d8ae12e44714bdef6097547"
+file = "mods/questlog.pw.toml"
+hash = "3cf7d22434316931da6ef0f54ff0fa40a4389de07fc1f34ed423bdb75deecada"
 metafile = true
 
 [[files]]
-file = "mods/questlog.pw.toml"
-hash = "3cf7d22434316931da6ef0f54ff0fa40a4389de07fc1f34ed423bdb75deecada"
+file = "mods/ragdoll-reactions.pw.toml"
+hash = "bd3ec8f8997d7b66885c548d2b87f89ce8d3a0ff2de83b7e07192824e9245505"
 metafile = true
 
 [[files]]
@@ -1937,6 +1937,11 @@ metafile = true
 [[files]]
 file = "mods/sable-explosions-fix.pw.toml"
 hash = "53ada45ad20415ebba2944e39a53eb204e14cdd54669108315a27b0175ffb205"
+metafile = true
+
+[[files]]
+file = "mods/sable-ragdoll-corpse.pw.toml"
+hash = "0f60629a44fe9e6c71a1fe55661098ee8fd60e74b5a3b1b6724191af14818d2a"
 metafile = true
 
 [[files]]
