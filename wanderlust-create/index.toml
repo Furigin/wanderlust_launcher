@@ -1925,11 +1925,6 @@ hash = "75dcc598339b396de9aaea2896fddc1a8a667cf565905b9f6f8688ed73a4ccae"
 metafile = true
 
 [[files]]
-file = "mods/sable-(create-aeronautics)-collision-damage.pw.toml"
-hash = "8fa9784183733f97395b1ff9dadfd77d52a0ad58bbb7bc44f96961cdf756d750"
-metafile = true
-
-[[files]]
 file = "mods/sable-cleanup.pw.toml"
 hash = "855f420a37514259be42124e53ea42c1527ad2ae7bfcba983eeca6669c57f7f5"
 metafile = true
@@ -1952,11 +1947,6 @@ metafile = true
 [[files]]
 file = "mods/sable-xaero-bridge.pw.toml"
 hash = "1438d4565b1a1e2a27e9578aa08a31e432f71c17d5d34600e7d55082f703aa1a"
-metafile = true
-
-[[files]]
-file = "mods/sable.pw.toml"
-hash = "9d875fc454848e9a1af36ec2bd0567ccb97226cfe3f18b65264211284e807cc5"
 metafile = true
 
 [[files]]
