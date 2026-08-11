@@ -1950,6 +1950,11 @@ hash = "1438d4565b1a1e2a27e9578aa08a31e432f71c17d5d34600e7d55082f703aa1a"
 metafile = true
 
 [[files]]
+file = "mods/sable.pw.toml"
+hash = "56c47f4f4732d86a144c8c86af80411238c3ea74f6b96b0bc5174d2f20073a98"
+metafile = true
+
+[[files]]
 file = "mods/sable_beyond.pw.toml"
 hash = "e3904891022f0ed7a2fcad2dcab6e190588c2338dfde1f171afaddbed7e081d6"
 metafile = true
