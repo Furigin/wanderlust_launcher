@@ -1,0 +1,13 @@
+name = "Create Dupe Patch"
+filename = "createdupefix-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/onMkRkgP/versions/4AGBJME1/createdupefix-1.0.1.jar"
+hash-format = "sha512"
+hash = "ac3f0c1fedd4039d127f0be64dd686661e1180e7c36b94ff0162efa0773d03e9f96fb83f110d4a8e87a6582458ff2d7791bc1e768fa43af54895ac8a493eb7ca"
+
+[update]
+[update.modrinth]
+mod-id = "onMkRkgP"
+version = "4AGBJME1"

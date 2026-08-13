@@ -1,0 +1,13 @@
+name = "Create: Netherite Portable Engine"
+filename = "netheriteportableengine-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZDd8e63m/versions/h1bUW7Ku/netheriteportableengine-1.0.0.jar"
+hash-format = "sha512"
+hash = "b38f0e7a2436bad2d45bc185d1fe92d26de5079423696dc12d566aa8e7c12ef32f880ea7336b938dfa042655ba866d0a3eddce544c956e0c27e9bc8957d2b1ef"
+
+[update]
+[update.modrinth]
+mod-id = "ZDd8e63m"
+version = "h1bUW7Ku"

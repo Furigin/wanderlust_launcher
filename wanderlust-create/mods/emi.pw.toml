@@ -1,6 +1,6 @@
 filename = 'emi-1.1.24+1.21.1+neoforge.jar'
 name = 'EMI'
-side = 'both'
+side = 'client'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

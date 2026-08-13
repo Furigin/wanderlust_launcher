@@ -1,21 +1,13 @@
-filename = 'createschematichelper-neoforge-mc1.21.1-2.0.3.jar'
-name = 'Create: Schematic Helper'
-side = 'client'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5', '1.21.6', '1.21.7', '1.21.8', '1.21.9', '1.21.10', '1.21.11' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '2.0.3'
+name = "Create: Schematic Helper"
+filename = "createschematichelper-neoforge-mc1.21.1-2.1.0.jar"
+side = "client"
 
 [download]
-hash = 'a490f528a063ebec2dcc6a8e88e5ce99fc86baf00df389836bb159ca8506e7cf93e37e2540731dcb44a51ca2959d45eef99c3d26ad571c305d843e9974e5d141'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/vDsPXWBh/versions/ghn7StYe/createschematichelper-neoforge-mc1.21.1-2.0.3.jar'
+url = "https://cdn.modrinth.com/data/vDsPXWBh/versions/oqEEkF7n/createschematichelper-neoforge-mc1.21.1-2.1.0.jar"
+hash-format = "sha512"
+hash = "0c1992874111350959ec5630942529a7080ea1824ff239d7f5584c4bf2414be761556c853ecd39be42ea11669a4698a671b87c2eec2813d6d187352f50d6d109"
 
+[update]
 [update.modrinth]
-mod-id = 'vDsPXWBh'
-version = 'ghn7StYe'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'LNytGWDc'
-type = 'REQUIRED'
+mod-id = "vDsPXWBh"
+version = "oqEEkF7n"

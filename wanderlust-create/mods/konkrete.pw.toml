@@ -1,6 +1,6 @@
 filename = 'konkrete_neoforge_1.9.9_MC_1.21.jar'
 name = 'Konkrete'
-side = 'both'
+side = 'client'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

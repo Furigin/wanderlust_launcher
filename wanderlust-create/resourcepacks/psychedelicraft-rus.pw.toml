@@ -1,0 +1,13 @@
+name = "Psychedelicraft перевод"
+filename = "Psychedelicraft.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/yxc7ClsA/versions/qXGAOKQR/Psychedelicraft.zip"
+hash-format = "sha512"
+hash = "1e38997cc4b69f0147a6cc74ce37b1aabfa9429025bb2e5e6a321df1636e3b4b4dc662f309b67635b661698aa5b90f88fec57f8c2ee08e19451a2dc380e2fffd"
+
+[update]
+[update.modrinth]
+mod-id = "yxc7ClsA"
+version = "qXGAOKQR"

@@ -1,0 +1,8 @@
+name = "Psychedelicraft"
+filename = "psychedelicraft-1.8.9+1.21.jar"
+side = "both"
+
+[download]
+url = "https://furigin.github.io/wanderlust_launcher/custom-mods/psychedelicraft-1.8.9%2B1.21.jar"
+hash-format = "sha256"
+hash = "8baa351dce869938d00e4e6dbfdc23a2f36f97f5493c144dbc9593473006889b"

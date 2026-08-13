@@ -1,21 +1,13 @@
-filename = 'reliable_recipes-neoforge-1.21.1-2.2.0.jar'
-name = 'Reliable Recipes'
-side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '2.2.0-1.21.1-neoforge'
+name = "Reliable Recipes"
+filename = "reliable_recipes-neoforge-1.21.1-3.1.3.jar"
+side = "both"
 
 [download]
-hash = 'ec8faab59c5c471eae5d23241423226390adda079baf5340cecb98c06ae5c3acc5ed9f1d48f0a9ffe6377129b0e802a8d3f0be99819945359552e83472144912'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/Hl4ARA1z/versions/nL9DaN74/reliable_recipes-neoforge-1.21.1-2.2.0.jar'
+url = "https://cdn.modrinth.com/data/Hl4ARA1z/versions/U90Oh17W/reliable_recipes-neoforge-1.21.1-3.1.3.jar"
+hash-format = "sha512"
+hash = "9ddb8822bbb70526a0d80caa7758b3eee759544bbc2380cbcfa30ddcaab156d10715afda30440cbe11b734b125b9ed16b1ed95b739afb3967a44c9b7561b697c"
 
+[update]
 [update.modrinth]
-mod-id = 'Hl4ARA1z'
-version = 'nL9DaN74'
-
-[[x-prismlauncher-dependencies]]
-addonId = '9s6osm5g'
-type = 'OPTIONAL'
+mod-id = "Hl4ARA1z"
+version = "U90Oh17W"

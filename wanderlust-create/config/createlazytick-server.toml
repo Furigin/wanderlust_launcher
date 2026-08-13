@@ -7,7 +7,7 @@
 	#
 	#--------------------------------------------------------------------------
 	#Whether to print CreateLazyTick info/warn logs.
-	enable_info_log = true
+	enable_info_log = false
 	#
 	#--------------------------------------------------------------------------
 	#Whether to print CreateLazyTick debug logs.

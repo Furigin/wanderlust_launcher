@@ -1,25 +1,13 @@
-filename = 'CreateCyberGoggles-1.21.1-8.1.3-NeoForge.jar'
-name = 'Create: Cyber Goggles'
-side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.21.1-8.1.3-NeoForge'
+name = "Create: Cyber Goggles"
+filename = "CreateCyberGoggles-1.21.1-8.3.9-NeoForge.jar"
+side = "both"
 
 [download]
-hash = '1aa559917017384d49a73739055819fe04416ba8ccfba086a0ec6a16f90ecf79118f42b8e4904e5f7574aeb636b8cfe6c227f98e03efddb49da3bdee446f221a'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/TlQAWQCY/versions/NML1AcTG/CreateCyberGoggles-1.21.1-8.1.3-NeoForge.jar'
+url = "https://cdn.modrinth.com/data/TlQAWQCY/versions/JSbDmeX1/CreateCyberGoggles-1.21.1-8.3.9-NeoForge.jar"
+hash-format = "sha512"
+hash = "4f910175261fc5f5465c31521fbfd43625b73f07b5736860da0b6a93da80337e6c116e770776f6c335effd825c131299f363380e230e1f371bdbf67bf6eceb54"
 
+[update]
 [update.modrinth]
-mod-id = 'TlQAWQCY'
-version = 'NML1AcTG'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'LNytGWDc'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'oWaK0Q19'
-type = 'OPTIONAL'
+mod-id = "TlQAWQCY"
+version = "JSbDmeX1"

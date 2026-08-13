@@ -1,25 +1,13 @@
-filename = 'barehanded-neoforge-1.21.1-1.6.2.jar'
-name = 'Barehanded'
-side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.6.2'
+name = "Barehanded"
+filename = "barehanded-neoforge-1.21.1-1.6.6.jar"
+side = "both"
 
 [download]
-hash = '0f35c8f9fb7f9f0d9869f7915f2c2c126111fb4944dc9cd81311bdd2da6c38a6cdf66cbcc31d6f68922c062eaf405065dcc772662b252faaff2db7c78242302e'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/NnSJuVRa/versions/ZQ4kfmLR/barehanded-neoforge-1.21.1-1.6.2.jar'
+url = "https://cdn.modrinth.com/data/NnSJuVRa/versions/VvSHjZXg/barehanded-neoforge-1.21.1-1.6.6.jar"
+hash-format = "sha512"
+hash = "5d0aacec55a37eb161761d7e3508aa8be17f4beaab6ec4f10e62c27df3f5e9e9c02a012561ccabde11808008d80d4489adba06fa34fe8ca95b989cca2584b049"
 
+[update]
 [update.modrinth]
-mod-id = 'NnSJuVRa'
-version = 'ZQ4kfmLR'
-
-[[x-prismlauncher-dependencies]]
-addonId = '9s6osm5g'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'T9PomCSv'
-type = 'REQUIRED'
+mod-id = "NnSJuVRa"
+version = "VvSHjZXg"
