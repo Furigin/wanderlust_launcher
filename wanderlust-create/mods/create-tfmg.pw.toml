@@ -2,33 +2,20 @@ filename = 'tfmg-1.2.0.jar'
 name = 'Create: The Factory Must Grow'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [
-    '1.21',
-    '1.21.1',
-    '1.21.2',
-    '1.21.3',
-    '1.21.4',
-    '1.21.5',
-    '1.21.6',
-    '1.21.7',
-    '1.21.8',
-    '1.21.9',
-    '1.21.10',
-    '1.21.11'
-]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.2.0'
+x-prismlauncher-version-number = '1.2.0-wl1'
+
+# Пропатченная сборка TFMG 1.2.0.
+# Оригинал крашил клиент при открытии креативного инвентаря:
+#   IllegalArgumentException: Itemstack 1 tfmg:cooling_fluid_bottle
+#   already exists in the tab's list
+# В TFMGCreativeTabs.blacklist() добавлен COOLING_FLUID_BOTTLE, чтобы
+# мод не добавлял этот предмет во вкладку повторно. Больше ничего не тронуто.
+# При выходе TFMG 1.2.1+ проверить, пофикшено ли, и вернуться на Modrinth.
 
 [download]
-hash = '03f2ad28c78ef565ef203c5650280acb0b846d6105dc5c84b2e31187f501be5c59733ef3adb623fbaa32c3233d113d608905259128661ffab06b26b270b1b38c'
-hash-format = 'sha512'
+hash = '41509b9514ae443dc58ab7564c440923326b26d06348f9c5c28d0ccfd655581a'
+hash-format = 'sha256'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/USgVjXsk/versions/uDi14nbt/tfmg-1.2.0.jar'
-
-[update.modrinth]
-mod-id = 'USgVjXsk'
-version = 'uDi14nbt'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'LNytGWDc'
-type = 'REQUIRED'
+url = 'https://furigin.github.io/wanderlust_launcher/custom-mods/tfmg-1.2.0-wl1.jar'
