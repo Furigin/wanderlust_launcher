@@ -144,6 +144,13 @@ public final class RestartManager {
     }
 
     private static void tickVote(long leftSec) {
+        // Как только «против» набралось — отменяем сразу, не досчитывая до нуля.
+        // Иначе игроки видят полный отсчёт с титрами, а перезапуска не происходит.
+        if (vetoReached()) {
+            applyVeto();
+            return;
+        }
+
         if (leftSec > COUNTDOWN_FROM) {
             int min = (int) (leftSec / 60L);
             if (leftSec % 60L <= 1L && min > 0 && voteReminders.add(min)) {
@@ -178,40 +185,67 @@ public final class RestartManager {
                         ? Component.literal("за перезапуск").withStyle(ChatFormatting.GREEN)
                         : Component.literal("против перезапуска").withStyle(ChatFormatting.RED)));
         actionBar(tallyInline());
+
+        // Если этого голоса хватило — отменяем прямо сейчас, а не в конце отсчёта.
+        if (vetoReached()) applyVeto();
         return true;
     }
 
     private static void finish() {
-        int online = server.getPlayerList().getPlayerCount();
-        int against = countAgainst();
-
-        // Порог считаем от числа игроков онлайн, а не от числа проголосовавших:
-        // молчание — это не голос против.
-        boolean vetoed = online > 0 && against * 100 >= cfg.vetoPercent * online;
-
         voteOpen = false;
 
-        if (vetoed) {
-            broadcast(line());
-            broadcast(Component.literal("Перезапуск отменён — против " + against + " из " + online + ".")
-                    .withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD));
-            broadcast(Component.literal("Следующая попытка через " + cfg.postponeMinutes + " мин.")
-                    .withStyle(ChatFormatting.GRAY));
-            broadcast(line());
-            WlRestart.LOGGER.info("[wlrestart] перезапуск отклонён ({} против из {} онлайн), перенос на {} мин",
-                    against, online, cfg.postponeMinutes);
-            scheduleNext(cfg.postponeMinutes * 60.0D);
+        if (vetoReached()) {
+            applyVeto();
             return;
         }
 
-        WlRestart.LOGGER.info("[wlrestart] перезапуск подтверждён ({} против из {} онлайн)", against, online);
+        WlRestart.LOGGER.info("[wlrestart] перезапуск подтверждён ({} против из {} онлайн)",
+                countAgainst(), server.getPlayerList().getPlayerCount());
         doRestart();
     }
 
+    /**
+     * Голоса «против» только от тех, кто сейчас на сервере.
+     *
+     * Иначе вышедший игрок продолжал бы держать свой голос, а онлайн при этом
+     * уменьшался — и порог набирался бы сам собой, без единого нового голоса.
+     */
     private static int countAgainst() {
+        if (server == null) return 0;
         int n = 0;
-        for (Boolean v : votes.values()) if (!v) n++;
+        for (ServerPlayer p : server.getPlayerList().getPlayers()) {
+            Boolean v = votes.get(p.getUUID());
+            if (v != null && !v) n++;
+        }
         return n;
+    }
+
+    /** Набралось ли уже достаточно «против», чтобы отменять. */
+    private static boolean vetoReached() {
+        if (server == null) return false;
+        int online = server.getPlayerList().getPlayerCount();
+        return online > 0 && countAgainst() * 100 >= cfg.vetoPercent * online;
+    }
+
+    /** Отменить перезапуск и перенести его. Отсчёт при этом сразу прекращается. */
+    private static void applyVeto() {
+        int against = countAgainst();
+        int online = server.getPlayerList().getPlayerCount();
+
+        voteOpen = false;
+
+        broadcast(line());
+        broadcast(Component.literal("Перезапуск отменён — против " + against + " из " + online + ".")
+                .withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD));
+        broadcast(Component.literal("Следующая попытка через " + cfg.postponeMinutes + " мин.")
+                .withStyle(ChatFormatting.GRAY));
+        broadcast(line());
+        // Убрать титры отсчёта с экрана, если они там висят.
+        title(Component.empty(), Component.empty(), 0, 1, 0);
+
+        WlRestart.LOGGER.info("[wlrestart] перезапуск отклонён ({} против из {} онлайн), перенос на {} мин",
+                against, online, cfg.postponeMinutes);
+        scheduleNext(cfg.postponeMinutes * 60.0D);
     }
 
     // ------------------------------------------------------------------ собственно перезапуск

@@ -11,7 +11,7 @@ x-prismlauncher-version-number = '1.0.0'
 # side = server: клиентам не нужен и не скачивается.
 
 [download]
-hash = '08a85623cea04c7fa35ce202dfdaf5dff8cd42898fc51d3d5bebff55bd7d237d'
+hash = '40d2516d7b16c52f2b158100e12329e0ab07a629066ed1c547813d0af74617e3'
 hash-format = 'sha256'
 mode = 'url'
 url = 'https://furigin.github.io/wanderlust_launcher/custom-mods/wlrestart-1.0.0.jar'

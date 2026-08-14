@@ -2091,7 +2091,7 @@ metafile = true
 
 [[files]]
 file = "mods/wlrestart.pw.toml"
-hash = "559cc451ec3519d816a24c4031fd005693228d2546ccd70e2f3aab5de4364047"
+hash = "96765d05de90639b357fbc3377c68b570b67bc51a39e7379826c7c5bda1bcbb9"
 metafile = true
 
 [[files]]
