@@ -15,6 +15,7 @@ import net.minecraft.sounds.SoundSource;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.neoforge.event.server.ServerStartedEvent;
+import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
@@ -45,6 +46,8 @@ public final class RestartManager {
     private static long restartAtMs;
     private static boolean voteOpen;
     private static boolean restarting;
+    /** Надо ли при полной остановке выйти с ненулевым кодом (см. RestartConfig.exitCode). */
+    private static boolean exitRequested;
 
     /** uuid -> true = за перезапуск, false = против. */
     private static final Map<UUID, Boolean> votes = new HashMap<>();
@@ -72,9 +75,21 @@ public final class RestartManager {
 
     @SubscribeEvent
     public static void onServerStopping(ServerStoppingEvent event) {
+        exitRequested = restarting && cfg.exitCode != 0;
         server = null;
         restarting = false;
         resetCycle();
+    }
+
+    /**
+     * Сервер уже полностью остановлен и мир записан — можно безопасно выйти
+     * с нужным кодом, если панель хостинга поднимает сервер только «после падения».
+     */
+    @SubscribeEvent
+    public static void onServerStopped(ServerStoppedEvent event) {
+        if (!exitRequested) return;
+        WlRestart.LOGGER.info("[wlrestart] выхожу с кодом {} — панель должна поднять сервер обратно", cfg.exitCode);
+        Runtime.getRuntime().halt(cfg.exitCode);
     }
 
     @SubscribeEvent
