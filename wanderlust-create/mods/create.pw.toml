@@ -5,14 +5,19 @@ x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '6.0.10+mc1.21.1'
+x-prismlauncher-version-number = '6.0.10+mc1.21.1-wl1'
+
+# Пропатчена вложенная библиотека Registrate (META-INF/jarjar/Registrate-MC1.21-1.3.0+67.jar).
+# Оригинал ронял клиент при открытии креативного инвентаря:
+#   IllegalArgumentException: Itemstack 1 tfmg:cooling_fluid_bottle
+#   already exists in the tab's list
+# CreativeModeTabModifier.accept(ItemStack, TabVisibility) обёрнут в try/catch,
+# поэтому повторное добавление одного и того же предмета во вкладку теперь
+# молча игнорируется вместо краша. Больше в Create ничего не изменено.
+# При обновлении Create патч надо накатить заново (scripts/patch_registrate.py).
 
 [download]
-hash = '11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b'
-hash-format = 'sha512'
+hash = 'af1cd203e0e4734fbae87fb21eb40419d4587d72328843a6e47dfcfb34063c0e'
+hash-format = 'sha256'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/create-1.21.1-6.0.10.jar'
-
-[update.modrinth]
-mod-id = 'LNytGWDc'
-version = 'UjX6dr61'
+url = 'https://furigin.github.io/wanderlust_launcher/custom-mods/create-1.21.1-6.0.10-wl1.jar'

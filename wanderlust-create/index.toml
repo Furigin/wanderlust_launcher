@@ -1556,7 +1556,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-tfmg.pw.toml"
-hash = "3cb6f5390f568f257e8e149bdaf5e37c01d85465fbafd9bd2a24f7cb2da56025"
+hash = "fc689ddbbee884a8eed74e8e91e2ba9a83dd053c821f6a88446f2a3ea7ceea71"
 metafile = true
 
 [[files]]
@@ -1571,7 +1571,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "d54c45b486976c4c6ffb74197f2f1f8d37130ab4208db229969b6397517e40e7"
+hash = "ac4150172e171f0ecce0eedcb085f1e7d219e7878912774865eac8206afa8179"
 metafile = true
 
 [[files]]
