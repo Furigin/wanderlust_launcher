@@ -1,4 +1,0 @@
-C:\Users\rusla\Desktop\wanderlust_launcher\mod-src\wlrestart\src\dev\wanderlust\restart\RestartCommands.java
-C:\Users\rusla\Desktop\wanderlust_launcher\mod-src\wlrestart\src\dev\wanderlust\restart\RestartConfig.java
-C:\Users\rusla\Desktop\wanderlust_launcher\mod-src\wlrestart\src\dev\wanderlust\restart\RestartManager.java
-C:\Users\rusla\Desktop\wanderlust_launcher\mod-src\wlrestart\src\dev\wanderlust\restart\WlRestart.java
