@@ -2090,6 +2090,11 @@ hash = "f8e848f5605740c77bb3b898e07d74938940ed3efbf1299b5b3683fe39343222"
 metafile = true
 
 [[files]]
+file = "mods/wlrestart.pw.toml"
+hash = "8833515627b5557a6fca7c56d041dece6373d5463815851bf471b77b21e23b74"
+metafile = true
+
+[[files]]
 file = "mods/xaero-train-map.pw.toml"
 hash = "efefd1e4ef8f77ba5fd4ea641d8a889cac6282094241dfb77c9858ef4fea780f"
 metafile = true
