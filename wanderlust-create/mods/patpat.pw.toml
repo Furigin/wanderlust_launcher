@@ -11,7 +11,7 @@ x-prismlauncher-version-number = '1.0.0'
 # пытаться искать этот мод на Modrinth и перетирать ссылку.
 
 [download]
-hash = '09ea557c7b154263694afbf8d4d606f6346ba70c360e018dc975acde6906ba22'
+hash = '7932dd9a667aa097df1e27971edae386039426c2fb727373bb2c3902f578744e'
 hash-format = 'sha256'
 mode = 'url'
 url = 'https://furigin.github.io/wanderlust_launcher/custom-mods/patpat-1.0.0.jar'
