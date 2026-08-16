@@ -1860,6 +1860,11 @@ hash = "a8e88d8dad474f36b4a83573ea383d116745da95f878a17f206a6623c43c6313"
 metafile = true
 
 [[files]]
+file = "mods/patpat.pw.toml"
+hash = "e916039b45ed5bd6727d25bdc9ade09265ede188f02c9b2e572791e607648249"
+metafile = true
+
+[[files]]
 file = "mods/paxi.pw.toml"
 hash = "7dd57e84cb57785e8e0186be20d36230d2003d09630810742e2cfa255bfec180"
 metafile = true

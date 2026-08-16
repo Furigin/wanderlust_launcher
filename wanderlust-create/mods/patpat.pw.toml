@@ -1,0 +1,17 @@
+filename = 'patpat-1.0.0.jar'
+name = 'Pat Pat'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.0'
+
+# Раздаётся из custom-mods/ этого репозитория через GitHub Pages.
+# Блока [update.*] здесь нет намеренно: packwiz update не должен
+# пытаться искать этот мод на Modrinth и перетирать ссылку.
+
+[download]
+hash = '09ea557c7b154263694afbf8d4d606f6346ba70c360e018dc975acde6906ba22'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://furigin.github.io/wanderlust_launcher/custom-mods/patpat-1.0.0.jar'
