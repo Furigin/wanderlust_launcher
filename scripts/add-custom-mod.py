@@ -89,9 +89,15 @@ def main():
     name = display_name or slug
     ver = version or "custom"
 
+    # Имя мода — человеческий текст, в нём бывают апострофы («NukaTeam's Gun
+    # Lib»). В одинарных кавычках TOML такой апостроф закрывает строку и ломает
+    # файл, поэтому имя пишем как basic string в двойных кавычках с экранированием.
+    def toml_basic(s: str) -> str:
+        return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
     meta_path.write_text(
         f"filename = '{jar.name}'\n"
-        f"name = '{name}'\n"
+        f"name = {toml_basic(name)}\n"
         f"side = '{side}'\n"
         f"x-prismlauncher-loaders = [ 'neoforge' ]\n"
         f"x-prismlauncher-mc-versions = [ '1.21.1' ]\n"

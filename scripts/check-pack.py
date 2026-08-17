@@ -185,9 +185,29 @@ def check_every_indexed_file_is_reachable() -> None:
                 )
 
 
+def check_metafiles_parse() -> None:
+    """Каждый .pw.toml должен быть валидным TOML.
+
+    Апостроф в имени мода («NukaTeam's Gun Lib») внутри одинарных кавычек
+    закрывает строку и ломает файл. packwiz refresh такой файл молча
+    пропускает, а установщик у игроков падает при разборе индекса.
+    """
+    try:
+        import tomllib
+    except ModuleNotFoundError:  # Python < 3.11
+        return
+    metas = sorted((PACK / "mods").glob("*.pw.toml"))
+    for meta in metas:
+        try:
+            tomllib.load(meta.open("rb"))
+        except Exception as e:
+            problems.append(f"{meta.name}: битый TOML ({e})")
+
+
 def main() -> int:
     check_index_against_disk()
     check_pack_against_index()
+    check_metafiles_parse()
     check_custom_mods_local()
     if "--online" in sys.argv:
         check_online()

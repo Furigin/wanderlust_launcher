@@ -1,13 +1,17 @@
-name = "[NTGL] NukaTeam's Gun Lib"
-filename = "ntgl-1.21.1-3.2.0.jar"
-side = "both"
+filename = 'ntgl-1.21.1-3.2.0-wl1.jar'
+name = "NukaTeam's Gun Lib"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.2.0'
+
+# Раздаётся из custom-mods/ этого репозитория через Cloudflare.
+# Блока [update.*] здесь нет намеренно: packwiz update не должен
+# пытаться искать этот мод на Modrinth и перетирать ссылку.
 
 [download]
-url = "https://cdn.modrinth.com/data/5m2kV8xK/versions/zd7xJnqO/ntgl-1.21.1-3.2.0.jar"
-hash-format = "sha512"
-hash = "fd164c5368be552237c327978d3c53f3e9208812438d97471382c3bb21b5e272e4cef2c466784ea8c169a6d1e979dd6e4ceb957a444f5590c3f43d7c16e48544"
-
-[update]
-[update.modrinth]
-mod-id = "5m2kV8xK"
-version = "zd7xJnqO"
+hash = 'b4efaff3abd63221d68255d1ee16d3dfd87ac15b6a0c75a3e16a7d193138e6aa'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/custom-mods/ntgl-1.21.1-3.2.0-wl1.jar'
