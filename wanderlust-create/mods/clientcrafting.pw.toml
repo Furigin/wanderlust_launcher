@@ -3,6 +3,6 @@ filename = "clientcrafting-1.21-2.1.jar"
 side = "client"
 
 [download]
-url = "https://furigin.github.io/wanderlust_launcher/custom-mods/clientcrafting-1.21-2.1.jar"
+url = "https://wanderlust-launcher.ruslanyik8.workers.dev/custom-mods/clientcrafting-1.21-2.1.jar"
 hash-format = "sha512"
 hash = "99a7a64738fe4bb1494783a414c31785364089a1cd77fba9a736cf34e85e0b0a80eacfe41f622a604bf7e8506507d69b07acab3b41240d94286460ecc1826177"

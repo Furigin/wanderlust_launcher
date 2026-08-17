@@ -1,9 +1,9 @@
 {
   "schema": 2,
   "launcher": {
-    "version": "0.2.3",
-    "url": "https://github.com/Furigin/wanderlust_launcher/releases/download/v0.2.3/Wanderlust.exe",
-    "sha256": "3fbde841d8958cf4520ff158ba235aeb7014b06907a99ba225295d5b841c823f"
+    "version": "0.2.4",
+    "url": "https://wanderlust-launcher.ruslanyik8.workers.dev/download/Wanderlust.exe",
+    "sha256": "be384d386c98b4878bbd73c358c990cf1bec6414c2d4528bc907ac97b28d3a6f"
   },
   "links": {
     "donate": "https://www.donationalerts.com/r/furigin",
@@ -52,8 +52,8 @@
       "java": {
         "major": 21,
         "windows-x64": {
-          "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_windows_hotspot_21.0.11_10.zip",
-          "sha256": "be26677aaa20b39a62edcaab4c8857a8b76673b0f45abc0b6143b142b62717e4"
+          "url": "https://cdn.azul.com/zulu/bin/zulu21.52.15-ca-jre21.0.12-win_x64.zip",
+          "sha256": "7f132f02ebcecee08de733bc8672705a3f7976488362e046118c94ffb129d5de"
         }
       },
       "server": {
@@ -62,7 +62,7 @@
       },
       "pack": {
         "title": "Wanderlust Create",
-        "packwiz_url": "https://furigin.github.io/wanderlust_launcher/wanderlust-create/pack.toml"
+        "packwiz_url": "https://wanderlust-launcher.ruslanyik8.workers.dev/wanderlust-create/pack.toml"
       }
     },
     {
@@ -81,8 +81,8 @@
       "java": {
         "major": 25,
         "windows-x64": {
-          "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_windows_hotspot_25.0.3_9.zip",
-          "sha256": "a183e7280220ad5f6fe94ecbf025a5f10fc5797a0b18c600ed8f813c8158c530"
+          "url": "https://cdn.azul.com/zulu/bin/zulu25.36.15-ca-jre25.0.4-win_x64.zip",
+          "sha256": "db550b4ebb8bba5284c25d1e882e3a01cbea9cba4759742f9803ca5d389ff29a"
         }
       },
       "server": {
@@ -91,7 +91,7 @@
       },
       "pack": {
         "title": "Wanderlust Stray Souls",
-        "packwiz_url": "https://furigin.github.io/wanderlust_launcher/stray-souls/pack.toml"
+        "packwiz_url": "https://wanderlust-launcher.ruslanyik8.workers.dev/stray-souls/pack.toml"
       }
     }
   ]

@@ -11,6 +11,6 @@ default = false
 description = "Дальняя прорисовка мира (LOD). Красиво, но грузит видеокарту и может давать графические артефакты. Включайте, только если компьютер мощный."
 
 [download]
-url = "https://furigin.github.io/wanderlust_launcher/custom-mods/voxy-0.2.15-NeoForge-1.21.1.jar"
+url = "https://wanderlust-launcher.ruslanyik8.workers.dev/custom-mods/voxy-0.2.15-NeoForge-1.21.1.jar"
 hash-format = "sha512"
 hash = "821b94ab26033b42d26c200a24f9e66e300fa60d5f501c18bc4c4b89c6e5456ab1edb00d357b28650b2f9fa2ea8dd01bb9bfaebf98e3f8161259df81cdf33caa"

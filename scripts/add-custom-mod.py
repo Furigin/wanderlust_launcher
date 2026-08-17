@@ -5,16 +5,16 @@
     python scripts/add-custom-mod.py путь/к/моду.jar [both|client|server]
 
 Что делает:
-  1. копирует jar в custom-mods/ (оттуда его раздаёт GitHub Pages);
+  1. копирует jar в custom-mods/ (оттуда его раздаёт Cloudflare);
   2. считает sha256;
-  3. пишет wanderlust-create/mods/<имя>.pw.toml со ссылкой на Pages;
+  3. пишет wanderlust-create/mods/<имя>.pw.toml со ссылкой на Cloudflare;
   4. обновляет index.toml и pack.toml (packwiz refresh).
 
 Дальше остаётся закоммитить и запушить — лаунчер игроков подтянет мод сам.
 
 Почему не `packwiz url add`: та команда скачивает файл по ссылке, чтобы
 посчитать хеш, то есть jar должен УЖЕ лежать в интернете. Получается
-двухшаговый порядок: сначала запушить, дождаться деплоя Pages, потом
+двухшаговый порядок: сначала запушить, дождаться деплоя, потом
 добавлять в пак. Здесь хеш считается локально, поэтому шаг один.
 """
 
@@ -31,7 +31,7 @@ REPO = Path(__file__).resolve().parent.parent
 CUSTOM_MODS = REPO / "custom-mods"
 PACK = REPO / "wanderlust-create"
 MODS_META = PACK / "mods"
-BASE_URL = "https://furigin.github.io/wanderlust_launcher/custom-mods/"
+BASE_URL = "https://wanderlust-launcher.ruslanyik8.workers.dev/custom-mods/"
 PACKWIZ = Path.home() / "tools" / "packwiz.exe"
 
 SIDES = ("both", "client", "server")
