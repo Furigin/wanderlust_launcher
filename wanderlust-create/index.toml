@@ -1376,7 +1376,7 @@ metafile = true
 
 [[files]]
 file = "mods/clientcrafting.pw.toml"
-hash = "56f3078bc455b554acbf3fc462b446d81b29fcb78bfd56c07c43c721d71dc3ed"
+hash = "e299e760e2d6875a0e4a38ed6cea7d1fb2aacb8bc6445a8695eea65273dfec99"
 metafile = true
 
 [[files]]
@@ -1571,7 +1571,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "ac4150172e171f0ecce0eedcb085f1e7d219e7878912774865eac8206afa8179"
+hash = "18ff24aa3ba63ace205f8664cc8fbc5d7ec05ece1f4562c7b842e0c1ba273be5"
 metafile = true
 
 [[files]]
@@ -1861,7 +1861,7 @@ metafile = true
 
 [[files]]
 file = "mods/patpat.pw.toml"
-hash = "23608e9f94d48f3fa6a79f99d926902b587f10bc911e0c7dd900d96fb99637d4"
+hash = "e573f4d8d2e42c6fee422224dd597195ff7dc36cbe3ade8ed1f816e7ef46bf6c"
 metafile = true
 
 [[files]]
@@ -1891,7 +1891,7 @@ metafile = true
 
 [[files]]
 file = "mods/psychedelicraft.pw.toml"
-hash = "7ed0a6b2f3600afc7ac9ca31caecd0225d500f2bdfef9fa8555f3fb48a764474"
+hash = "ebdaa81828da5b7138d41303e31471048417980311162f0eecddb5a22044c486"
 metafile = true
 
 [[files]]
@@ -1961,7 +1961,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable-xaero-bridge.pw.toml"
-hash = "1438d4565b1a1e2a27e9578aa08a31e432f71c17d5d34600e7d55082f703aa1a"
+hash = "fc01d70dd205c45b9440abb0b05e977ebc95e90d8699e7c699b985c19573046a"
 metafile = true
 
 [[files]]
@@ -2086,7 +2086,7 @@ metafile = true
 
 [[files]]
 file = "mods/voxy.pw.toml"
-hash = "30975c214e28482dbeabcb96a65f4a0fdda78e36229b0c9d56c78baa8ae8a935"
+hash = "0b453eacd6c6ae071ef490e2ca8cdb5c88b16150f8fe608fb38fcb756cad6767"
 metafile = true
 
 [[files]]
@@ -2096,7 +2096,7 @@ metafile = true
 
 [[files]]
 file = "mods/wlrestart.pw.toml"
-hash = "96765d05de90639b357fbc3377c68b570b67bc51a39e7379826c7c5bda1bcbb9"
+hash = "8b4976e446abce062c489f041b343398fa233b4325d39e77d973e34f8e9bd015"
 metafile = true
 
 [[files]]
