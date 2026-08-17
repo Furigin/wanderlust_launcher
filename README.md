@@ -59,3 +59,23 @@ https://furigin.github.io/wanderlust_launcher/custom-mods/<имя файла>,
 Обновление такого мода: собрать новый jar и прогнать скрипт заново — он
 пересчитает хеш и перепишет запись. Если версия в имени файла изменилась,
 старый jar из custom-mods/ удалить вручную.
+
+ПРОВЕРКА ПАКА
+-------------
+Если правил .pw.toml руками (мимо add-custom-mod.py), обязательно сделай
+`packwiz refresh` в папке wanderlust-create — packwiz не пересчитывает индекс
+сам, и без этого у игроков установка падает с «Invalid mod file hash».
+
+Проверить, что всё сходится:
+
+  python scripts/check-pack.py            # локально
+  python scripts/check-pack.py --online   # ещё и то, что реально раздаётся
+
+ОБНОВЛЕНИЕ ЛАУНЧЕРА
+-------------------
+  python scripts/release-launcher.py            # версия +1
+  python scripts/release-launcher.py 0.3.0      # конкретная
+
+Скрипт поднимает версию, гоняет тесты, собирает exe, кладёт его в download/,
+прописывает версию и sha256 в manifest.json, коммитит и пушит. Через минуту
+Cloudflare разложит файлы, и лаунчеры обновятся сами при следующем запуске.
