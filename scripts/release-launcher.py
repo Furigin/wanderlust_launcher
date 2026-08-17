@@ -34,7 +34,7 @@ LAUNCHER = Path(r"C:\Users\rusla\Desktop\laincher")
 TAURI_CONF = LAUNCHER / "src-tauri" / "tauri.conf.json"
 CARGO_TOML = LAUNCHER / "src-tauri" / "Cargo.toml"
 BUILT_EXE = LAUNCHER / "src-tauri" / "target" / "release" / "app.exe"
-DEST_EXE = REPO / "download" / "Wanderlust.exe"
+DOWNLOAD_DIR = REPO / "download"
 MANIFEST = REPO / "manifest.json"
 
 
@@ -78,8 +78,18 @@ def main():
         print(f"\nНе нашёл собранный exe: {BUILT_EXE}")
         sys.exit(1)
 
-    # 4. кладём в репозиторий
-    DEST_EXE.parent.mkdir(exist_ok=True)
+    # 4. Кладём в репозиторий под именем с версией.
+    #
+    # Почему не постоянное «Wanderlust.exe»: файлы попадают на раздачу не
+    # одновременно, и манифест успевает обновиться раньше самого exe. В это
+    # окно лаунчер видит новую версию, качает по ссылке ещё старый файл и
+    # ловит несовпадение хеша. С именем по версии такого не бывает: ссылка
+    # либо ещё не отвечает (обновление отложится до следующего запуска),
+    # либо отдаёт ровно тот файл, от которого посчитан хеш.
+    DOWNLOAD_DIR.mkdir(exist_ok=True)
+    for old in DOWNLOAD_DIR.glob("Wanderlust*.exe"):
+        old.unlink()
+    DEST_EXE = DOWNLOAD_DIR / f"Wanderlust-{new_version}.exe"
     shutil.copy2(BUILT_EXE, DEST_EXE)
 
     # 5. манифест: версия и хеш. Хеш считаем от того файла, который реально
@@ -88,6 +98,9 @@ def main():
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     manifest["launcher"]["version"] = new_version
     manifest["launcher"]["sha256"] = digest
+    manifest["launcher"]["url"] = (
+        f"https://wanderlust-launcher.ruslanyik8.workers.dev/download/{DEST_EXE.name}"
+    )
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     size_mb = DEST_EXE.stat().st_size / 1048576
