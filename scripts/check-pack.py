@@ -24,6 +24,7 @@ add-custom-mod.py и забыть `packwiz refresh` — и у игроков у�
 import hashlib
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -50,7 +51,7 @@ def fetch(url: str) -> bytes | None:
     # и проверка ложно ругалась бы на живую раздачу.
     req = urllib.request.Request(url, headers={"User-Agent": "wanderlust-check/1.0"})
     try:
-        with urllib.request.urlopen(req, timeout=30) as r:
+        with urllib.request.urlopen(req, timeout=120) as r:
             return r.read()
     except Exception as e:
         problems.append(f"не открывается {url}: {e}")
@@ -166,18 +167,27 @@ def check_every_indexed_file_is_reachable() -> None:
 
     def head(rel: str) -> tuple[str, int]:
         url = f"{HOST}/wanderlust-create/" + urllib.parse.quote(rel)
-        req = urllib.request.Request(
-            url, method="HEAD", headers={"User-Agent": "wanderlust-check/1.0"}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=20) as r:
-                return rel, r.status
-        except urllib.error.HTTPError as e:
-            return rel, e.code
-        except Exception:
-            return rel, 0
+        # Один повтор: при большом числе параллельных запросов Cloudflare
+        # иногда рвёт соединение (код 0), и без повтора проверка ложно
+        # ругалась бы на живые файлы.
+        for attempt in range(2):
+            req = urllib.request.Request(
+                url, method="HEAD", headers={"User-Agent": "wanderlust-check/1.0"}
+            )
+            try:
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    return rel, r.status
+            except urllib.error.HTTPError as e:
+                return rel, e.code  # реальный HTTP-код (404 и т.п.) — не транзиент
+            except Exception:
+                if attempt == 0:
+                    time.sleep(1)
+                    continue
+                return rel, 0
+        return rel, 0
 
-    with ThreadPoolExecutor(max_workers=16) as pool:
+    # 8 потоков вместо 16: Cloudflare спокойнее, ложных обрывов почти нет.
+    with ThreadPoolExecutor(max_workers=8) as pool:
         for rel, code in pool.map(head, files):
             if code != 200:
                 problems.append(
