@@ -1,0 +1,10 @@
+# Cloudflare раздаёт этот репозиторий как файлы. Здесь — что НЕ отдавать.
+# Главное: .git (там pack-файл >25 МБ, из-за него падала сборка).
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+mod-src
+scripts
+player-stats.py
+README.md
