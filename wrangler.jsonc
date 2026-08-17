@@ -1,0 +1,15 @@
+{
+  // Раздаём репозиторий как статические файлы через Cloudflare (Worker с assets).
+  // Нужно, чтобы лаунчер российских игроков брал манифест/пак/моды с Cloudflare,
+  // а не с github.io, который режет РКН. Cloudflare доходит — по этой же сети
+  // качаются моды с Modrinth.
+  //
+  // Без блока main это Worker "только для файлов": скрипта нет, отдаётся
+  // содержимое каталога как есть. /manifest.json -> ./manifest.json и т.д.
+  "name": "wanderlust-launcher",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "none"
+  }
+}
