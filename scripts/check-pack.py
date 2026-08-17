@@ -10,8 +10,8 @@
   2. pack.toml против index.toml — хеш индекса;
   3. кастом-моды: файл из custom-mods/ существует, и его sha256 совпадает
      с тем, что записан в .pw.toml;
-  4. с --online: то же самое, но файлы берутся с раздачи, плюс проверяется,
-     что каждая ссылка вообще отвечает.
+  4. с --online: то же самое на живой раздаче, плюс каждый файл из индекса
+     проверяется на доступность — установщик роняет установку на первом 404.
 
 Зачем: packwiz не пересчитывает индекс сам. Стоит поправить .pw.toml мимо
 add-custom-mod.py и забыть `packwiz refresh` — и у игроков установка падает
@@ -24,7 +24,10 @@ add-custom-mod.py и забыть `packwiz refresh` — и у игроков у�
 import hashlib
 import re
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -144,6 +147,43 @@ def check_online() -> None:
         if digest_bytes(data, algo) != expected:
             problems.append(f"{name}: файл на раздаче не совпадает с хешем в .pw.toml")
 
+    check_every_indexed_file_is_reachable()
+
+
+def check_every_indexed_file_is_reachable() -> None:
+    """Каждый файл из index.toml должен отдаваться раздачей.
+
+    Установщик обрывается на первом же 404 — не пропускает файл, а роняет
+    установку целиком, и игрок не может зайти. Ровно так .assetsignore
+    выкинул из раздачи config/crash_assistant/scripts/* и README внутри
+    конфигов: локально всё было на месте, а у игроков установка падала.
+
+    Ходим HEAD-запросами и параллельно — иначе 492 файла проверялись бы минуты.
+    """
+    idx = (PACK / "index.toml").read_text(encoding="utf-8")
+    files = re.findall(r'file = "([^"]+)"', idx)
+    print(f"проверяю доступность {len(files)} файлов индекса…")
+
+    def head(rel: str) -> tuple[str, int]:
+        url = f"{HOST}/wanderlust-create/" + urllib.parse.quote(rel)
+        req = urllib.request.Request(
+            url, method="HEAD", headers={"User-Agent": "wanderlust-check/1.0"}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return rel, r.status
+        except urllib.error.HTTPError as e:
+            return rel, e.code
+        except Exception:
+            return rel, 0
+
+    with ThreadPoolExecutor(max_workers=16) as pool:
+        for rel, code in pool.map(head, files):
+            if code != 200:
+                problems.append(
+                    f"не отдаётся: {rel} (код {code}) — установка у игроков оборвётся здесь"
+                )
+
 
 def main() -> int:
     check_index_against_disk()
@@ -163,5 +203,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    import urllib.parse  # noqa: E402  (нужен только внутри проверок)
     sys.exit(main())

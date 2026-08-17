@@ -98,7 +98,7 @@ def main():
         f"x-prismlauncher-release-type = 'release'\n"
         f"x-prismlauncher-version-number = '{ver}'\n"
         f"\n"
-        f"# Раздаётся из custom-mods/ этого репозитория через GitHub Pages.\n"
+        f"# Раздаётся из custom-mods/ этого репозитория через Cloudflare.\n"
         f"# Блока [update.*] здесь нет намеренно: packwiz update не должен\n"
         f"# пытаться искать этот мод на Modrinth и перетирать ссылку.\n"
         f"\n"

@@ -107,7 +107,12 @@ def main():
     print(f"\nexe: {size_mb:.1f} МБ")
     print(f"sha256: {digest}")
 
-    # 6. публикация
+    # 6. Пак едет игрокам этим же пушем, поэтому проверяем и его. Битый
+    #    индекс роняет установку у всех сразу («Invalid mod file hash»), и
+    #    заметно это становится только когда игрок уже не может зайти.
+    run([sys.executable, str(REPO / "scripts" / "check-pack.py")], REPO, "проверка пака")
+
+    # 7. публикация
     run(["git", "add", "-A"], REPO, "git add")
     run(["git", "commit", "-m", f"Лаунчер {new_version}"], REPO, "git commit")
     run(["git", "push", "origin", "main"], REPO, "git push")
