@@ -1,10 +1,14 @@
 # Cloudflare раздаёт этот репозиторий как файлы. Здесь — что НЕ отдавать.
-# Главное: .git (там pack-файл >25 МБ, из-за него падала сборка).
-.git
-.gitignore
-.assetsignore
-wrangler.jsonc
-mod-src
-scripts
-player-stats.py
-README.md
+#
+# Ведущий слеш обязателен: правила без него матчат путь на ЛЮБОЙ глубине.
+# Без него "scripts" выкидывал ещё и config/crash_assistant/scripts/, а
+# "README.md" — README внутри конфигов модов. Эти файлы есть в index.toml,
+# поэтому установка у игроков падала целиком с 404, а не просто теряла их.
+/.git
+/.gitignore
+/.assetsignore
+/wrangler.jsonc
+/mod-src
+/scripts
+/player-stats.py
+/README.md
