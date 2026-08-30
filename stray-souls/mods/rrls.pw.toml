@@ -1,0 +1,23 @@
+filename = 'rrls-5.2.8+mc.26.2.jar'
+name = "Remove Reloading Screen"
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '5.2.8+mc.26.2'
+
+# Раздаётся из custom-mods/ этого репозитория через Cloudflare.
+# Блока [update.*] здесь нет намеренно: packwiz update не должен
+# пытаться искать этот мод на Modrinth и перетирать ссылку.
+
+[option]
+optional = true
+default = false
+description = "Ресурспаки грузятся в фоне — во время загрузки можно продолжать играть, а не смотреть в экран ожидания."
+
+
+[download]
+hash = '7ea7aa83fa6b3bd7be0f520092e7daeaaeb6c366e33524fbb53eeea820622e62'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/custom-mods/rrls-5.2.8%2Bmc.26.2.jar'

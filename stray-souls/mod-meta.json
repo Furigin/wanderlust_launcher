@@ -1,0 +1,51 @@
+{
+  "pack": "stray-souls",
+  "mods": [
+    {
+      "id": "mods/betterclouds.pw.toml",
+      "slug": "betterclouds",
+      "mod_id": "betterclouds",
+      "name": "Better Clouds",
+      "summary": "Объёмные облака вместо плоских ванильных. Заметно красивее небо, но нагружает видеокарту.",
+      "description": "Beautiful clouds in touch with the vanilla style.",
+      "icon": "mod-icons/betterclouds.png",
+      "default": false,
+      "size_bytes": 1432123,
+      "requires": [
+        "mods/yet_another_config_lib_v3.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/rrls.pw.toml",
+      "slug": "rrls",
+      "mod_id": "rrls",
+      "name": "Remove Reloading Screen",
+      "summary": "Ресурспаки грузятся в фоне — во время загрузки можно продолжать играть, а не смотреть в экран ожидания.",
+      "description": "Makes resource packs load in the background, allowing you to do other things while waiting!",
+      "icon": "mod-icons/rrls.png",
+      "default": false,
+      "size_bytes": 119145,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/yet_another_config_lib_v3.pw.toml",
+      "slug": "yet_another_config_lib_v3",
+      "mod_id": "yet_another_config_lib_v3",
+      "name": "YetAnotherConfigLib",
+      "summary": "Библиотека настроек. Ставится автоматически вместе с модами, которым она нужна.",
+      "description": "YetAnotherConfigLib (yacl) is just that. A builder-based configuration library for Minecraft.",
+      "icon": "mod-icons/yet_another_config_lib_v3.png",
+      "default": false,
+      "size_bytes": 1116280,
+      "requires": [],
+      "needed_by": [
+        "mods/betterclouds.pw.toml"
+      ],
+      "hidden": true
+    }
+  ]
+}

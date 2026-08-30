@@ -2,8 +2,9 @@
 """
 Проверяет, что пак собран верно и его реально можно установить.
 
-    python scripts/check-pack.py            # локально
-    python scripts/check-pack.py --online   # ещё и то, что раздаётся
+    python scripts/check-pack.py                          # локально
+    python scripts/check-pack.py --online                 # ещё и то, что раздаётся
+    python scripts/check-pack.py --pack stray-souls       # другая сборка
 
 Что сверяется:
   1. index.toml против файлов на диске — хеш каждой записи;
@@ -32,8 +33,15 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-PACK = REPO / "wanderlust-create"
 HOST = "https://wanderlust-launcher.ruslanyik8.workers.dev"
+
+# Какой пак проверяем: по умолчанию боевой, иначе --pack ИМЯ.
+PACK_NAME = "wanderlust-create"
+if "--pack" in sys.argv:
+    _i = sys.argv.index("--pack")
+    if _i + 1 < len(sys.argv):
+        PACK_NAME = sys.argv[_i + 1]
+PACK = REPO / PACK_NAME
 
 problems: list[str] = []
 
@@ -62,7 +70,7 @@ def check_index_against_disk() -> None:
     idx_path = PACK / "index.toml"
     idx = idx_path.read_text(encoding="utf-8")
     entries = re.findall(r'file = "([^"]+)"\nhash = "([0-9a-f]+)"', idx)
-    print(f"index.toml: {len(entries)} записей")
+    print(f"пак {PACK_NAME} — index.toml: {len(entries)} записей")
 
     for rel, expected in entries:
         f = PACK / rel
@@ -131,13 +139,13 @@ def check_custom_mods_local() -> None:
 
 def check_online() -> None:
     print("\nпроверяю раздачу…")
-    pack_remote = fetch(f"{HOST}/wanderlust-create/pack.toml")
+    pack_remote = fetch(f"{HOST}/{PACK_NAME}/pack.toml")
     if pack_remote is None:
         return
     if pack_remote != (PACK / "pack.toml").read_bytes():
         problems.append("на раздаче лежит другой pack.toml — деплой ещё идёт или не прошёл")
 
-    idx_remote = fetch(f"{HOST}/wanderlust-create/index.toml")
+    idx_remote = fetch(f"{HOST}/{PACK_NAME}/index.toml")
     if idx_remote is not None and idx_remote != (PACK / "index.toml").read_bytes():
         problems.append("на раздаче лежит другой index.toml — деплой ещё идёт или не прошёл")
 
@@ -166,7 +174,7 @@ def check_every_indexed_file_is_reachable() -> None:
     print(f"проверяю доступность {len(files)} файлов индекса…")
 
     def head(rel: str) -> tuple[str, int]:
-        url = f"{HOST}/wanderlust-create/" + urllib.parse.quote(rel)
+        url = f"{HOST}/{PACK_NAME}/" + urllib.parse.quote(rel)
         # Один повтор: при большом числе параллельных запросов Cloudflare
         # иногда рвёт соединение (код 0), и без повтора проверка ложно
         # ругалась бы на живые файлы.

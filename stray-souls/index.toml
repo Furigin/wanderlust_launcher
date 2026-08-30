@@ -1,0 +1,16 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/betterclouds.pw.toml"
+hash = "b0a9bca089f2a7d9295baafd1f5f124de5b0f91b07f0782eb0616dc09f1ba8c6"
+metafile = true
+
+[[files]]
+file = "mods/rrls.pw.toml"
+hash = "89d2bd1d48e485fc64c739d005e6aba7b9607df4a83d6de75ece33c4fa7c2381"
+metafile = true
+
+[[files]]
+file = "mods/yet_another_config_lib_v3.pw.toml"
+hash = "1190254bf17f4ed7ab2086413fa660e36735554cef7d962fa15c678531dc4a1e"
+metafile = true
