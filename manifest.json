@@ -1,9 +1,9 @@
 {
   "schema": 2,
   "launcher": {
-    "version": "0.2.8",
-    "url": "https://wanderlust-launcher.ruslanyik8.workers.dev/download/Wanderlust-0.2.8.exe",
-    "sha256": "588f77496074ae3a2c2b75736c89a580b1bbbda8fe3bc2f65555976554a5eb14"
+    "version": "0.2.9",
+    "url": "https://wanderlust-launcher.ruslanyik8.workers.dev/download/Wanderlust-0.2.9.exe",
+    "sha256": "a5f7721299457150b6df52c7517bfe5fc2649256df7646a4cae3538af579064d"
   },
   "links": {
     "donate": "https://www.donationalerts.com/r/furigin",
