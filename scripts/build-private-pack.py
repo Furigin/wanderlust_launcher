@@ -50,6 +50,16 @@ BIG_FILES_FROM_MODRINTH = {
     ),
 }
 
+# Моды, которые лежат в базовой папке, но раздавать их всем не нужно —
+# уезжают в список «на выбор». Iris (шейдеры) и Sodium: шейдеры хотят не все,
+# а на слабых машинах они только вредят. Sodium уходит сюда же не как отдельный
+# пункт списка, а как обязательная зависимость Iris — он объявлен у Iris в
+# neoforge.mods.toml с type = "required", витрина подхватит связь сама.
+OPTIONAL_FROM_BASE = {
+    "iris-neoforge-1.11.2+mc26.2.jar",
+    "sodium-neoforge-0.9.1+mc26.2.jar",
+}
+
 CLOUDFLARE_FILE_LIMIT = 25 * 1024 * 1024
 
 PACK_ID = "stray-souls"
@@ -102,6 +112,8 @@ DESCRIPTIONS = {
     "visuality": "Больше визуальных мелочей у мобов и блоков — капли, искры, дымка.",
     "wakes": "От лодок и плавающих существ расходятся волны по воде.",
     "blur": "Размывает фон за открытым меню — интерфейс читается легче.",
+    "iris": "Поддержка шейдеров: воду, тени и освещение можно сделать киношными. Требует Sodium — он включится сам. На слабой видеокарте лучше не включать.",
+    "sodium": "Переписанный движок отрисовки: заметно больше FPS и меньше просадок.",
 }
 
 # Библиотеки: сами по себе игроку не нужны, в списке не показываются.
@@ -155,7 +167,7 @@ def collect():
             print(f"  пропускаю {jar.name}: modId {mid} уже есть в {seen[mid]}")
             continue
         seen[mid or jar.name] = jar.name
-        base.append(jar)
+        (extra if jar.name in OPTIONAL_FROM_BASE else base).append(jar)
 
     for jar in sorted(EXTRA_MODS.rglob("*.jar")):
         if jar.name in SKIP:

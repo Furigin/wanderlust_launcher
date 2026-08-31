@@ -6,6 +6,11 @@ x-prismlauncher-mc-versions = [ '26.2' ]
 x-prismlauncher-release-type = 'release'
 x-prismlauncher-version-number = '1.11.2+mc26.2'
 
+[option]
+optional = true
+default = false
+description = "Поддержка шейдеров: воду, тени и освещение можно сделать киношными. Требует Sodium — он включится сам. На слабой видеокарте лучше не включать."
+
 [download]
 hash = 'd30e423e9bc052301a8f98c8043e2af27ca9bda1e11538e550074b4da5c8d69e'
 hash-format = 'sha256'

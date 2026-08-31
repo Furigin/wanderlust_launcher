@@ -114,7 +114,7 @@
       "name": "ChatAnimation",
       "summary": "Сообщения в чате появляются плавно, а не рывком.",
       "description": "Adds animations to the chat.",
-      "icon": null,
+      "icon": "mod-icons/chatanimation.png",
       "default": false,
       "size_bytes": 1031829,
       "requires": [],
@@ -283,6 +283,22 @@
       "size_bytes": 1415038,
       "requires": [
         "mods/libipn.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/iris.pw.toml",
+      "slug": "iris",
+      "mod_id": "iris",
+      "name": "Iris",
+      "summary": "Поддержка шейдеров: воду, тени и освещение можно сделать киношными. Требует Sodium — он включится сам. На слабой видеокарте лучше не включать.",
+      "description": "Iris is a modern shaders mod for Minecraft intended to be compatible with existing OptiFine shader packs.",
+      "icon": "mod-icons/iris.png",
+      "default": false,
+      "size_bytes": 2751198,
+      "requires": [
+        "mods/sodium.pw.toml"
       ],
       "needed_by": [],
       "hidden": false
@@ -493,6 +509,22 @@
       "requires": [],
       "needed_by": [],
       "hidden": false
+    },
+    {
+      "id": "mods/sodium.pw.toml",
+      "slug": "sodium",
+      "mod_id": "sodium",
+      "name": "Sodium",
+      "summary": "Переписанный движок отрисовки: заметно больше FPS и меньше просадок.",
+      "description": "Sodium is a powerful rendering engine for Minecraft which improves frame rates and reduces lag spikes.",
+      "icon": "mod-icons/sodium.png",
+      "default": false,
+      "size_bytes": 1128681,
+      "requires": [],
+      "needed_by": [
+        "mods/iris.pw.toml"
+      ],
+      "hidden": true
     },
     {
       "id": "mods/sound_physics_remastered.pw.toml",

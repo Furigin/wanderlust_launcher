@@ -33,6 +33,10 @@ file = "mod-icons/chat_heads.png"
 hash = "08e8b5f6aa105396fd3669d25fcbf5cb17b1294b34f053db5490ae8ad504de4c"
 
 [[files]]
+file = "mod-icons/chatanimation.png"
+hash = "eec2ba2cbcd7d9e2fa5e22b84b13b2643dce19cc6228b3e8eb282cffa5585997"
+
+[[files]]
 file = "mod-icons/clickthrough.png"
 hash = "ae0deafbc1e85efe7341db7dd03a0d393b83cb6c1a52977cd1636db141fb553c"
 
@@ -75,6 +79,10 @@ hash = "6108be7ffe72c5714757968fbdc2e4a1772b4329700b2ed8c36c41adc9a974bf"
 [[files]]
 file = "mod-icons/inventoryprofilesnext.png"
 hash = "69a470f49092afaf181948028fada3ee59ed34afb5bbc31588ca915a49acd47e"
+
+[[files]]
+file = "mod-icons/iris.png"
+hash = "31f18f0fd68f517f33318d5a35740f897bcaef5bdc4a225bddd139845664d30b"
 
 [[files]]
 file = "mod-icons/justzoom.png"
@@ -137,6 +145,10 @@ file = "mod-icons/smoothswapping.png"
 hash = "405df5bec3d191e9d953bba2836f8066754c7bd38ea981398991df37298424e4"
 
 [[files]]
+file = "mod-icons/sodium.png"
+hash = "bdda8134b19f01f44316fc71c47946a4ad85a160550d45670b08588ac1551bc0"
+
+[[files]]
 file = "mod-icons/sound_physics_remastered.png"
 hash = "6564567704a955618aaf4874c011f85d9a12ed5a4580ca76cb0de29e50ea5f0e"
 
@@ -166,7 +178,7 @@ hash = "f477ec872b81d129e1aba3c7dd3a8d4819e47ec273967daab54dda33462018c9"
 
 [[files]]
 file = "mod-meta.json"
-hash = "d140804329921558c0f49b562562efb3d48ac2a0f6bbb6a0fc6111b93bb25050"
+hash = "102cd80c027ec2560885a5be501cd9aa3a599b4df88f66ff3f0bc182c759da33"
 
 [[files]]
 file = "mods/additionalbanners.pw.toml"
@@ -375,7 +387,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "d1463e93d6ad071c730595b47625b0cbec47c45da311032ceb1e2820f47756f8"
+hash = "7e1b512a342ff5a1c4e06f9c89f9c264370d9f587b40b48afcdefffc1a23013a"
 metafile = true
 
 [[files]]
@@ -486,6 +498,11 @@ metafile = true
 [[files]]
 file = "mods/smoothswapping.pw.toml"
 hash = "8ed43f1412efc1effd83e84f5f2a68744d6e6d21351cb2227b88f65d9e939b2c"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "132c55912bdd3d8b4902478cdc1889951765e9b2662539814c5c0ae7a8dd7c21"
 metafile = true
 
 [[files]]

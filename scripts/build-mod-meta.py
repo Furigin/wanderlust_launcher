@@ -149,7 +149,10 @@ def extract_icon(jar_bytes: bytes, logo: str | None, mod_id: str | None) -> byte
     if logo:
         candidates.append(logo)
     if mod_id:
-        candidates += [f"assets/{mod_id}/icon.png", f"assets/{mod_id}/logo.png"]
+        # <modid>.png в корне — распространённый вариант у модов, которые
+        # logoFile вообще не объявляют (так лежит иконка у ChatAnimation).
+        candidates += [f"assets/{mod_id}/icon.png", f"assets/{mod_id}/logo.png",
+                       f"{mod_id}.png"]
     candidates += ["icon.png", "logo.png", "pack.png"]
 
     try:
@@ -158,6 +161,14 @@ def extract_icon(jar_bytes: bytes, logo: str | None, mod_id: str | None) -> byte
             for c in candidates:
                 if c in names:
                     return z.read(c)
+            # Часть модов указывает logoFile просто по имени, а сам файл лежит
+            # в assets/<modid>/textures/... — так делает, например, Iris.
+            # Ищем по имени файла, а не по полному пути.
+            if logo:
+                base = logo.rsplit("/", 1)[-1].lower()
+                for n in names:
+                    if n.rsplit("/", 1)[-1].lower() == base:
+                        return z.read(n)
     except Exception:
         pass
     return None
