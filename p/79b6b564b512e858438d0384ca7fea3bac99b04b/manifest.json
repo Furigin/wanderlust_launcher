@@ -30,32 +30,32 @@
   },
   "versions": [
     {
-      "id": "wanderlust-create",
-      "title": "Wanderlust Create",
-      "subtitle": "Minecraft 1.21.1",
-      "theme": "orange",
+      "id": "stray-souls",
+      "title": "Wanderlust Stray Souls",
+      "subtitle": "Minecraft 26.2 · закрытая",
+      "theme": "purple",
       "status": "ready",
       "news": "",
       "minecraft": {
-        "version": "1.21.1"
+        "version": "26.2"
       },
       "neoforge": {
-        "version": "21.1.243"
+        "version": "26.2.0.75"
       },
       "java": {
-        "major": 21,
+        "major": 25,
         "windows-x64": {
-          "url": "https://cdn.azul.com/zulu/bin/zulu21.52.15-ca-jre21.0.12-win_x64.zip",
-          "sha256": "7f132f02ebcecee08de733bc8672705a3f7976488362e046118c94ffb129d5de"
+          "url": "https://cdn.azul.com/zulu/bin/zulu25.36.15-ca-jre25.0.4-win_x64.zip",
+          "sha256": "db550b4ebb8bba5284c25d1e882e3a01cbea9cba4759742f9803ca5d389ff29a"
         }
       },
       "server": {
-        "host": "213.171.18.242",
-        "port": 30530
+        "host": "",
+        "port": 0
       },
       "pack": {
-        "title": "Wanderlust Create",
-        "packwiz_url": "https://wanderlust-launcher.ruslanyik8.workers.dev/wanderlust-create/pack.toml"
+        "title": "Stray Souls",
+        "packwiz_url": "https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/stray-souls/pack.toml"
       }
     }
   ]

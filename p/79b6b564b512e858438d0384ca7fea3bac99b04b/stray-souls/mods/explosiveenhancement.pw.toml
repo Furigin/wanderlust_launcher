@@ -1,0 +1,18 @@
+filename = 'explosiveenhancement-5.0.0.jar'
+name = "Explosive Enhancement"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '5.0.0'
+
+[option]
+optional = true
+default = false
+description = "Взрывы выглядят объёмнее — вместо ванильного облачка нормальная вспышка и дым."
+
+[download]
+hash = 'c6f7d08cf83190d07e002b0adcfef7d4b507b50bb39e538c147bbba7bc97c10f'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/explosiveenhancement-5.0.0.jar'

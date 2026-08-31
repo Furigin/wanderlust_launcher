@@ -1,0 +1,590 @@
+{
+  "pack": "p/79b6b564b512e858438d0384ca7fea3bac99b04b/stray-souls",
+  "mods": [
+    {
+      "id": "mods/ambientsounds.pw.toml",
+      "slug": "ambientsounds",
+      "mod_id": "ambientsounds",
+      "name": "AmbientSounds",
+      "summary": "Живые звуки окружения: лес шумит, в пещерах капает, у воды слышен плеск.",
+      "description": "Expands minecraft's ambient sounds.",
+      "icon": "mod-icons/ambientsounds.png",
+      "default": false,
+      "size_bytes": 84813650,
+      "requires": [
+        "mods/creativecore.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/appleskin.pw.toml",
+      "slug": "appleskin",
+      "mod_id": "appleskin",
+      "name": "AppleSkin",
+      "summary": "Показывает, сколько сытости и насыщения даёт еда, прямо в подсказке предмета.",
+      "description": "Adds various food-related HUD improvements",
+      "icon": "mod-icons/appleskin.png",
+      "default": false,
+      "size_bytes": 80690,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/baguettelib.pw.toml",
+      "slug": "baguettelib",
+      "mod_id": "baguettelib",
+      "name": "BaguetteLib",
+      "summary": "",
+      "description": "A library mod about adding more events into the modding API (and more stuff)",
+      "icon": "mod-icons/baguettelib.png",
+      "default": false,
+      "size_bytes": 108132,
+      "requires": [],
+      "needed_by": [
+        "mods/wakes.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/betteradvancements.pw.toml",
+      "slug": "betteradvancements",
+      "mod_id": "betteradvancements",
+      "name": "Better Advancements",
+      "summary": "Удобный экран достижений: нормальный поиск, прокрутка и понятное дерево.",
+      "description": "Improvements to the advancements screen.",
+      "icon": "mod-icons/betteradvancements.png",
+      "default": false,
+      "size_bytes": 103358,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/betterclouds.pw.toml",
+      "slug": "betterclouds",
+      "mod_id": "betterclouds",
+      "name": "Better Clouds",
+      "summary": "Объёмные облака вместо плоских ванильных. Небо заметно красивее, но нагружает видеокарту.",
+      "description": "Beautiful clouds in touch with the vanilla style.",
+      "icon": "mod-icons/betterclouds.png",
+      "default": false,
+      "size_bytes": 1432123,
+      "requires": [
+        "mods/yet_another_config_lib_v3.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/blur.pw.toml",
+      "slug": "blur",
+      "mod_id": "blur",
+      "name": "Blur+",
+      "summary": "Размывает фон за открытым меню — интерфейс читается легче.",
+      "description": "Various enhancements for the blur effect behind Minecraft GUIs",
+      "icon": "mod-icons/blur.png",
+      "default": false,
+      "size_bytes": 156228,
+      "requires": [
+        "mods/midnightlib.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/chat_heads.pw.toml",
+      "slug": "chat_heads",
+      "mod_id": "chat_heads",
+      "name": "Chat Heads",
+      "summary": "Рядом с сообщением в чате рисуется голова того, кто его написал.",
+      "description": "See who are you chatting with!\nThis mod adds player heads next to their chat messages.",
+      "icon": "mod-icons/chat_heads.png",
+      "default": false,
+      "size_bytes": 97481,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/chatanimation.pw.toml",
+      "slug": "chatanimation",
+      "mod_id": "chatanimation",
+      "name": "ChatAnimation",
+      "summary": "Сообщения в чате появляются плавно, а не рывком.",
+      "description": "Adds animations to the chat.",
+      "icon": null,
+      "default": false,
+      "size_bytes": 1031829,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/clickthrough.pw.toml",
+      "slug": "clickthrough",
+      "mod_id": "clickthrough",
+      "name": "ClickThrough Plus",
+      "summary": "Позволяет кликать сквозь таблички и рамки — не мешают взаимодействовать с блоками за ними.",
+      "description": "Click through Signs and Item Frames to Chests and other containers - a port of ClickThrough to Architectury.",
+      "icon": "mod-icons/clickthrough.png",
+      "default": false,
+      "size_bytes": 328534,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/clientsort.pw.toml",
+      "slug": "clientsort",
+      "mod_id": "clientsort",
+      "name": "ClientSort",
+      "summary": "Сортировка инвентаря и сундуков одной кнопкой.",
+      "description": "Versatile and easy inventory sorting.",
+      "icon": "mod-icons/clientsort.png",
+      "default": false,
+      "size_bytes": 350832,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/creativecore.pw.toml",
+      "slug": "creativecore",
+      "mod_id": "creativecore",
+      "name": "CreativeCore",
+      "summary": "",
+      "description": "A simple but powerful coremod.",
+      "icon": "mod-icons/creativecore.png",
+      "default": false,
+      "size_bytes": 1345747,
+      "requires": [],
+      "needed_by": [
+        "mods/ambientsounds.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/durabilitytooltip.pw.toml",
+      "slug": "durabilitytooltip",
+      "mod_id": "durabilitytooltip",
+      "name": "Durability Tooltip",
+      "summary": "Полоска прочности в подсказке предмета — видно износ, не наводя мышь на иконку.",
+      "description": "Durability Tooltip shows you the durability of an item!",
+      "icon": "mod-icons/durabilitytooltip.png",
+      "default": false,
+      "size_bytes": 20048,
+      "requires": [
+        "mods/supermartijn642configlib.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/eg_particle_interactions.pw.toml",
+      "slug": "eg_particle_interactions",
+      "mod_id": "eg_particle_interactions",
+      "name": "Particle Interactions",
+      "summary": "Частицы реагируют на движение: пыль и искры разлетаются, когда проходишь рядом.",
+      "description": "A client side mod that adds particles to various interactions in the game that dont normally have particles.\n\nNew in v0.10.2\n- Ambient leaf particles now use the particle override specified for that leaf block\n- Spruce leaves now have falling needles, and azalea leaves now have appropriate falling leaf particles\n- Honey block particles are no longer bouncy\n- Fixed block placement particles sometimes clipping into the block directly above or below\n- Fixed bouncy particles taking an extra tick to bounce instead of immediately after colliding something\n- Particle collision and interaction with fluids should now be much more accurate\n- See the GitHub page for full changelog",
+      "icon": "mod-icons/eg_particle_interactions.png",
+      "default": false,
+      "size_bytes": 959095,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/elytra_physics.pw.toml",
+      "slug": "elytra_physics",
+      "mod_id": "elytra_physics",
+      "name": "Elytra physics",
+      "summary": "Более честная физика элитр: полёт ощущается тяжелее и предсказуемее.",
+      "description": "A simple mod that adds cape-like physics to the elytra when worn by the player.",
+      "icon": "mod-icons/elytra_physics.png",
+      "default": false,
+      "size_bytes": 479662,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/explosiveenhancement.pw.toml",
+      "slug": "explosiveenhancement",
+      "mod_id": "explosiveenhancement",
+      "name": "Explosive Enhancement",
+      "summary": "Взрывы выглядят объёмнее — вместо ванильного облачка нормальная вспышка и дым.",
+      "description": "Makes the explosion animation look cooler. Unofficial NeoForge Port.",
+      "icon": "mod-icons/explosiveenhancement.png",
+      "default": false,
+      "size_bytes": 115445,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/fallingleavesplus.pw.toml",
+      "slug": "fallingleavesplus",
+      "mod_id": "fallingleavesplus",
+      "name": "Falling Leaves Plus",
+      "summary": "С деревьев опадают листья. Чистая косметика, на игру не влияет.",
+      "description": "Beautiful tree-specific falling leaves with branches, acorns, cones, and more.",
+      "icon": "mod-icons/fallingleavesplus.png",
+      "default": false,
+      "size_bytes": 119592,
+      "requires": [
+        "mods/puzzleslib.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/fzzy_config.pw.toml",
+      "slug": "fzzy_config",
+      "mod_id": "fzzy_config",
+      "name": "Fzzy Config",
+      "summary": "",
+      "description": "Configuration engine with automatic GUI generation, client-server syncing, powerful validation and error handling, and much more.",
+      "icon": "mod-icons/fzzy_config.png",
+      "default": false,
+      "size_bytes": 2326995,
+      "requires": [],
+      "needed_by": [
+        "mods/subtle_effects.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/helditemtooltips.pw.toml",
+      "slug": "helditemtooltips",
+      "mod_id": "helditemtooltips",
+      "name": "Held Item Tooltips",
+      "summary": "Название предмета в руке показывается аккуратнее, с прочностью и зачарованиями.",
+      "description": "See item enchantments, potion effects, shulker box contents and much more directly above your hotbar.",
+      "icon": "mod-icons/helditemtooltips.png",
+      "default": false,
+      "size_bytes": 58684,
+      "requires": [
+        "mods/puzzleslib.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/inventoryprofilesnext.pw.toml",
+      "slug": "inventoryprofilesnext",
+      "mod_id": "inventoryprofilesnext",
+      "name": "Inventory Profiles Next",
+      "summary": "Мощная работа с инвентарём: сортировка, автоперенос, сохранение раскладок.",
+      "description": "\"Inventory Profiles Next\"",
+      "icon": "mod-icons/inventoryprofilesnext.png",
+      "default": false,
+      "size_bytes": 1415038,
+      "requires": [
+        "mods/libipn.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/justzoom.pw.toml",
+      "slug": "justzoom",
+      "mod_id": "justzoom",
+      "name": "Just Zoom",
+      "summary": "Приближение по кнопке, как в оптике. Удобно осматриваться и целиться.",
+      "description": "Zoom by pressing a hotkey and adjust the zoom factor with your mouse wheel!",
+      "icon": "mod-icons/justzoom.png",
+      "default": false,
+      "size_bytes": 65460,
+      "requires": [
+        "mods/konkrete.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/konkrete.pw.toml",
+      "slug": "konkrete",
+      "mod_id": "konkrete",
+      "name": "Konkrete",
+      "summary": "",
+      "description": "Core library for Keksuccino's mods.",
+      "icon": "mod-icons/konkrete.png",
+      "default": false,
+      "size_bytes": 580739,
+      "requires": [],
+      "needed_by": [
+        "mods/justzoom.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/lambdynlights.pw.toml",
+      "slug": "lambdynlights",
+      "mod_id": "lambdynlights",
+      "name": "LambDynamicLights",
+      "summary": "Динамическое освещение: факел, лава в руке и горящие мобы реально светят.",
+      "description": "The most feature-complete dynamic lighting mod.",
+      "icon": "mod-icons/lambdynlights.png",
+      "default": false,
+      "size_bytes": 1344044,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/libipn.pw.toml",
+      "slug": "libipn",
+      "mod_id": "libipn",
+      "name": "libIPN",
+      "summary": "",
+      "description": "\"Inventory Profiles Next Settings and GUI Library\"",
+      "icon": "mod-icons/libipn.png",
+      "default": false,
+      "size_bytes": 7705006,
+      "requires": [],
+      "needed_by": [
+        "mods/inventoryprofilesnext.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/midnightlib.pw.toml",
+      "slug": "midnightlib",
+      "mod_id": "midnightlib",
+      "name": "MidnightLib",
+      "summary": "",
+      "description": "Lightweight config library with config screens and commands.",
+      "icon": "mod-icons/midnightlib.png",
+      "default": false,
+      "size_bytes": 61026,
+      "requires": [],
+      "needed_by": [
+        "mods/blur.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/mousetweaks.pw.toml",
+      "slug": "mousetweaks",
+      "mod_id": "mousetweaks",
+      "name": "Mouse Tweaks",
+      "summary": "Перетаскивание предметов мышью в инвентаре: раскладывать стопки заметно быстрее.",
+      "description": "A mod that enhances the inventory management by adding various additional functions to the usual mouse buttons.",
+      "icon": "mod-icons/mousetweaks.png",
+      "default": false,
+      "size_bytes": 74483,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/particle_effects.pw.toml",
+      "slug": "particle_effects",
+      "mod_id": "particle_effects",
+      "name": "Particle Effects",
+      "summary": "Дополнительные частицы для обычных действий — удары, шаги, падения.",
+      "description": "Visual Fabric Mod that adds unique textured particles for every effect in vanilla Minecraft!",
+      "icon": "mod-icons/particle_effects.png",
+      "default": false,
+      "size_bytes": 309654,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/punchy.pw.toml",
+      "slug": "punchy",
+      "mod_id": "punchy",
+      "name": "Punchy",
+      "summary": "Отдача и тряска камеры при ударах: бой чувствуется весомее.",
+      "description": "First-person animations. Special thanks to Godku for the support.",
+      "icon": "mod-icons/punchy.png",
+      "default": false,
+      "size_bytes": 2048989,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/puzzleslib.pw.toml",
+      "slug": "puzzleslib",
+      "mod_id": "puzzleslib",
+      "name": "Puzzles Lib",
+      "summary": "",
+      "description": "Why is it called Puzzles? That's the puzzle.",
+      "icon": "mod-icons/puzzleslib.png",
+      "default": false,
+      "size_bytes": 1072529,
+      "requires": [],
+      "needed_by": [
+        "mods/fallingleavesplus.pw.toml",
+        "mods/helditemtooltips.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/rrls.pw.toml",
+      "slug": "rrls",
+      "mod_id": "rrls",
+      "name": "Remove Reloading Screen",
+      "summary": "Ресурспаки грузятся в фоне — во время загрузки можно продолжать играть, а не смотреть в экран ожидания.",
+      "description": "Makes resource packs load in the background, allowing you to do other things while waiting!",
+      "icon": "mod-icons/rrls.png",
+      "default": false,
+      "size_bytes": 119145,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/shulkerboxtooltip.pw.toml",
+      "slug": "shulkerboxtooltip",
+      "mod_id": "shulkerboxtooltip",
+      "name": "ShulkerBoxTooltip",
+      "summary": "Показывает содержимое шалкера прямо в подсказке, не открывая его.",
+      "description": "What's in my shulker box?",
+      "icon": "mod-icons/shulkerboxtooltip.png",
+      "default": false,
+      "size_bytes": 418270,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/simplefog.pw.toml",
+      "slug": "simplefog",
+      "mod_id": "simplefog",
+      "name": "Simple Fog Control",
+      "summary": "Настройка тумана: можно убрать дымку вдалеке или наоборот сгустить.",
+      "description": "Allows simple control over water, nether and terrain fog.",
+      "icon": "mod-icons/simplefog.png",
+      "default": false,
+      "size_bytes": 34815,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/smoothgui.pw.toml",
+      "slug": "smoothgui",
+      "mod_id": "smoothgui",
+      "name": "SmoothGui",
+      "summary": "Плавные переходы и анимации в меню и интерфейсе.",
+      "description": "Adds animation to gui opening.",
+      "icon": "mod-icons/smoothgui.png",
+      "default": false,
+      "size_bytes": 727844,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/smoothswapping.pw.toml",
+      "slug": "smoothswapping",
+      "mod_id": "smoothswapping",
+      "name": "Smooth Swapping",
+      "summary": "Предметы в инвентаре перемещаются с анимацией, а не телепортируются.",
+      "description": "Moves items smoothly in inventories",
+      "icon": "mod-icons/smoothswapping.png",
+      "default": false,
+      "size_bytes": 67634,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/sound_physics_remastered.pw.toml",
+      "slug": "sound_physics_remastered",
+      "mod_id": "sound_physics_remastered",
+      "name": "Sound Physics Remastered",
+      "summary": "Звук ведёт себя как в реальности: эхо в пещерах, глухота за стеной, реверберация.",
+      "description": "Provides realistic sound attenuation, reverberation, and absorption through blocks.",
+      "icon": "mod-icons/sound_physics_remastered.png",
+      "default": false,
+      "size_bytes": 201519,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/subtle_effects.pw.toml",
+      "slug": "subtle_effects",
+      "mod_id": "subtle_effects",
+      "name": "Subtle Effects",
+      "summary": "Мелкие частицы для атмосферы: искры от огня, брызги, пыль под ногами.",
+      "description": "Adding many new subtle details through particles and a few sounds",
+      "icon": "mod-icons/subtle_effects.png",
+      "default": false,
+      "size_bytes": 3356646,
+      "requires": [
+        "mods/fzzy_config.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/supermartijn642configlib.pw.toml",
+      "slug": "supermartijn642configlib",
+      "mod_id": "supermartijn642configlib",
+      "name": "SuperMartijn642's Config Library",
+      "summary": "",
+      "description": "Config Lib makes dealing with config files just a bit easier.",
+      "icon": "mod-icons/supermartijn642configlib.png",
+      "default": false,
+      "size_bytes": 206411,
+      "requires": [],
+      "needed_by": [
+        "mods/durabilitytooltip.pw.toml"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "mods/visuality.pw.toml",
+      "slug": "visuality",
+      "mod_id": "visuality",
+      "name": "visuality-forge",
+      "summary": "Больше визуальных мелочей у мобов и блоков — капли, искры, дымка.",
+      "description": "Little visual improvements by adding a bunch of new particles.",
+      "icon": "mod-icons/visuality.png",
+      "default": false,
+      "size_bytes": 134555,
+      "requires": [],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/wakes.pw.toml",
+      "slug": "wakes",
+      "mod_id": "wakes",
+      "name": "Wakes",
+      "summary": "От лодок и плавающих существ расходятся волны по воде.",
+      "description": "Wakes aims to add simple wakes that fit the spirit of vanilla",
+      "icon": "mod-icons/wakes.png",
+      "default": false,
+      "size_bytes": 196129,
+      "requires": [
+        "mods/baguettelib.pw.toml"
+      ],
+      "needed_by": [],
+      "hidden": false
+    },
+    {
+      "id": "mods/yet_another_config_lib_v3.pw.toml",
+      "slug": "yet_another_config_lib_v3",
+      "mod_id": "yet_another_config_lib_v3",
+      "name": "YetAnotherConfigLib",
+      "summary": "",
+      "description": "YetAnotherConfigLib (yacl) is just that. A builder-based configuration library for Minecraft.",
+      "icon": "mod-icons/yet_another_config_lib_v3.png",
+      "default": false,
+      "size_bytes": 1116280,
+      "requires": [],
+      "needed_by": [
+        "mods/betterclouds.pw.toml"
+      ],
+      "hidden": true
+    }
+  ]
+}

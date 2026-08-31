@@ -1,0 +1,18 @@
+filename = 'smoothgui-neoforge-2.0.5+mc26.2.jar'
+name = "SmoothGui"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.0.5'
+
+[option]
+optional = true
+default = false
+description = "Плавные переходы и анимации в меню и интерфейсе."
+
+[download]
+hash = '83c27475b8ea745b2659e61eb813db9aeb5ba249b106b7bffbd477905c61c433'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/smoothgui-neoforge-2.0.5%2Bmc26.2.jar'

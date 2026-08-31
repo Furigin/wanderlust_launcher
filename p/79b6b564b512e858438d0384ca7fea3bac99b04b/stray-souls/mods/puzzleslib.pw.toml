@@ -1,0 +1,18 @@
+filename = 'PuzzlesLib-v26.2.3-mc26.2.x-NeoForge.jar'
+name = "Puzzles Lib"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '26.2.3'
+
+[option]
+optional = true
+default = false
+description = ""
+
+[download]
+hash = '44a871014da0de73be3f3efaa00d00c72e3cc1eb77c4750f8cf0c695a9e36e00'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/PuzzlesLib-v26.2.3-mc26.2.x-NeoForge.jar'

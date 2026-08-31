@@ -34,6 +34,18 @@ DEFAULT_PACK = "wanderlust-create"
 # Эти зависимости объявляет каждый мод, к выбору игрока они отношения не имеют.
 IGNORED_DEPS = {"minecraft", "neoforge", "forge", "fabricloader", "fabric", "java"}
 
+# Куда ещё смотреть за jar-ами, кроме custom-mods/ (заполняется для приватного пака).
+EXTRA_JAR_DIRS: list = []
+
+# Библиотеки, которые надо прятать, даже если никто не объявил их зависимостью
+# явно: игроку нечего выбирать в «Cloth Config», это просто движок настроек.
+FORCE_HIDDEN = {
+    "konkrete", "cloth_config", "architectury", "puzzleslib", "creativecore",
+    "supermartijn642configlib", "libipn", "baguettelib", "fzzy_config",
+    "yet_another_config_lib_v3", "tlib", "klf", "midnightlib", "spruceui",
+    "lambdynlights_api", "yumi_mc_core",
+}
+
 
 def parse_pack_mods(pack: Path):
     """Читает .pw.toml пака: slug -> данные записи."""
@@ -59,11 +71,12 @@ def parse_pack_mods(pack: Path):
 
 
 def load_jar(entry) -> bytes | None:
-    """Байты jar: сначала локальный custom-mods/, иначе качаем по ссылке."""
+    """Байты jar: сначала локальные папки, иначе качаем по ссылке."""
     fname = entry["filename"]
-    local = CUSTOM_MODS / fname
-    if local.is_file():
-        return local.read_bytes()
+    for d in [CUSTOM_MODS, *EXTRA_JAR_DIRS]:
+        local = d / fname
+        if local.is_file():
+            return local.read_bytes()
 
     url = entry["url"]
     if not url:
@@ -161,6 +174,9 @@ def main() -> int:
     if not (pack / "pack.toml").is_file():
         print(f"нет пака: {pack_name}")
         return 1
+    # У приватного пака jar-ы лежат не в общем custom-mods/, а рядом с ним.
+    global EXTRA_JAR_DIRS
+    EXTRA_JAR_DIRS = [pack.parent / "files"]
 
     mods = parse_pack_mods(pack)
     print(f"пак {pack_name}: {len(mods)} записей")
@@ -225,7 +241,9 @@ def main() -> int:
         e["needed_by"] = [slug_to_id[s2] for s2 in needed_by.get(slug, []) if s2 in slug_to_id]
         # Прячем всё, что кто-то тянет как зависимость: это библиотеки,
         # выбирать их отдельно игроку незачем — лаунчер включит их сам.
-        e["hidden"] = bool(e["needed_by"])
+        # Плюс те, что перечислены явно: часть модов объявляет зависимость
+        # мягко (optional), и автоопределение такую библиотеку не поймает.
+        e["hidden"] = bool(e["needed_by"]) or e["mod_id"] in FORCE_HIDDEN
         e.pop("requires_ids", None)
 
     out = {

@@ -1,0 +1,18 @@
+filename = 'chat_heads-1.2.8-neoforge-26.1.jar'
+name = "Chat Heads"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.8'
+
+[option]
+optional = true
+default = false
+description = "Рядом с сообщением в чате рисуется голова того, кто его написал."
+
+[download]
+hash = 'fc752097d0436ebcc20de4c28fd69d7bf2c96d709688c90a073bbf9ca6bd1e6e'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/chat_heads-1.2.8-neoforge-26.1.jar'

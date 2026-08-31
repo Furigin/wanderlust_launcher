@@ -1,0 +1,18 @@
+filename = 'chatanimation-neoforge-1.3.0+mc26.2.jar'
+name = "ChatAnimation"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.3.0'
+
+[option]
+optional = true
+default = false
+description = "Сообщения в чате появляются плавно, а не рывком."
+
+[download]
+hash = '88b2ff69d53ac92941860fda7d54f18a8232c7cb95a73ae2d9ae5898c7e80fc9'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/chatanimation-neoforge-1.3.0%2Bmc26.2.jar'

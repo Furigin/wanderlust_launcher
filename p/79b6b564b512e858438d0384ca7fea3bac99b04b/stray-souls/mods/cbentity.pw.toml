@@ -1,0 +1,13 @@
+filename = 'cbentity-1.0.0.jar'
+name = "Command Block Entity"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.0'
+
+[download]
+hash = 'df01af01f42560e5579e624566e232aabf32e4547d1c23d40d29cf0a224a2afe'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/cbentity-1.0.0.jar'

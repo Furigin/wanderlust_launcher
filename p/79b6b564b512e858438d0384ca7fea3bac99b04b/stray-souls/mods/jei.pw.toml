@@ -1,0 +1,13 @@
+filename = 'jei-26.2-neoforge-30.7.0.39.jar'
+name = "Just Enough Items"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '30.7.0.39'
+
+[download]
+hash = 'e18c083343b3c5c3c9389f83b554c3585ba56b0a7c254297829e5be8344eeb9b'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/jei-26.2-neoforge-30.7.0.39.jar'

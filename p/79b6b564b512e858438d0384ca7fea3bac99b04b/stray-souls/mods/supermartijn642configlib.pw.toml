@@ -1,0 +1,18 @@
+filename = 'supermartijn642configlib-1.1.8-neoforge-mc26.2.jar'
+name = "SuperMartijn642's Config Library"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.1.8'
+
+[option]
+optional = true
+default = false
+description = ""
+
+[download]
+hash = 'f75ff576703a175deebbe112f502c926e4fb8845b57ca7ec3e629e02f0c052eb'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/supermartijn642configlib-1.1.8-neoforge-mc26.2.jar'

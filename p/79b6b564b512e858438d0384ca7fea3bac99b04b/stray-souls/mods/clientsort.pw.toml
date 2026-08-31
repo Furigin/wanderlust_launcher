@@ -1,0 +1,18 @@
+filename = 'clientsort-neoforge-3.103.1+26.2.jar'
+name = "ClientSort"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.103.1+26.2'
+
+[option]
+optional = true
+default = false
+description = "Сортировка инвентаря и сундуков одной кнопкой."
+
+[download]
+hash = 'dcbbb5a02a7a110648d97b552500cd7e4c38f640f4348bf63e4dce3eec26ac53'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/clientsort-neoforge-3.103.1%2B26.2.jar'

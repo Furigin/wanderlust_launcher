@@ -1,0 +1,18 @@
+filename = 'eg_particle_interactions-0.10.2+26.2-neoforge.jar'
+name = "Particle Interactions"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '0.10.2+26.2-neoforge'
+
+[option]
+optional = true
+default = false
+description = "Частицы реагируют на движение: пыль и искры разлетаются, когда проходишь рядом."
+
+[download]
+hash = 'eff37c1deffdaadbbca304a15230c10bcfcbb29b15fd8b9850fb7fa24899c860'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/eg_particle_interactions-0.10.2%2B26.2-neoforge.jar'

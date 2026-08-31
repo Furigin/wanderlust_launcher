@@ -1,0 +1,18 @@
+filename = 'MouseTweaks-neoforge-mc26.2-2.31.jar'
+name = "Mouse Tweaks"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.31'
+
+[option]
+optional = true
+default = false
+description = "Перетаскивание предметов мышью в инвентаре: раскладывать стопки заметно быстрее."
+
+[download]
+hash = '923b3087f750df523dbbb8b6ffbbe5384f5f4e6725fb91c10ee4307b9f27f6d9'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/MouseTweaks-neoforge-mc26.2-2.31.jar'

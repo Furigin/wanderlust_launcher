@@ -1,0 +1,13 @@
+filename = 'PlayerAnimationLibMerged-1.2.4+mc.26.2.jar'
+name = "Player Animation Library"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.4+mc.26.2'
+
+[download]
+hash = '4dd34180a982eab8f26ba200cf57b0d5ce8360b63400d23c7afc1c40a17b6072'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/PlayerAnimationLibMerged-1.2.4%2Bmc.26.2.jar'

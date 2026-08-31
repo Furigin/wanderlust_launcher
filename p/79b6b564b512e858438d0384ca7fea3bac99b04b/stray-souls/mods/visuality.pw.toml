@@ -1,0 +1,18 @@
+filename = 'visuality-3.0.0.jar'
+name = "visuality-forge"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.0.0'
+
+[option]
+optional = true
+default = false
+description = "Больше визуальных мелочей у мобов и блоков — капли, искры, дымка."
+
+[download]
+hash = '493bda5e22e438c2b5dd384b733171e64b4aa8137d06ee02deaad506b1298393'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/visuality-3.0.0.jar'

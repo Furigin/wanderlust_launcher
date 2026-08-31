@@ -1,0 +1,18 @@
+filename = 'wakes-26.2-NeoForge-1.4.1.jar'
+name = "Wakes"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.4.1'
+
+[option]
+optional = true
+default = false
+description = "От лодок и плавающих существ расходятся волны по воде."
+
+[download]
+hash = '543d89b4f036a12734299afbd1d2c1e393d8006470e3b45b4de9174eb33c2526'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/wakes-26.2-NeoForge-1.4.1.jar'

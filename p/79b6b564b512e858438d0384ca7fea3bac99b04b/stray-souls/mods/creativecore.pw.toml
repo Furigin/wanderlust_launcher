@@ -1,0 +1,18 @@
+filename = 'CreativeCore_NEOFORGE_v2.14.16_mc26.2.jar'
+name = "CreativeCore"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.14.16'
+
+[option]
+optional = true
+default = false
+description = ""
+
+[download]
+hash = '54c5fab1aacac365f94ec8c3a2f98e4c59c821fd7413990f759396b5b4295042'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/CreativeCore_NEOFORGE_v2.14.16_mc26.2.jar'

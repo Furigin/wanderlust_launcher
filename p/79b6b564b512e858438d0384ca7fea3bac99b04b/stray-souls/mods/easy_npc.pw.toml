@@ -1,0 +1,13 @@
+filename = 'easy_npc-neoforge-26.2-6.25.0.jar'
+name = "Easy NPC"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '${file.jarVersion}'
+
+[download]
+hash = '3e3f7315ec2dbcce9b4d6ca462175b9347ace436240945754013a766b79e10e7'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/easy_npc-neoforge-26.2-6.25.0.jar'

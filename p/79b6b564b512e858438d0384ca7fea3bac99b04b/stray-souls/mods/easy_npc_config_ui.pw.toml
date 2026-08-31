@@ -1,0 +1,13 @@
+filename = 'easy_npc_config_ui-neoforge-26.2-6.25.0.jar'
+name = "Easy NPC: Config UI"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '6.25.0'
+
+[download]
+hash = '8a79b52560b580251ff884339681a182c0a583dc2021b7b4bf097cf83aeb694a'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/p/79b6b564b512e858438d0384ca7fea3bac99b04b/files/easy_npc_config_ui-neoforge-26.2-6.25.0.jar'
