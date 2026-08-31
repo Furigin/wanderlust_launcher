@@ -46,6 +46,12 @@ FORCE_HIDDEN = {
     "lambdynlights_api", "yumi_mc_core",
 }
 
+# Моды, которые кто-то тянет как зависимость, но выбирать их отдельно всё
+# равно есть смысл. Sodium — не библиотека, а прирост FPS сам по себе:
+# прятать его только потому, что его требует Iris, значит заставлять брать
+# шейдеры ради производительности.
+ALWAYS_VISIBLE = {"sodium"}
+
 
 def parse_pack_mods(pack: Path):
     """Читает .pw.toml пака: slug -> данные записи."""
@@ -254,7 +260,8 @@ def main() -> int:
         # выбирать их отдельно игроку незачем — лаунчер включит их сам.
         # Плюс те, что перечислены явно: часть модов объявляет зависимость
         # мягко (optional), и автоопределение такую библиотеку не поймает.
-        e["hidden"] = bool(e["needed_by"]) or e["mod_id"] in FORCE_HIDDEN
+        e["hidden"] = ((bool(e["needed_by"]) or e["mod_id"] in FORCE_HIDDEN)
+                       and e["mod_id"] not in ALWAYS_VISIBLE)
         e.pop("requires_ids", None)
 
     out = {

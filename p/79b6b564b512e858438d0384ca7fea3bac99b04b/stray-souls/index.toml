@@ -9,10 +9,6 @@ file = "mod-icons/appleskin.png"
 hash = "d3472a89d2cb5b653a3b23749535a94239fd783ca46778d1a3057716d21a76fe"
 
 [[files]]
-file = "mod-icons/architectury.png"
-hash = "4557520b0d65c4cbc6457d69195484f6b18b427b88e9e18904b961c9ece8ffd3"
-
-[[files]]
 file = "mod-icons/baguettelib.png"
 hash = "6f9f8ed393d5049d75d2375263caa5c8c81792f32cc0df1e826bc25458b0b9e1"
 
@@ -69,10 +65,6 @@ file = "mod-icons/fallingleavesplus.png"
 hash = "a7ad071bf9d4c5ae8dcf5885537526b621241105501535be7f82b7b0e04e6fdb"
 
 [[files]]
-file = "mod-icons/fzzy_config.png"
-hash = "759c88112dc1c0bf7e3016db35a27938cefec8b2a93dc19be896533f7c322a4e"
-
-[[files]]
 file = "mod-icons/helditemtooltips.png"
 hash = "6108be7ffe72c5714757968fbdc2e4a1772b4329700b2ed8c36c41adc9a974bf"
 
@@ -87,10 +79,6 @@ hash = "31f18f0fd68f517f33318d5a35740f897bcaef5bdc4a225bddd139845664d30b"
 [[files]]
 file = "mod-icons/justzoom.png"
 hash = "7cbbf2e387d091922d98b8d4fe3509692603ca3ec84b4a3a093a4614f0948062"
-
-[[files]]
-file = "mod-icons/klf.png"
-hash = "6e9aaf73d100bf62e9f7961a024c7c48b2240d02b3f1bad3796bba37ba90e244"
 
 [[files]]
 file = "mod-icons/konkrete.png"
@@ -153,16 +141,8 @@ file = "mod-icons/sound_physics_remastered.png"
 hash = "6564567704a955618aaf4874c011f85d9a12ed5a4580ca76cb0de29e50ea5f0e"
 
 [[files]]
-file = "mod-icons/subtle_effects.png"
-hash = "f3b9dc9189f994fe075e35d136b45cc5ba5156b6faa553be208ff6ca3bb77f96"
-
-[[files]]
 file = "mod-icons/supermartijn642configlib.png"
 hash = "96a545282443c609ea74e11647f14cf7d20eee07d8682b7d6c5993e743adf424"
-
-[[files]]
-file = "mod-icons/tlib.png"
-hash = "2f0bb4bd2ade8c2bc8d735331f5d6595ae8a29028d7a01c1c44b8e24b08f4774"
 
 [[files]]
 file = "mod-icons/visuality.png"
@@ -178,7 +158,7 @@ hash = "f477ec872b81d129e1aba3c7dd3a8d4819e47ec273967daab54dda33462018c9"
 
 [[files]]
 file = "mod-meta.json"
-hash = "102cd80c027ec2560885a5be501cd9aa3a599b4df88f66ff3f0bc182c759da33"
+hash = "9ecca70128153e9036cc8429aa084dda3b2cb2be6a1da2a0bddcff3ae5caeb8d"
 
 [[files]]
 file = "mods/additionalbanners.pw.toml"
@@ -351,11 +331,6 @@ hash = "ffc2bdfdbc7ef5f1f94464239fccdeb208b8b22c8122e9b5d79094e1a4815dad"
 metafile = true
 
 [[files]]
-file = "mods/fzzy_config.pw.toml"
-hash = "694621b6f4b20c13637743cffb978c83628adce0c007aa4a703f16306a3015d2"
-metafile = true
-
-[[files]]
 file = "mods/gazehead.pw.toml"
 hash = "9694ad4e5a9a6e94e7772c145b673bb262e7f94adb221cf79bf77d9ee53669c9"
 metafile = true
@@ -508,11 +483,6 @@ metafile = true
 [[files]]
 file = "mods/sound_physics_remastered.pw.toml"
 hash = "9b1bf4e6d518afcdaac10a6e32e2d1c84a36af0aff6d7746610cbb961be2751f"
-metafile = true
-
-[[files]]
-file = "mods/subtle_effects.pw.toml"
-hash = "d7c135ee6a067d478c8d6a70376454f7a089e880541eea06eb81b111ec480c7d"
 metafile = true
 
 [[files]]

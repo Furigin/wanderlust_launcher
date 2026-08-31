@@ -240,22 +240,6 @@
       "hidden": false
     },
     {
-      "id": "mods/fzzy_config.pw.toml",
-      "slug": "fzzy_config",
-      "mod_id": "fzzy_config",
-      "name": "Fzzy Config",
-      "summary": "",
-      "description": "Configuration engine with automatic GUI generation, client-server syncing, powerful validation and error handling, and much more.",
-      "icon": "mod-icons/fzzy_config.png",
-      "default": false,
-      "size_bytes": 2326995,
-      "requires": [],
-      "needed_by": [
-        "mods/subtle_effects.pw.toml"
-      ],
-      "hidden": true
-    },
-    {
       "id": "mods/helditemtooltips.pw.toml",
       "slug": "helditemtooltips",
       "mod_id": "helditemtooltips",
@@ -524,7 +508,7 @@
       "needed_by": [
         "mods/iris.pw.toml"
       ],
-      "hidden": true
+      "hidden": false
     },
     {
       "id": "mods/sound_physics_remastered.pw.toml",
@@ -537,22 +521,6 @@
       "default": false,
       "size_bytes": 201519,
       "requires": [],
-      "needed_by": [],
-      "hidden": false
-    },
-    {
-      "id": "mods/subtle_effects.pw.toml",
-      "slug": "subtle_effects",
-      "mod_id": "subtle_effects",
-      "name": "Subtle Effects",
-      "summary": "Мелкие частицы для атмосферы: искры от огня, брызги, пыль под ногами.",
-      "description": "Adding many new subtle details through particles and a few sounds",
-      "icon": "mod-icons/subtle_effects.png",
-      "default": false,
-      "size_bytes": 3356646,
-      "requires": [
-        "mods/fzzy_config.pw.toml"
-      ],
       "needed_by": [],
       "hidden": false
     },

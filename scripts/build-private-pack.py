@@ -77,6 +77,16 @@ SKIP = {
     "architectury-neoforge-21.0.7.jar": "никому не нужен: единственный, кто его требовал, — TLib, а он тоже лишний",
     "tlib-neoforge-1.5.0-26.2.jar": "ни один мод сборки не объявляет его зависимостью и не трогает его классы",
     "KotlinLangForge-2.13.0-k2.4.10-3.1+neoforge (1).jar": "ни один мод сборки не написан на Kotlin",
+    # NeoForge 26.2.0.75 переписал Entity.updateFluidInteraction: вместо
+    # fluidInteraction.isInFluid(TagKey) там теперь isInFluidMatching(...),
+    # а сама карта trackerByFluid переехала с TagKey на FluidType. Инжектор
+    # SubtleEffects не находит точку входа и валит запуск (required = 1),
+    # а если её подправить — тело метода упадёт на приведении типа.
+    # 1.14.3 от 17.06.2026 — последняя сборка мода под 26.2, чинить нечем.
+    "SubtleEffects-neoforge-26.2-1.14.3 (1).jar":
+        "ломает запуск: инжектор в Entity.updateFluidInteraction не совпадает с NeoForge 26.2.0.75",
+    "fzzy_config-0.7.6+26.2+neoforge (1).jar":
+        "нужен был только SubtleEffects — без него это мёртвый вес",
 }
 
 # Русские описания для карточек. Ключ — modId.
