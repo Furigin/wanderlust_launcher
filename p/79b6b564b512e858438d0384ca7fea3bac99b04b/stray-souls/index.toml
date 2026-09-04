@@ -516,6 +516,11 @@ hash = "26620cce982cb84d558093c1ea2144bdcdf9397e77b5130b0a1d6e5ff50bb563"
 metafile = true
 
 [[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "72b34ee2aff2cc1aa6ead878ff473e06382e6bbb0346eebd0b1325199bb45967"
+metafile = true
+
+[[files]]
 file = "mods/yet_another_config_lib_v3.pw.toml"
 hash = "11a71f12aabee96a9bc62e9551c1581b95ce94bdf63b51b60063672200a97ea3"
 metafile = true
