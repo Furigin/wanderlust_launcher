@@ -271,21 +271,6 @@ hash = "6d7a843f8310e81fba5e80cd57dd37aaffdebb2f160cf002f4c502a339fb6eba"
 metafile = true
 
 [[files]]
-file = "mods/easy_npc.pw.toml"
-hash = "df60fb10c314e756b33048a9b9f05e33a53b62373bc699dde8f1545c658322b2"
-metafile = true
-
-[[files]]
-file = "mods/easy_npc_bundle.pw.toml"
-hash = "c52f4ced94d68e00ccba7ef2b9dd9921555e8fa9d8730e45849aab3b59154696"
-metafile = true
-
-[[files]]
-file = "mods/easy_npc_config_ui.pw.toml"
-hash = "2a79f1659937614e2cf7ab9c569f9eaa6613aa5d4504c0ef5d59eb3fdb59c608"
-metafile = true
-
-[[files]]
 file = "mods/eg_particle_interactions.pw.toml"
 hash = "fb298828ec54f4a4acc824052e23178834ccd5f21afb2df71994ce29ea6d2b6d"
 metafile = true
