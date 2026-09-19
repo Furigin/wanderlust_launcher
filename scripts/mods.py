@@ -379,11 +379,34 @@ def check_dependencies() -> list[str]:
 
 # ------------------------------------------------------------ git ---------
 
+def child_env() -> dict:
+    """Окружение для запускаемых скриптов.
+
+    Без PYTHONIOENCODING дочерний Python печатает в кодировке консоли
+    (на этой системе — не UTF-8), а мы читаем его вывод как UTF-8 и падаем
+    на первой же русской букве. У меня при отладке переменная была
+    выставлена снаружи, поэтому проблема вылезла только у пользователя.
+    """
+    import os
+    env = dict(os.environ)
+    env["PYTHONIOENCODING"] = "utf-8"
+    return env
+
+
+def run_capture(cmd: list[str]) -> subprocess.CompletedProcess:
+    """Запуск с захватом вывода. errors='replace' — вторая страховка: если
+    подпроцесс всё-таки выдаст не UTF-8 (например, сообщение от git или
+    packwiz в системной кодировке), лучше показать пару кракозябр, чем
+    свалиться с UnicodeDecodeError посреди работы."""
+    return subprocess.run(cmd, cwd=REPO, capture_output=True, text=True,
+                          encoding="utf-8", errors="replace", env=child_env())
+
+
 def git(*args, check=True) -> str:
-    r = subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True, encoding="utf-8")
+    r = run_capture(["git", *args])
     if check and r.returncode != 0:
-        raise RuntimeError(f"git {' '.join(args)}: {r.stderr.strip()}")
-    return r.stdout
+        raise RuntimeError(f"git {' '.join(args)}: {(r.stderr or '').strip()}")
+    return r.stdout or ""
 
 
 def repo_restore():
@@ -444,6 +467,22 @@ def run(actions: list[tuple[str, str]], dry: bool) -> int:
         return 1
 
     plan = Plan()
+    try:
+        return _run(plan, actions, dry)
+    except Exception:
+        # Страховка на случай любой непредвиденной ошибки. Без неё падение
+        # посреди работы оставляло мод уже скопированным, пак пересобранным,
+        # но не опубликованным — и человек не понимал, в каком всё состоянии.
+        import traceback
+        traceback.print_exc()
+        plan.rollback()
+        repo_restore()
+        print("\n✗ Что-то пошло не так (текст выше). Всё откатил: папки модов и")
+        print("  репозиторий в том же виде, что до запуска. Ничего не опубликовано.")
+        return 1
+
+
+def _run(plan: Plan, actions: list[tuple[str, str]], dry: bool) -> int:
     changed = False
     print()
     for op, arg in actions:
@@ -474,17 +513,16 @@ def run(actions: list[tuple[str, str]], dry: bool) -> int:
             return 1
 
     print("\n== пересобираю пак ==")
-    build = subprocess.run([sys.executable, str(REPO / "scripts" / "build-private-pack.py")],
-                           cwd=REPO, capture_output=True, text=True, encoding="utf-8")
+    build = run_capture([sys.executable, str(REPO / "scripts" / "build-private-pack.py")])
     if build.returncode != 0:
-        print(build.stdout[-2500:])
-        print(build.stderr[-2500:])
+        print((build.stdout or "")[-2500:])
+        print((build.stderr or "")[-2500:])
         plan.rollback()
         repo_restore()
         print("\n✗ Сборка не прошла. Всё откатил: папки модов и репозиторий как были,")
         print("  в интернет ничего не ушло. Текст ошибки выше.")
         return 1
-    ok_line = next((l for l in build.stdout.splitlines() if "Пак в порядке" in l), "")
+    ok_line = next((l for l in (build.stdout or "").splitlines() if "Пак в порядке" in l), "")
     print(f"  {ok_line or 'собран'}")
 
     if dry:
