@@ -8,3 +8,6 @@ wanderlust-create/mods/.connector/
 
 # Крупные jar раздаются через GitHub Releases, а не из репозитория
 /releases-upload/
+
+# Появляется, когда mods.py подгружает сборщик ради его списка исключений.
+__pycache__/
