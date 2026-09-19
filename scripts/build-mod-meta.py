@@ -193,7 +193,10 @@ def main() -> int:
         return 1
     # У приватного пака jar-ы лежат не в общем custom-mods/, а рядом с ним.
     global EXTRA_JAR_DIRS
-    EXTRA_JAR_DIRS = [pack.parent / "files"]
+    # Раздача пака лежит рядом с ним под именем «<пак>-files»
+    # (stray-souls → stray-souls-files). Старое место p/<секрет>/files
+    # оставлено запасным вариантом для паков, которые ещё не переехали.
+    EXTRA_JAR_DIRS = [pack.parent / f"{pack.name}-files", pack.parent / "files"]
 
     mods = parse_pack_mods(pack)
     print(f"пак {pack_name}: {len(mods)} записей")
@@ -263,6 +266,13 @@ def main() -> int:
         e["hidden"] = ((bool(e["needed_by"]) or e["mod_id"] in FORCE_HIDDEN)
                        and e["mod_id"] not in ALWAYS_VISIBLE)
         e.pop("requires_ids", None)
+
+    # Иконки ушедших из пака модов удаляем: они входят в индекс, и игроки
+    # скачивали бы картинки модов, которых в сборке уже нет.
+    used = {e["icon"].split("/")[-1] for e in entries.values() if e.get("icon")}
+    for icon in icons_dir.glob("*.png"):
+        if icon.name not in used:
+            icon.unlink()
 
     out = {
         "pack": pack_name,

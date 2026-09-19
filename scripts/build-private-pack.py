@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
 """
-Собирает приватный пак 26.2 из готовых папок с модами.
+Собирает пак Stray Souls из готовых папок с модами.
 
     python scripts/build-private-pack.py
 
 Откуда берутся моды:
-  * база (ставится всем)      — инстанс PrismLauncher, папка mods;
+  * база (ставится всем)      — Desktop/stray-souls-mods. Это зеркало папки
+    mods на сервере билдеров: залил мод на сервер — положи копию сюда.
+    Клиент и сервер должны совпадать до байта, иначе игрока либо не пустит,
+    либо пустит, и всё поедет в рассинхрон;
   * дополнительные (на выбор) — «Новая папка (9)/моды»: файлы в корне это
     самостоятельные моды, а вложенные папки — «мод + его зависимости».
 
-Что делает: раскладывает jar-ы в приватную папку раздачи, пишет для каждого
+Что делает: раскладывает jar-ы в stray-souls-files/, пишет для каждого
 .pw.toml, помечает дополнительные как опциональные с русским описанием,
 обновляет индекс packwiz и собирает витрину (иконки/описания/зависимости).
 
-Приватность: и jar-ы, и метаданные лежат внутри p/<секрет>/, а не в общем
-custom-mods/. Публичный манифест о сборке не знает — путь вычисляется из
-пароля, см. PRIVATE_SALT в лаунчере.
+Где что лежит:
+  * stray-souls/             — сам пак (pack.toml, index.toml, mods/*.pw.toml);
+  * stray-souls-files/       — jar-ы, которые пак раздаёт;
+  * p/<секрет>/manifest.json — манифест сборки. Он по-прежнему лежит по
+    адресу, который считается из кода доступа, поэтому без кода лаунчер
+    сборку не покажет. Сам пак при этом лежит по открытому адресу: кто
+    знает путь /stray-souls/pack.toml, увидит список модов.
 
 Повторный запуск переписывает пак заново: правки в .pw.toml, сделанные
 руками, потеряются — описания правьте в DESCRIPTIONS ниже.
@@ -37,7 +44,9 @@ HOST = "https://wanderlust-launcher.ruslanyik8.workers.dev"
 SALT = "wanderlust-private-v1"
 PASSWORD = "sosybiby"
 
-BASE_MODS = Path(r"C:\Users\rusla\AppData\Roaming\PrismLauncher\instances\26.2\minecraft\mods")
+# Зеркало сервера билдеров. Раньше база бралась из инстанса Prism, а там
+# вперемешку лежали тестовые и недоделанные моды — и все они уезжали игрокам.
+BASE_MODS = Path(r"C:\Users\rusla\Desktop\stray-souls-mods")
 EXTRA_MODS = Path(r"C:\Users\rusla\Desktop\Новая папка (9)\моды")
 
 # Cloudflare не отдаёт файлы больше 25 МБ. Такие моды раздаём с Modrinth —
@@ -50,15 +59,10 @@ BIG_FILES_FROM_MODRINTH = {
     ),
 }
 
-# Моды, которые лежат в базовой папке, но раздавать их всем не нужно —
-# уезжают в список «на выбор». Iris (шейдеры) и Sodium: шейдеры хотят не все,
-# а на слабых машинах они только вредят. Sodium уходит сюда же не как отдельный
-# пункт списка, а как обязательная зависимость Iris — он объявлен у Iris в
-# neoforge.mods.toml с type = "required", витрина подхватит связь сама.
-OPTIONAL_FROM_BASE = {
-    "iris-neoforge-1.11.2+mc26.2.jar",
-    "sodium-neoforge-0.9.1+mc26.2.jar",
-}
+# Моды, которые лежат в базовой папке, но раздавать их всем не нужно, —
+# уезжают в список «на выбор». Сейчас пусто: база — это ровно сервер, а
+# выборочные живут в своей папке (Iris и Sodium — в «Iris + Sodium»).
+OPTIONAL_FROM_BASE: set = set()
 
 CLOUDFLARE_FILE_LIMIT = 25 * 1024 * 1024
 
@@ -242,9 +246,8 @@ def main() -> int:
         print(f"нет папки дополнительных модов: {EXTRA_MODS}")
         return 1
 
-    secret = secret_dir()
-    pack = secret / PACK_ID
-    files = secret / "files"
+    pack = REPO / PACK_ID
+    files = REPO / f"{PACK_ID}-files"
 
     print("== разбираю моды ==")
     base, extra = collect()
@@ -278,11 +281,57 @@ def main() -> int:
                 shutil.copy2(jar, target)
         write_entry(pack, jar, files_url, optional=(jar in extra), hidden=False)
 
+    # Из раздачи убираем jar-ы, на которые пак больше не ссылается. Иначе
+    # убранный из сборки тестовый мод так и лежал бы на Cloudflare, доступный
+    # по прямой ссылке любому, кто её знает.
+    wanted = {j.name for j in base + extra}
+    for stale in sorted(files.glob("*.jar")):
+        if stale.name not in wanted:
+            print(f"  убираю из раздачи: {stale.name}")
+            stale.unlink()
+
     subprocess.run([str(PACKWIZ), "refresh"], cwd=pack, check=True)
+
+    # Витрина (иконки, описания, зависимости) лежит внутри пака и входит в
+    # индекс. Поэтому после неё обязателен повторный refresh: однажды он был
+    # забыт, хеши в индексе разошлись с файлами, и у игроков синхронизация
+    # падала с «Invalid mod file hash». Теперь это делает сам скрипт.
+    subprocess.run([sys.executable, str(REPO / "scripts" / "build-mod-meta.py"),
+                    "--pack", PACK_ID], check=True)
+    subprocess.run([str(PACKWIZ), "refresh"], cwd=pack, check=True)
+
+    point_manifest_at(pack)
+
+    subprocess.run([sys.executable, str(REPO / "scripts" / "check-pack.py"),
+                    "--pack", PACK_ID], check=True)
+
     print(f"\nпак собран: {pack.relative_to(REPO)}")
     print(f"файлы:      {files.relative_to(REPO)} ({len(list(files.glob('*.jar')))} jar)")
-    print("\nдальше: scripts/build-mod-meta.py соберёт иконки и описания")
+    print(f"база:       {', '.join(j.name for j in base)}")
+    print("\nосталось: git add -A && git commit -m \"Stray Souls: …\" && git push")
     return 0
+
+
+def point_manifest_at(pack: Path) -> None:
+    """Прописывает в манифест сборки адрес пака.
+
+    Манифест остаётся по секретному адресу (его ищет лаунчер по коду
+    доступа), а пак лежит в корне раздачи. Если адреса разойдутся, лаунчер
+    покажет сборку, но поставить её не сможет, — поэтому ссылку пишет
+    скрипт, а не человек.
+    """
+    manifest_path = secret_dir() / "manifest.json"
+    data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    url = f"{HOST}/{pack.relative_to(REPO).as_posix()}/pack.toml"
+    changed = False
+    for v in data.get("versions", []):
+        if v.get("id") == PACK_ID and v.get("pack", {}).get("packwiz_url") != url:
+            v["pack"]["packwiz_url"] = url
+            changed = True
+    if changed:
+        manifest_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+                                 encoding="utf-8")
+        print(f"  манифест сборки теперь смотрит на {url}")
 
 
 if __name__ == "__main__":

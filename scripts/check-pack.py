@@ -108,7 +108,7 @@ def custom_mod_entries() -> list[tuple[str, str, str, str]]:
     out = []
     for meta in sorted((PACK / "mods").glob("*.pw.toml")):
         text = meta.read_text(encoding="utf-8")
-        if "custom-mods/" not in text:
+        if "custom-mods/" not in text and f"/{PACK.name}-files/" not in text:
             continue  # мод с Modrinth, за его хеши отвечает Modrinth
         url = re.search(r"""url = ['"]([^'"]+)['"]""", text)
         digest = re.search(r"""hash = ['"]([0-9a-f]{32,128})['"]""", text)
@@ -126,9 +126,12 @@ def check_custom_mods_local() -> None:
     print(f"кастом-моды: {len(entries)}")
     for name, url, expected, algo in entries:
         filename = urllib.parse.unquote(url.rsplit("/", 1)[1])
-        jar = REPO / "custom-mods" / filename
+        # Свои jar-ы у пака могут лежать в общем custom-mods/ или в своей
+        # раздаче <пак>-files/ — сверяем там, куда указывает ссылка.
+        folder = f"{PACK.name}-files" if f"/{PACK.name}-files/" in url else "custom-mods"
+        jar = REPO / folder / filename
         if not jar.is_file():
-            problems.append(f"{name}: нет файла custom-mods/{filename}")
+            problems.append(f"{name}: нет файла {folder}/{filename}")
             continue
         actual = digest_bytes(jar.read_bytes(), algo)
         if actual != expected:

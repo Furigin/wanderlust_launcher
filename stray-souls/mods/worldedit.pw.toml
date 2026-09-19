@@ -1,0 +1,13 @@
+filename = 'worldedit-mod-7.4.4.jar'
+name = "WorldEdit"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '26.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '7.4.4+7546-f9e033f'
+
+[download]
+hash = '5f257ffcaebf055d16171952cce5c2fea9d653a5c3b4f97f8139826068dd019b'
+hash-format = 'sha256'
+mode = 'url'
+url = 'https://wanderlust-launcher.ruslanyik8.workers.dev/stray-souls-files/worldedit-mod-7.4.4.jar'

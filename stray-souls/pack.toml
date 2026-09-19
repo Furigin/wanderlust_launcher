@@ -1,0 +1,13 @@
+name = "Wanderlust Stray Souls"
+author = "furigin"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "206c54c2a12d8edc1e209b28f6b0bf622afdfc3392c99d6651d61c0f1253004a"
+
+[versions]
+minecraft = "26.2"
+neoforge = "26.2.0.75"
