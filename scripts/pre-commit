@@ -1,0 +1,37 @@
+#!/bin/sh
+# Не даёт закоммитить пак, у которого хеши в .pw.toml разошлись с jar-ами.
+#
+# Ровно это уже уезжало к игрокам: в gazehead.pw.toml остался хеш старой
+# сборки, а в раздаче лежала новая — и синхронизация падала с «Invalid mod
+# file hash». Поймать это глазами в diff невозможно, а проверка занимает
+# секунду.
+#
+# Ставится так (из корня репозитория):
+#     cp scripts/pre-commit .git/hooks/pre-commit
+#
+# Обойти в крайнем случае: git commit --no-verify
+
+set -e
+
+staged=$(git diff --cached --name-only)
+status=0
+
+for pack in stray-souls wanderlust-create; do
+  case "$staged" in
+    *"$pack/"*)
+      echo "проверяю пак $pack…"
+      if ! PYTHONIOENCODING=utf-8 python scripts/check-pack.py --pack "$pack"; then
+        status=1
+      fi
+      ;;
+  esac
+done
+
+if [ "$status" != "0" ]; then
+  echo ""
+  echo "Коммит остановлен: пак не сходится. Чаще всего лечится пересборкой:"
+  echo "    python scripts/build-private-pack.py      (для stray-souls)"
+  echo "    python scripts/add-custom-mod.py …        (для wanderlust-create)"
+fi
+
+exit $status
