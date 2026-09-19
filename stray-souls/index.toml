@@ -251,7 +251,7 @@ metafile = true
 
 [[files]]
 file = "mods/gazehead.pw.toml"
-hash = "d319050897c47d9223524ab4f0e2067672a538166238b45abe1c5cc9328ea4cf"
+hash = "398d4d24e1f43009dd3e7f95b9812ffce0c5a4a3506474d604e5d2ea844d979e"
 metafile = true
 
 [[files]]
@@ -382,11 +382,6 @@ metafile = true
 [[files]]
 file = "mods/xaerominimap.pw.toml"
 hash = "4854b2af7d34650667da8768c024bf6fb682e39effbfccd01982948677f3a57f"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "a2e1c77aef57f0158df5a60e969e5e4b9e6a14f17898f1d840e71a7707283214"
 metafile = true
 
 [[files]]
