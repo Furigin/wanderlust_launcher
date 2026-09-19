@@ -4,8 +4,12 @@
 
     python scripts/add-custom-mod.py путь/к/моду.jar [both|client|server] [--pack ИМЯ]
 
-Пак по умолчанию — wanderlust-create. Для другой сборки:
-    python scripts/add-custom-mod.py mod.jar both --pack stray-souls
+Пак по умолчанию — wanderlust-create. Для другой сборки — `--pack ИМЯ`.
+
+Stray Souls этим скриптом НЕ пополняется: её пак целиком пересобирает
+build-private-pack.py, и мод, добавленный сюда, пропал бы при следующей
+сборке. Для неё — положить jar в Desktop/stray-souls-mods и запустить
+python scripts/build-private-pack.py.
 
 Что делает:
   1. копирует jar в custom-mods/ (оттуда его раздаёт Cloudflare);
@@ -66,6 +70,15 @@ def main():
         if i + 1 < len(sys.argv):
             pack_name = sys.argv[i + 1]
             args = [a for a in args if a != pack_name]
+
+    # Паки, которые целиком собирает свой скрипт. Запись, добавленную сюда,
+    # тот скрипт при следующем запуске сотрёт — молча. Лучше отказать сразу.
+    generated = {"stray-souls": "положи jar в Desktop/stray-souls-mods "
+                                "и запусти python scripts/build-private-pack.py"}
+    if pack_name in generated:
+        print(f"Пак {pack_name} собирается отдельным скриптом, сюда добавлять нельзя:")
+        print(f"  {generated[pack_name]}")
+        return 1
 
     pack = REPO / pack_name
     mods_meta = pack / "mods"
