@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "mod-icons/ambientsounds.png"
-hash = "6d75104f83d051b073a51ea778d469b7aa143a97ac512846ff919a32b797880a"
-
-[[files]]
 file = "mod-icons/appleskin.png"
 hash = "d3472a89d2cb5b653a3b23749535a94239fd783ca46778d1a3057716d21a76fe"
 
@@ -162,7 +158,7 @@ hash = "f477ec872b81d129e1aba3c7dd3a8d4819e47ec273967daab54dda33462018c9"
 
 [[files]]
 file = "mod-meta.json"
-hash = "9fd0e3f2100b1efe407edb41e64a418c0bc3d1f4abdbe325eb0354ebf350cf2b"
+hash = "c330f92f2a9ad44dd7a2596807ff843672675a79491f118e01916e6a4a0324cd"
 
 [[files]]
 file = "mods/ambientsounds.pw.toml"
@@ -251,7 +247,7 @@ metafile = true
 
 [[files]]
 file = "mods/gazehead.pw.toml"
-hash = "398d4d24e1f43009dd3e7f95b9812ffce0c5a4a3506474d604e5d2ea844d979e"
+hash = "d319050897c47d9223524ab4f0e2067672a538166238b45abe1c5cc9328ea4cf"
 metafile = true
 
 [[files]]
@@ -382,11 +378,6 @@ metafile = true
 [[files]]
 file = "mods/xaerominimap.pw.toml"
 hash = "4854b2af7d34650667da8768c024bf6fb682e39effbfccd01982948677f3a57f"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "a2e1c77aef57f0158df5a60e969e5e4b9e6a14f17898f1d840e71a7707283214"
 metafile = true
 
 [[files]]

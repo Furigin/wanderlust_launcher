@@ -2,22 +2,6 @@
   "pack": "stray-souls",
   "mods": [
     {
-      "id": "mods/ambientsounds.pw.toml",
-      "slug": "ambientsounds",
-      "mod_id": "ambientsounds",
-      "name": "AmbientSounds",
-      "summary": "Живые звуки окружения: лес шумит, в пещерах капает, у воды слышен плеск.",
-      "description": "Expands minecraft's ambient sounds.",
-      "icon": "mod-icons/ambientsounds.png",
-      "default": false,
-      "size_bytes": 84813650,
-      "requires": [
-        "mods/creativecore.pw.toml"
-      ],
-      "needed_by": [],
-      "hidden": false
-    },
-    {
       "id": "mods/appleskin.pw.toml",
       "slug": "appleskin",
       "mod_id": "appleskin",
@@ -176,9 +160,7 @@
       "default": false,
       "size_bytes": 1345747,
       "requires": [],
-      "needed_by": [
-        "mods/ambientsounds.pw.toml"
-      ],
+      "needed_by": [],
       "hidden": true
     },
     {
